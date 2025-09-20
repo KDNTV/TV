@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const channels = {
         '0': {
             name: 'BEIN NEWS',
-            source: 'https://raw.githubusercontent.com/alysjc7-dot/VBB/refs/heads/main/1.m3u8',
+            source: 'https://raw.githubusercontent.com/kidntv/KID/refs/heads/main/pos1.m3u8',
             description: 'شاشة البث الرئيسية'
         },
         '1': {
