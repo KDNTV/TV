@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Channel data with working test streams
     const channels = {
         // قنوات BEIN
-        '0': { name: 'BEIN 1', source: 'https://raw.githubusercontent.com/kidntv/KID/refs/heads/main/pos1.m3u8', description: 'قناة بي إن الرياضية 1' },
+        '0': { name: 'BEIN 1', source: 'https://raw.githubusercontent.com/alysjc7-dot/VBB/refs/heads/main/1.m3u8', description: 'قناة بي إن الرياضية 1' },
         '1': { name: 'BEIN 2', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة بي إن الرياضية 2' },
         '2': { name: 'BEIN 3', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة بي إن الرياضية 3' },
         '3': { name: 'BEIN 4', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة بي إن الرياضية 4' },
