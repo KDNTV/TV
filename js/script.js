@@ -13,36 +13,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Channel data with working test streams
     const channels = {
-        '0': {
-            name: 'TEST STREAM',
-            source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8',
-            description: 'بث تجريبي - Test Stream'
-        },
-        '1': {
-            name: 'AL JAZEERA',
-            source: 'https://live-hls-web-aje.getaj.net/AJE/index.m3u8',
-            description: 'قناة الجزيرة الدولية'
-        },
-        '2': {
-            name: 'FRANCE 24',
-            source: 'https://live.france24.com/fr24/ar/hls/live.m3u8',
-            description: 'قناة فرانس 24 العربية'
-        },
-        '3': {
-            name: 'BBC WORLD',
-            source: 'https://bbcwshls-i.akamaihd.net/hls/live/2530591/ws-arablive/master.m3u8',
-            description: 'بي بي سي عربي'
-        },
-        '4': {
-            name: 'DW TV',
-            source: 'https://dwstream6-lh.akamaihd.net/i/dwstream6_live@123962/master.m3u8',
-            description: 'قناة دويتشه فيله العربية'
-        },
-        '5': {
-            name: 'EURONEWS',
-            source: 'https://euronews-al.secure.footprint.net/eu1-al/_definst_/euronews-ar/playlist.m3u8',
-            description: 'يورونيوز عربي'
-        }
+        // قنوات BEIN
+        '0': { name: 'BEIN 1', source: 'https://raw.githubusercontent.com/kidntv/KID/refs/heads/main/pos1.m3u8', description: 'قناة بي إن الرياضية 1' },
+        '1': { name: 'BEIN 2', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة بي إن الرياضية 2' },
+        '2': { name: 'BEIN 3', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة بي إن الرياضية 3' },
+        '3': { name: 'BEIN 4', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة بي إن الرياضية 4' },
+        '4': { name: 'BEIN 5', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة بي إن الرياضية 5' },
+        '5': { name: 'BEIN 6', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة بي إن الرياضية 6' },
+        '6': { name: 'BEIN 7', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة بي إن الرياضية 7' },
+        '7': { name: 'BEIN 8', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة بي إن الرياضية 8' },
+        '8': { name: 'BEIN 9', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة بي إن الرياضية 9' },
+        
+        // قنوات الثمانية
+        '9': { name: 'الثمانية 1', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة الثمانية 1' },
+        '10': { name: 'الثمانية 2', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة الثمانية 2' },
+        
+        // قنوات POST SPORT
+        '11': { name: 'POST SPORT 1', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة بوست سبورت 1' },
+        '12': { name: 'POST SPORT 2', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة بوست سبورت 2' },
+        '13': { name: 'POST SPORT 3', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة بوست سبورت 3' },
+        '14': { name: 'POST SPORT 4', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة بوست سبورت 4' },
+        '15': { name: 'POST SPORT 5', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة بوست سبورت 5' },
+        '16': { name: 'POST SPORT 6', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة بوست سبورت 6' }
     };
 
     // Setup JWPlayer
@@ -56,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
         height: "100%",
         aspectratio: "16:9",
         mute: false,
-        autostart: false, // Changed to false to prevent auto-playing
+        autostart: false,
         cast: {},
         logo: {
             file: "https://up6.cc/2025/08/175836245010381.jpg",
