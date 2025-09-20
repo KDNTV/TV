@@ -14,20 +14,20 @@ document.addEventListener('DOMContentLoaded', function() {
     // Channel data with working test streams
     const channels = {
         // قنوات BEIN
-        '0': { name: 'BEIN 1', source: 'https://raw.githubusercontent.com/alysjc7-dot/VBB/refs/heads/main/1.m3u8', description: 'قناة بي إن الرياضية 1' },
-        '1': { name: 'BEIN 2', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة بي إن الرياضية 2' },
-        '2': { name: 'BEIN 3', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة بي إن الرياضية 3' },
+        '0': { name: 'BEIN 1', source: 'https://raw.githubusercontent.com/kidntv/KID/refs/heads/main/td1.m3u8', description: 'قناة بي إن الرياضية 1' },
+        '1': { name: 'BEIN 2', source: 'https://raw.githubusercontent.com/alysjc7-dot/math/refs/heads/main/k1.m3u8', description: 'قناة بي إن الرياضية 2' },
+        '2': { name: 'BEIN 3', source: 'https://raw.githubusercontent.com/alysjc7-dot/VBB/refs/heads/main/for1.m3u8', description: 'قناة بي إن الرياضية 3' },
         '3': { name: 'BEIN 4', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة بي إن الرياضية 4' },
         '4': { name: 'BEIN 5', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة بي إن الرياضية 5' },
         '5': { name: 'BEIN 6', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة بي إن الرياضية 6' },
         '6': { name: 'BEIN 7', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة بي إن الرياضية 7' },
         '7': { name: 'BEIN 8', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة بي إن الرياضية 8' },
         '8': { name: 'BEIN 9', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة بي إن الرياضية 9' },
-        
+
         // قنوات الثمانية
         '9': { name: 'الثمانية 1', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة الثمانية 1' },
         '10': { name: 'الثمانية 2', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة الثمانية 2' },
-        
+
         // قنوات POST SPORT
         '11': { name: 'POST SPORT 1', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة بوست سبورت 1' },
         '12': { name: 'POST SPORT 2', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة بوست سبورت 2' },
@@ -41,9 +41,8 @@ document.addEventListener('DOMContentLoaded', function() {
     jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
     const playerInstance = jwplayer("player");
 
-    // Initialize player with default setup
+    // Initialize player with default setup without an image
     playerInstance.setup({
-        image: "https://up6.cc/2025/08/175836245010381.jpg",
         width: "100%",
         height: "100%",
         aspectratio: "16:9",
@@ -95,10 +94,9 @@ document.addEventListener('DOMContentLoaded', function() {
         // Update program info
         if (programTitle) programTitle.textContent = channel.description;
 
-        // Setup player with new source
+        // Setup player with new source without an image
         playerInstance.setup({
             playlist: [{
-                image: "https://up6.cc/2025/08/175836245010381.jpg",
                 sources: [{
                     default: true,
                     type: "hls",
