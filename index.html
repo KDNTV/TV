@@ -8,20 +8,8 @@
     <meta name="keywords" content="yarigatv, yariga live, yariga online, Sport live">
     <meta name="author" content="Yariga TV">
 
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="/">
-    <meta property="og:title" content="Yariga TV - البث المباشر">
-    <meta property="og:description" content="بـۆ بـینینی یاریه‌كـان به‌ شـێـوه‌ی ڕاسـتـه‌وخـۆ">
-    <meta property="og:image" content="https://yarigatv.basnews.com/rast.jpg">
-
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="/">
-    <meta property="twitter:title" content="Yariga TV - البث المباشر">
-    <meta property="twitter:description" content="بـۆ بـینینی یاریه‌كـان به‌ شـێـوه‌ی ڕاسـتـه‌وخـۆ">
-    <meta property="twitter:image" content="https://yarigatv.basnews.com/rast.jpg">
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanskufiarabic.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- إضافة Video.js للمشغل -->
+    <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
     <style>
         :root {
             --primary-color: #ff3366;
@@ -38,7 +26,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Noto Sans Kufi Arabic', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         body {
@@ -46,25 +34,35 @@
             color: var(--text-color);
             overflow-x: hidden;
             padding: 20px;
+            line-height: 1.6;
         }
 
-        /* Layout */
-        .app-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-
-        /* Main Content */
-        .main-content {
-            flex: 1;
-            max-width: 1000px;
-            padding: 20px;
+        .container {
+            max-width: 1200px;
             margin: 0 auto;
-            position: relative;
+            padding: 20px;
         }
 
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: var(--border-radius);
+        }
+
+        header h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1.2rem;
+        }
+
+        /* مشغل الفيديو */
         .player-container {
             position: relative;
             width: 100%;
@@ -75,19 +73,15 @@
             margin-bottom: 20px;
         }
 
-        #player {
+        #my-video {
             width: 100%;
             height: 0;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-            position: relative;
+            padding-bottom: 56.25%; /* نسبة 16:9 */
+            background: #000;
         }
 
-        #player > div {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+        .vjs-poster {
+            background-size: cover;
         }
 
         .player-placeholder {
@@ -101,6 +95,7 @@
             justify-content: center;
             align-items: center;
             background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            z-index: 5;
         }
 
         .player-placeholder i {
@@ -143,7 +138,7 @@
             font-weight: bold;
         }
         
-        /* New Styles for Telegram Button */
+        /* زر التليجرام */
         .telegram-button {
             background-color: #0088cc;
             color: #fff;
@@ -175,30 +170,24 @@
             transition: all 0.3s ease;
             cursor: pointer;
             padding: 15px;
+            text-align: center;
         }
 
         .channel-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            background: rgba(40, 40, 40, 0.9);
         }
 
         .channel-card.active {
             border: 2px solid var(--primary-color);
-        }
-
-        .channel-thumb {
-            display: none;
-        }
-
-        .channel-content {
-            padding: 0;
-            text-align: center;
+            background: rgba(50, 50, 50, 0.9);
         }
 
         .channel-title {
             font-size: 1.1rem;
             font-weight: bold;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -215,6 +204,7 @@
             align-items: center;
             gap: 4px;
             font-size: 0.8rem;
+            color: #e74c3c;
         }
 
         .live-dot {
@@ -231,7 +221,7 @@
             100% { opacity: 1; }
         }
 
-        /* Loading Animation */
+        /* تحميل */
         .loading-overlay {
             position: absolute;
             top: 0;
@@ -267,7 +257,7 @@
             100% { transform: rotate(360deg); }
         }
 
-        /* Notification */
+        /* الإشعارات */
         .notification {
             position: fixed;
             bottom: 20px;
@@ -285,13 +275,26 @@
             display: flex;
             align-items: center;
             gap: 10px;
+            max-width: 90%;
+            text-align: center;
         }
 
         .notification.visible {
             opacity: 1;
         }
 
-        /* Footer */
+        /* رسالة الخطأ */
+        .error-message {
+            background: #c0392b;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            text-align: center;
+            display: none;
+        }
+
+        /* التذييل */
         .footer {
             text-align: center;
             padding: 20px;
@@ -301,18 +304,7 @@
             color: rgba(255, 255, 255, 0.6);
         }
 
-        /* Error message */
-        .error-message {
-            background: #c0392b;
-            color: white;
-            padding: 10px;
-            border-radius: 5px;
-            margin: 10px 0;
-            text-align: center;
-            display: none;
-        }
-
-        /* Responsive adjustments */
+        /* للجوال */
         @media (max-width: 768px) {
             .program-info {
                 flex-direction: column;
@@ -322,30 +314,49 @@
             .channel-grid {
                 grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
             }
+            
+            header h1 {
+                font-size: 2rem;
+            }
         }
 
-        /* Hide elements as requested */
-        .header, .sidebar, .menu-toggle, .overlay {
-            display: none !important;
-        }
-
-        .main-content {
-            margin-right: 0 !important;
-            padding-top: 20px !important;
+        @media (max-width: 480px) {
+            .channel-grid {
+                grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+                gap: 10px;
+            }
+            
+            .channel-card {
+                padding: 10px;
+            }
+            
+            header h1 {
+                font-size: 1.8rem;
+            }
         }
     </style>
 </head>
 <body>
 
-    <div class="main-content">
+    <div class="container">
+        <header>
+            <h1>Yariga TV</h1>
+            <p>البث المباشر لمشاهدة المباريات والرياضة</p>
+        </header>
+
         <div class="error-message" id="errorMessage"></div>
         
         <div class="player-container">
-            <div id="player">
-                <div class="player-placeholder">
-                    <i class="fas fa-tv"></i>
-                    <p>اختر قناة للمشاهدة</p>
-                </div>
+            <video id="my-video" class="video-js vjs-default-skin" controls preload="auto" poster="https://images.unsplash.com/photo-1598890779134-57bbd2cd4090?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80">
+                <p class="vjs-no-js">
+                    لإعادة إنتاج هذا الفيديو ، يرجى تمكين JavaScript و / أو النظر في الترقية إلى متصفح ويب يدعم
+                    <a href="https://videojs.com/html5-video-support/" target="_blank">HTML5 video</a>
+                </p>
+            </video>
+
+            <div class="player-placeholder" id="playerPlaceholder">
+                <i class="fas fa-tv"></i>
+                <p>اختر قناة للمشاهدة</p>
             </div>
 
             <div class="loading-overlay" id="loadingOverlay">
@@ -410,54 +421,11 @@
                     </div>
                 </div>
             </div>
-
-            <div class="channel-card" data-channel="5">
-                <div class="channel-content">
-                    <div class="channel-title">BEIN 4</div>
-                    <div class="channel-status">
-                        <span class="live-indicator"><span class="live-dot"></span> LIVE</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="channel-card" data-channel="6">
-                <div class="channel-content">
-                    <div class="channel-title">BEIN 5</div>
-                    <div class="channel-status">
-                        <span class="live-indicator"><span class="live-dot"></span> LIVE</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="channel-card" data-channel="7">
-                <div class="channel-content">
-                    <div class="channel-title">BEIN 6</div>
-                    <div class="channel-status">
-                        <span class="live-indicator"><span class="live-dot"></span> LIVE</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="channel-card" data-channel="8">
-                <div class="channel-content">
-                    <div class="channel-title">BEIN 7</div>
-                    <div class="channel-status">
-                        <span class="live-indicator"><span class="live-dot"></span> LIVE</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="channel-card" data-channel="9">
-                <div class="channel-content">
-                    <div class="channel-title">BEIN 8</div>
-                    <div class="channel-status">
-                        <span class="live-indicator"><span class="live-dot"></span> LIVE</span>
-                    </div>
-                </div>
-            </div>
         </div>
 
-
+        <div class="footer">
+            <p>Yariga TV &copy; 2023 - جميع الحقوق محفوظة</p>
+        </div>
     </div>
 
     <div class="notification" id="notification">
@@ -465,24 +433,23 @@
         <span id="notificationText"></span>
     </div>
 
-    <script src="https://ssl.p.jwpcdn.com/player/v/8.26.0/jwplayer.js"></script>
+    <!-- إضافة Video.js ومشغل HLS -->
+    <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.15.0/videojs-contrib-hls.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Initialize variables
+            // تهيئة المتغيرات
             const loadingOverlay = document.getElementById('loadingOverlay');
             const notification = document.getElementById('notification');
             const notificationText = document.getElementById('notificationText');
             const programTitle = document.getElementById('programTitle');
             const channelCards = document.querySelectorAll('.channel-card');
             const errorMessage = document.getElementById('errorMessage');
+            const playerPlaceholder = document.getElementById('playerPlaceholder');
 
-            // Check if JWPlayer is loaded
-            if (typeof jwplayer === 'undefined') {
-                showError('لم يتم تحميل مشغل الفيديو. يرجى التحقق من اتصال الإنترنت وإعادة تحميل الصفحة.');
-                return;
-            }
-
-            // Channel data
+            // بيانات القنوات
             const channels = {
                 '0': {
                     name: 'BEIN NEWS',
@@ -501,61 +468,27 @@
                 },
                 '3': {
                     name: 'BEIN 2',
-                    source: 'https://example.com/channel3.m3u8',
+                    source: 'https://cubedgeo2.fluidstream.eu/geo2/geo2.m3u8',
                     description: 'القناة الثانية'
                 },
                 '4': {
                     name: 'BEIN 3',
-                    source: 'https://example.com/channel4.m3u8',
+                    source: 'https://rai1.rai.it/rai1/rai1_1200/playlist.m3u8',
                     description: 'القناة الثالثة'
-                },
-                '5': {
-                    name: 'BEIN 4',
-                    source: 'https://example.com/channel5.m3u8',
-                    description: 'القناة الرابعة'
-                },
-                '6': {
-                    name: 'BEIN 5',
-                    source: 'https://example.com/channel5.m3u8',
-                    description: 'القناة الخامسة'
-                },
-                '7': {
-                    name: 'BEIN 6',
-                    source: 'https://example.com/channel5.m3u8',
-                    description: 'القناة السادسة'
-                },
-                '8': {
-                    name: 'BEIN 7',
-                    source: 'https://example.com/channel5.m3u8',
-                    description: 'القناة السابعة'
-                },
-                '9': {
-                    name: 'BEIN 8',
-                    source: 'https://example.com/channel5.m3u8',
-                    description: 'القناة الثامنة'
                 }
             };
 
-            // Setup JWPlayer
-            jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
-            const playerInstance = jwplayer("player");
-
-            // Initialize player with default setup
-            playerInstance.setup({
-                width: "100%",
-                height: "100%",
-                aspectratio: "16:9",
-                mute: false,
-                autostart: true,
-                cast: {},
-                logo: {
-                    file: "https://up6.cc/2025/08/175836245010381.jpg",
-                    position: 'bottom-right'
-                },
-                stretching: 'fill'
+            // تهيئة مشغل الفيديو
+            const player = videojs('my-video', {
+                controls: true,
+                autoplay: false,
+                preload: 'auto',
+                responsive: true,
+                liveui: true,
+                playbackRates: [0.5, 1, 1.5, 2]
             });
 
-            // Show notification function
+            // وظيفة عرض الإشعار
             function showNotification(message, duration = 3000) {
                 notificationText.textContent = message;
                 notification.classList.add('visible');
@@ -565,7 +498,7 @@
                 }, duration);
             }
 
-            // Show error message
+            // وظيفة عرض الخطأ
             function showError(message) {
                 errorMessage.textContent = message;
                 errorMessage.style.display = 'block';
@@ -575,71 +508,58 @@
                 }, 5000);
             }
 
-            // Show loading
+            // وظيفة إظهار التحميل
             function showLoading() {
                 loadingOverlay.classList.add('visible');
             }
 
-            // Hide loading
+            // وظيفة إخفاء التحميل
             function hideLoading() {
                 loadingOverlay.classList.remove('visible');
             }
 
-            // Change channel function
+            // وظيفة تغيير القناة
             function changeChannel(channelId) {
                 const channel = channels[channelId];
                 if (!channel) return;
 
                 showLoading();
+                playerPlaceholder.style.display = 'flex';
 
-                // Update active channel
+                // تحديث القناة النشطة
                 channelCards.forEach(card => card.classList.remove('active'));
-
                 document.querySelector(`.channel-card[data-channel="${channelId}"]`).classList.add('active');
 
-                // Update program info
+                // تحديث معلومات البرنامج
                 programTitle.textContent = channel.description;
 
-                // Setup player with new source
-                playerInstance.setup({
-                    playlist: [{
-                        sources: [{
-                            default: true,
-                            type: "hls",
-                            file: channel.source,
-                            label: "0"
-                        }]
-                    }],
-                    width: "100%",
-                    height: "100%",
-                    aspectratio: "16:9",
-                    mute: false,
-                    autostart: true,
-                    cast: {},
-                    logo: {
-                        file: "",
-                        position: 'bottom-right'
-                    },
-                    stretching: 'fill'
-                });
-
-                // Show notification
-                showNotification(`جاري تحميل ${channel.name}`);
-
-                // Hide loading when player is ready
-                playerInstance.on('ready', function() {
+                // إعداد المشغل مع المصدر الجديد
+                try {
+                    player.src({
+                        src: channel.source,
+                        type: 'application/x-mpegURL'
+                    });
+                    
+                    player.ready(function() {
+                        player.play().then(() => {
+                            hideLoading();
+                            playerPlaceholder.style.display = 'none';
+                            showNotification(`جاري تشغيل ${channel.name}`);
+                        }).catch(error => {
+                            hideLoading();
+                            showError('لا يمكن تشغيل الفيديو تلقائياً. يرجى النقر على زر التشغيل.');
+                            console.error('Playback error:', error);
+                        });
+                    });
+                    
+                } catch (error) {
                     hideLoading();
-                });
-
-                // Handle errors
-                playerInstance.on('error', function() {
-                    hideLoading();
-                    showError('حدث خطأ في تحميل القناة. قد يكون المصدر غير متاح أو هناك مشكلة في الاتصال.');
-                    showNotification('حدث خطأ في تحميل القناة', 5000);
-                });
+                    showError('حدث خطأ في تحميل القناة. قد يكون المصدر غير متاح.');
+                    console.error('Player error:', error);
+                }
             }
 
-            // Add click event to channel cards
+            // إضافة حدث النقر لبطاقات القنوات
             channelCards.forEach(card => {
                 card.addEventListener('click', function() {
                     const channelId = this.getAttribute('data-channel');
@@ -647,18 +567,24 @@
                 });
             });
 
-            // Load channel based on URL parameter
-            function getQueryParam(name) {
-                name = name.replace(/[\[\]]/g, '\\$&');
-                const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
-                const results = regex.exec(window.location.href);
-                if (!results) return null;
-                if (!results[2]) return '';
-                return decodeURIComponent(results[2].replace(/\+/g, ' '));
-            }
+            // معالجة أخطاء المشغل
+            player.on('error', function() {
+                hideLoading();
+                showError('حدث خطأ في تحميل الفيديو. يرجى المحاولة مرة أخرى أو اختيار قناة أخرى.');
+            });
 
-            const channelId = getQueryParam('') || '0';
-            changeChannel(channelId);
+            // تحميل القناة الأولى افتراضياً
+            changeChannel('0');
+
+            // إضافة أحداث للتحكم بالمشغل
+            player.on('loadstart', function() {
+                showLoading();
+            });
+
+            player.on('canplay', function() {
+                hideLoading();
+                playerPlaceholder.style.display = 'none';
+            });
         });
     </script>
 </body>
