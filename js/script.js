@@ -14,11 +14,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Channel data with working test streams
     const channels = {
         // قنوات BEIN
-        '0': { name: 'BEIN 1', source: 'https://raw.githubusercontent.com/alysjc7-dot/bein/refs/heads/main/14kid.m3u8', description: 'قناة بي إن الرياضية 1' },
-        '1': { name: 'BEIN 2', source: 'https://raw.githubusercontent.com/alysjc7-dot/bein/refs/heads/main/24kid.m3u8', description: 'قناة بي إن الرياضية 2' },
-        '2': { name: 'BEIN 3', source: 'https://raw.githubusercontent.com/alysjc7-dot/bein/refs/heads/main/34kid.m3u8', description: 'قناة بي إن الرياضية 3' },
-        '3': { name: 'BEIN 4', source: 'https://raw.githubusercontent.com/alysjc7-dot/bein/refs/heads/main/44kid.m3u8', description: 'قناة بي إن الرياضية 4' },
-        '4': { name: 'BEIN 5', source: 'https://raw.githubusercontent.com/alysjc7-dot/bein/refs/heads/main/54kid.m3u8', description: 'قناة بي إن الرياضية 5' },
+        '0': { name: 'BEIN 1', source: 'https://raw.githubusercontent.com/alysjc7-dot/kid/refs/heads/main/sdddd.m3u8', description: 'قناة بي إن الرياضية 1' },
+        '1': { name: 'BEIN 2', source: 'https://raw.githubusercontent.com/alysjc7-dot/2/refs/heads/main/index.m3u8', description: 'قناة بي إن الرياضية 2' },
+        '2': { name: 'BEIN 3', source: 'https://raw.githubusercontent.com/alysjc7-dot/3/refs/heads/main/index.m3u8', description: 'قناة بي إن الرياضية 3' },
+        '3': { name: 'BEIN 4', source: 'https://raw.githubusercontent.com/alysjc7-dot/4/refs/heads/main/index.m3u8', description: 'قناة بي إن الرياضية 4' },
+        '4': { name: 'BEIN 5', source: 'https://raw.githubusercontent.com/alysjc7-dot/5/refs/heads/main/index.m3u8', description: 'قناة بي إن الرياضية 5' },
         '5': { name: 'BEIN 6', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة بي إن الرياضية 6' },
         '6': { name: 'BEIN 7', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة بي إن الرياضية 7' },
         '7': { name: 'BEIN 8', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة بي إن الرياضية 8' },
