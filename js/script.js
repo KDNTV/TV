@@ -5,77 +5,99 @@ document.addEventListener('DOMContentLoaded', function() {
     const notificationText = document.getElementById('notificationText');
     const programTitle = document.getElementById('programTitle');
     const channelCards = document.querySelectorAll('.channel-card');
-    const errorMessage = document.getElementById('errorMessage');
-    const errorText = document.getElementById('errorText');
 
-    // Show error message about stream limitations
-    if (errorMessage) errorMessage.style.display = 'block';
-
-    // Channel data with working test streams
+    // Channel data
     const channels = {
-        // قنوات BEIN
-        '0': { name: 'BEIN 1', source: 'https://raw.githubusercontent.com/alysjc7-dot/kid/refs/heads/main/sdddd.m3u8', description: 'قناة بي إن الرياضية 1' },
-        '1': { name: 'BEIN 2', source: 'https://raw.githubusercontent.com/alysjc7-dot/2/refs/heads/main/index.m3u8', description: 'قناة بي إن الرياضية 2' },
-        '2': { name: 'BEIN 3', source: 'https://raw.githubusercontent.com/alysjc7-dot/3/refs/heads/main/index.m3u8', description: 'قناة بي إن الرياضية 3' },
-        '3': { name: 'BEIN 4', source: 'https://raw.githubusercontent.com/alysjc7-dot/4/refs/heads/main/index.m3u8', description: 'قناة بي إن الرياضية 4' },
-        '4': { name: 'BEIN 5', source: 'https://raw.githubusercontent.com/alysjc7-dot/5/refs/heads/main/index.m3u8', description: 'قناة بي إن الرياضية 5' },
-        '5': { name: 'BEIN 6', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة بي إن الرياضية 6' },
-        '6': { name: 'BEIN 7', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة بي إن الرياضية 7' },
-        '7': { name: 'BEIN 8', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة بي إن الرياضية 8' },
-        '8': { name: 'BEIN 9', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة بي إن الرياضية 9' },
-
-        // قنوات الثمانية
-        '9': { name: 'الثمانية 1', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة الثمانية 1' },
-        '10': { name: 'الثمانية 2', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة الثمانية 2' },
-
-        // قنوات POST SPORT
-        '11': { name: 'POST SPORT 1', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة بوست سبورت 1' },
-        '12': { name: 'POST SPORT 2', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة بوست سبورت 2' },
-        '13': { name: 'POST SPORT 3', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة بوست سبورت 3' },
-        '14': { name: 'POST SPORT 4', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة بوست سبورت 4' },
-        '15': { name: 'POST SPORT 5', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة بوست سبورت 5' },
-        '16': { name: 'POST SPORT 6', source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', description: 'قناة بوست سبورت 6' }
+        '0': {
+            name: 'BEIN NEWS',
+            source: 'https://raw.githubusercontent.com/kidntv/KID/refs/heads/main/pos1.m3u8',
+            description: 'شاشة البث الرئيسية'
+        },
+        '1': {
+            name: 'BEIN GLOBAL',
+            source: 'http://het111a.4rouwanda-shop.store/live/610303030/index.m3u8',
+            description: 'قناة رياضية متخصصة'
+        },
+        '2': {
+            name: 'BEIN 1',
+            source: 'http://135.125.109.73:9000/beinsport1_.m3u8',
+            description: 'القناة الأولى'
+        },
+        '3': {
+            name: 'BEIN 2',
+            source: 'https://example.com/channel3.m3u8',
+            description: 'القناة الثانية'
+        },
+        '4': {
+            name: 'BEIN 3',
+            source: 'https://example.com/channel4.m3u8',
+            description: 'القناة الثالثة'
+        },
+        '5': {
+            name: 'BEIN 4',
+            source: 'https://example.com/channel5.m3u8',
+            description: 'القناة الرابعة'
+        },
+        '6': {
+            name: 'BEIN 5',
+            source: 'https://example.com/channel5.m3u8',
+            description: 'القناة الخامسة'
+        },
+        '7': {
+            name: 'BEIN 6',
+            source: 'https://example.com/channel5.m3u8',
+            description: 'القناة السادسة'
+        },
+        '8': {
+            name: 'BEIN 7',
+            source: 'https://example.com/channel5.m3u8',
+            description: 'القناة السابعة'
+        },
+        '9': {
+            name: 'BEIN 8',
+            source: 'https://example.com/channel5.m3u8',
+            description: 'القناة الثامنة'
+        }
     };
 
     // Setup JWPlayer
     jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
     const playerInstance = jwplayer("player");
 
-    // Initialize player with default setup without an image
+    // Initialize player with default setup
     playerInstance.setup({
+        
         width: "100%",
         height: "100%",
         aspectratio: "16:9",
         mute: false,
-        autostart: false,
+        autostart: true,
         cast: {},
         logo: {
-            file: "https://up6.cc/2025/08/175836245010381.jpg",
+            file: "",
             position: 'bottom-right'
         },
-        stretching: 'uniform'
+        stretching: 'fill'
     });
 
     // Show notification function
     function showNotification(message, duration = 3000) {
-        if (notification && notificationText) {
-            notificationText.textContent = message;
-            notification.classList.add('visible');
+        notificationText.textContent = message;
+        notification.classList.add('visible');
 
-            setTimeout(() => {
-                notification.classList.remove('visible');
-            }, duration);
-        }
+        setTimeout(() => {
+            notification.classList.remove('visible');
+        }, duration);
     }
 
     // Show loading
     function showLoading() {
-        if (loadingOverlay) loadingOverlay.classList.add('visible');
+        loadingOverlay.classList.add('visible');
     }
 
     // Hide loading
     function hideLoading() {
-        if (loadingOverlay) loadingOverlay.classList.remove('visible');
+        loadingOverlay.classList.remove('visible');
     }
 
     // Change channel function
@@ -88,15 +110,15 @@ document.addEventListener('DOMContentLoaded', function() {
         // Update active channel
         channelCards.forEach(card => card.classList.remove('active'));
 
-        const activeCard = document.querySelector(`.channel-card[data-channel="${channelId}"]`);
-        if (activeCard) activeCard.classList.add('active');
+        document.querySelector(`.channel-card[data-channel="${channelId}"]`).classList.add('active');
 
         // Update program info
-        if (programTitle) programTitle.textContent = channel.description;
+        programTitle.textContent = channel.description;
 
-        // Setup player with new source without an image
+        // Setup player with new source
         playerInstance.setup({
             playlist: [{
+                
                 sources: [{
                     default: true,
                     type: "hls",
@@ -111,10 +133,10 @@ document.addEventListener('DOMContentLoaded', function() {
             autostart: true,
             cast: {},
             logo: {
-                file: "https://up6.cc/2025/08/175836245010381.jpg",
+                file: "",
                 position: 'bottom-right'
             },
-            stretching: 'uniform'
+            stretching: 'fill'
         });
 
         // Show notification
@@ -126,10 +148,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         // Handle errors
-        playerInstance.on('error', function(e) {
+        playerInstance.on('error', function() {
             hideLoading();
-            console.error('Player error:', e);
-            showNotification('حدث خطأ في تحميل القناة. جرب قناة أخرى.', 5000);
+            showNotification('حدث خطأ في تحميل القناة', 5000);
         });
     }
 
@@ -143,10 +164,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Load channel based on URL parameter
     function getQueryParam(name) {
-        const urlParams = new URLSearchParams(window.location.search);
-        return urlParams.get(name);
+        name = name.replace(/[\[\]]/g, '\\$&');
+        const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
+        const results = regex.exec(window.location.href);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
     }
 
-    const channelId = getQueryParam('channel') || '0';
+    const channelId = getQueryParam('') || '0';
     changeChannel(channelId);
 });
