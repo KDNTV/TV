@@ -3,26 +3,311 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>كايدن TV - البث المباشر</title>
-    <meta name="description" content="كايدن TV - بث مباشر لمشاهدة المباريات والرياضة">
-    <meta name="keywords" content="كايدنtv, كايدن live, كايدن online, Sport live">
-    <meta name="author" content="كايدن TV">
+    <title>Yariga TV - البث المباشر</title>
+    <meta name="description" content="Yariga TV - بث مباشر لمشاهدة المباريات والرياضة">
+    <meta name="keywords" content="yarigatv, yariga live, yariga online, Sport live">
+    <meta name="author" content="Yariga TV">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="/">
-    <meta property="og:title" content="كايدن TV - البث المباشر">
+    <meta property="og:title" content="Yariga TV - البث المباشر">
     <meta property="og:description" content="بـۆ بـینینی یاریه‌كـان به‌ شـێـوه‌ی ڕاسـتـه‌وخـۆ">
-    <meta property="og:image" content="">
+    <meta property="og:image" content="https://yarigatv.basnews.com/rast.jpg">
 
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="/">
-    <meta property="twitter:title" content="كايدن TV - البث المباشر">
+    <meta property="twitter:title" content="Yariga TV - البث المباشر">
     <meta property="twitter:description" content="بـۆ بـینینی یاریه‌كـان به‌ شـێـوه‌ی ڕاسـتـه‌وخـۆ">
-    <meta property="twitter:image" content="">
+    <meta property="twitter:image" content="https://yarigatv.basnews.com/rast.jpg">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanskufiarabic.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        :root {
+            --primary-color: #ff3366;
+            --secondary-color: #2c3e50;
+            --dark-bg: #121212;
+            --control-bg: rgba(0, 0, 0, 0.7);
+            --text-color: #ffffff;
+            --hover-color: rgba(255, 255, 255, 0.1);
+            --transition-speed: 0.3s;
+            --border-radius: 8px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Noto Sans Kufi Arabic', sans-serif;
+        }
+
+        body {
+            background: var(--dark-bg);
+            color: var(--text-color);
+            overflow-x: hidden;
+        }
+
+        /* Layout */
+        .app-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            max-width: 1000px;
+            padding: 20px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .player-container {
+            position: relative;
+            width: 100%;
+            background: #000;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+
+        #player {
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            position: relative;
+        }
+
+        #player > div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .player-placeholder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+        }
+
+        .player-placeholder i {
+            font-size: 4rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .player-placeholder p {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .now-playing {
+            background: rgba(20, 20, 20, 0.7);
+            padding: 15px;
+            border-radius: var(--border-radius);
+            margin-bottom: 20px;
+        }
+
+        .now-playing h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .program-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .program-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        
+        /* New Styles for Telegram Button */
+        .telegram-button {
+            background-color: #0088cc;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .telegram-button:hover {
+            background-color: #0077b3;
+        }
+
+        .channel-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .channel-card {
+            background: rgba(30, 30, 30, 0.7);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            padding: 15px;
+        }
+
+        .channel-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .channel-card.active {
+            border: 2px solid var(--primary-color);
+        }
+
+        .channel-thumb {
+            display: none;
+        }
+
+        .channel-content {
+            padding: 0;
+            text-align: center;
+        }
+
+        .channel-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .channel-status {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .live-indicator {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 0.8rem;
+        }
+
+        .live-dot {
+            width: 8px;
+            height: 8px;
+            background: #e74c3c;
+            border-radius: 50%;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        /* Loading Animation */
+        .loading-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .loading-overlay.visible {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            border-top: 5px solid var(--primary-color);
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Notification */
+        .notification {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--control-bg);
+            color: var(--text-color);
+            padding: 12px 20px;
+            border-radius: var(--border-radius);
+            z-index: 1000;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .notification.visible {
+            opacity: 1;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Hide elements as requested */
+        .header, .sidebar, .menu-toggle, .overlay {
+            display: none !important;
+        }
+
+        .main-content {
+            margin-right: 0 !important;
+            padding-top: 20px !important;
+        }
+    </style>
 </head>
 <body>
 
@@ -143,6 +428,8 @@
                 </div>
             </div>
         </div>
+
+
     </div>
 
     <div class="notification" id="notification">
@@ -152,191 +439,183 @@
 
     <script src="https://ssl.p.jwpcdn.com/player/v/8.26.0/jwplayer.js"></script>
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize variables
+            const loadingOverlay = document.getElementById('loadingOverlay');
+            const notification = document.getElementById('notification');
+            const notificationText = document.getElementById('notificationText');
+            const programTitle = document.getElementById('programTitle');
+            const channelCards = document.querySelectorAll('.channel-card');
 
+            // Channel data
+            const channels = {
+                '0': {
+                    name: 'BEIN NEWS',
+                    source: 'https://raw.githubusercontent.com/kidntv/KID/refs/heads/main/pos1.m3u8',
+                    description: 'شاشة البث الرئيسية'
+                },
+                '1': {
+                    name: 'BEIN GLOBAL',
+                    source: 'http://het111a.4rouwanda-shop.store/live/610303030/index.m3u8',
+                    description: 'قناة رياضية متخصصة'
+                },
+                '2': {
+                    name: 'BEIN 1',
+                    source: 'http://135.125.109.73:9000/beinsport1_.m3u8',
+                    description: 'القناة الأولى'
+                },
+                '3': {
+                    name: 'BEIN 2',
+                    source: 'https://example.com/channel3.m3u8',
+                    description: 'القناة الثانية'
+                },
+                '4': {
+                    name: 'BEIN 3',
+                    source: 'https://example.com/channel4.m3u8',
+                    description: 'القناة الثالثة'
+                },
+                '5': {
+                    name: 'BEIN 4',
+                    source: 'https://example.com/channel5.m3u8',
+                    description: 'القناة الرابعة'
+                },
+                '6': {
+                    name: 'BEIN 5',
+                    source: 'https://example.com/channel5.m3u8',
+                    description: 'القناة الخامسة'
+                },
+                '7': {
+                    name: 'BEIN 6',
+                    source: 'https://example.com/channel5.m3u8',
+                    description: 'القناة السادسة'
+                },
+                '8': {
+                    name: 'BEIN 7',
+                    source: 'https://example.com/channel5.m3u8',
+                    description: 'القناة السابعة'
+                },
+                '9': {
+                    name: 'BEIN 8',
+                    source: 'https://example.com/channel5.m3u8',
+                    description: 'القناة الثامنة'
+                }
+            };
 
+            // Setup JWPlayer
+            jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
+            const playerInstance = jwplayer("player");
 
-
-document.addEventListener('DOMContentLoaded', function() {
-    // Initialize variables
-    const loadingOverlay = document.getElementById('loadingOverlay');
-    const notification = document.getElementById('notification');
-    const notificationText = document.getElementById('notificationText');
-    const programTitle = document.getElementById('programTitle');
-    const channelCards = document.querySelectorAll('.channel-card');
-
-    // Channel data
-    const channels = {
-        '0': {
-            name: 'BEIN NEWS',
-            source: 'https://raw.githubusercontent.com/kidntv/KID/refs/heads/main/pos1.m3u8',
-            description: 'شاشة البث الرئيسية'
-        },
-        '1': {
-            name: 'BEIN GLOBAL',
-            source: 'http://het111a.4rouwanda-shop.store/live/610303030/index.m3u8',
-            description: 'قناة رياضية متخصصة'
-        },
-        '2': {
-            name: 'BEIN 1',
-            source: 'http://135.125.109.73:9000/beinsport1_.m3u8',
-            description: 'القناة الأولى'
-        },
-        '3': {
-            name: 'BEIN 2',
-            source: 'https://example.com/channel3.m3u8',
-            description: 'القناة الثانية'
-        },
-        '4': {
-            name: 'BEIN 3',
-            source: 'https://example.com/channel4.m3u8',
-            description: 'القناة الثالثة'
-        },
-        '5': {
-            name: 'BEIN 4',
-            source: 'https://example.com/channel5.m3u8',
-            description: 'القناة الرابعة'
-        },
-        '6': {
-            name: 'BEIN 5',
-            source: 'https://example.com/channel5.m3u8',
-            description: 'القناة الخامسة'
-        },
-        '7': {
-            name: 'BEIN 6',
-            source: 'https://example.com/channel5.m3u8',
-            description: 'القناة السادسة'
-        },
-        '8': {
-            name: 'BEIN 7',
-            source: 'https://example.com/channel5.m3u8',
-            description: 'القناة السابعة'
-        },
-        '9': {
-            name: 'BEIN 8',
-            source: 'https://example.com/channel5.m3u8',
-            description: 'القناة الثامنة'
-        }
-    };
-
-    // Setup JWPlayer
-    jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
-    const playerInstance = jwplayer("player");
-
-    // Initialize player with default setup
-    playerInstance.setup({
-        
-        width: "100%",
-        height: "100%",
-        aspectratio: "16:9",
-        mute: false,
-        autostart: true,
-        cast: {},
-        logo: {
-            file: "https://up6.cc/2025/08/175836245010381.jpg",
-            position: 'bottom-right'
-        },
-        stretching: 'fill'
-    });
-
-    // Show notification function
-    function showNotification(message, duration = 3000) {
-        notificationText.textContent = message;
-        notification.classList.add('visible');
-
-        setTimeout(() => {
-            notification.classList.remove('visible');
-        }, duration);
-    }
-
-    // Show loading
-    function showLoading() {
-        loadingOverlay.classList.add('visible');
-    }
-
-    // Hide loading
-    function hideLoading() {
-        loadingOverlay.classList.remove('visible');
-    }
-
-    // Change channel function
-    function changeChannel(channelId) {
-        const channel = channels[channelId];
-        if (!channel) return;
-
-        showLoading();
-
-        // Update active channel
-        channelCards.forEach(card => card.classList.remove('active'));
-
-        document.querySelector(`.channel-card[data-channel="${channelId}"]`).classList.add('active');
-
-        // Update program info
-        programTitle.textContent = channel.description;
-
-        // Setup player with new source
-        playerInstance.setup({
-            playlist: [{
+            // Initialize player with default setup
+            playerInstance.setup({
                 
-                sources: [{
-                    default: true,
-                    type: "hls",
-                    file: channel.source,
-                    label: "0"
-                }]
-            }],
-            width: "100%",
-            height: "100%",
-            aspectratio: "16:9",
-            mute: false,
-            autostart: true,
-            cast: {},
-            logo: {
-                file: "",
-                position: 'bottom-right'
-            },
-            stretching: 'fill'
-        });
+                width: "100%",
+                height: "100%",
+                aspectratio: "16:9",
+                mute: false,
+                autostart: true,
+                cast: {},
+                logo: {
+                    file: "https://up6.cc/2025/08/175836245010381.jpg",
+                    position: 'bottom-right'
+                },
+                stretching: 'fill'
+            });
 
-        // Show notification
-        showNotification(`جاري تحميل ${channel.name}`);
+            // Show notification function
+            function showNotification(message, duration = 3000) {
+                notificationText.textContent = message;
+                notification.classList.add('visible');
 
-        // Hide loading when player is ready
-        playerInstance.on('ready', function() {
-            hideLoading();
-        });
+                setTimeout(() => {
+                    notification.classList.remove('visible');
+                }, duration);
+            }
 
-        // Handle errors
-        playerInstance.on('error', function() {
-            hideLoading();
-            showNotification('حدث خطأ في تحميل القناة', 5000);
-        });
-    }
+            // Show loading
+            function showLoading() {
+                loadingOverlay.classList.add('visible');
+            }
 
-    // Add click event to channel cards
-    channelCards.forEach(card => {
-        card.addEventListener('click', function() {
-            const channelId = this.getAttribute('data-channel');
+            // Hide loading
+            function hideLoading() {
+                loadingOverlay.classList.remove('visible');
+            }
+
+            // Change channel function
+            function changeChannel(channelId) {
+                const channel = channels[channelId];
+                if (!channel) return;
+
+                showLoading();
+
+                // Update active channel
+                channelCards.forEach(card => card.classList.remove('active'));
+
+                document.querySelector(`.channel-card[data-channel="${channelId}"]`).classList.add('active');
+
+                // Update program info
+                programTitle.textContent = channel.description;
+
+                // Setup player with new source
+                playerInstance.setup({
+                    playlist: [{
+                        
+                        sources: [{
+                            default: true,
+                            type: "hls",
+                            file: channel.source,
+                            label: "0"
+                        }]
+                    }],
+                    width: "100%",
+                    height: "100%",
+                    aspectratio: "16:9",
+                    mute: false,
+                    autostart: true,
+                    cast: {},
+                    logo: {
+                        file: "",
+                        position: 'bottom-right'
+                    },
+                    stretching: 'fill'
+                });
+
+                // Show notification
+                showNotification(`جاري تحميل ${channel.name}`);
+
+                // Hide loading when player is ready
+                playerInstance.on('ready', function() {
+                    hideLoading();
+                });
+
+                // Handle errors
+                playerInstance.on('error', function() {
+                    hideLoading();
+                    showNotification('حدث خطأ في تحميل القناة', 5000);
+                });
+            }
+
+            // Add click event to channel cards
+            channelCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    const channelId = this.getAttribute('data-channel');
+                    changeChannel(channelId);
+                });
+            });
+
+            // Load channel based on URL parameter
+            function getQueryParam(name) {
+                name = name.replace(/[\[\]]/g, '\\$&');
+                const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
+                const results = regex.exec(window.location.href);
+                if (!results) return null;
+                if (!results[2]) return '';
+                return decodeURIComponent(results[2].replace(/\+/g, ' '));
+            }
+
+            const channelId = getQueryParam('') || '0';
             changeChannel(channelId);
         });
-    });
-
-    // Load channel based on URL parameter
-    function getQueryParam(name) {
-        name = name.replace(/[\[\]]/g, '\\$&');
-        const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
-        const results = regex.exec(window.location.href);
-        if (!results) return null;
-        if (!results[2]) return '';
-        return decodeURIComponent(results[2].replace(/\+/g, ' '));
-    }
-
-    const channelId = getQueryParam('') || '0';
-    changeChannel(channelId);
-});
-
-
-
-        
     </script>
 </body>
 </html>
