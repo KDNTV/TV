@@ -5,58 +5,43 @@ document.addEventListener('DOMContentLoaded', function() {
     const notificationText = document.getElementById('notificationText');
     const programTitle = document.getElementById('programTitle');
     const channelCards = document.querySelectorAll('.channel-card');
+    const errorMessage = document.getElementById('errorMessage');
+    const errorText = document.getElementById('errorText');
 
-    // Channel data
+    // Show error message about stream limitations
+    if (errorMessage) errorMessage.style.display = 'block';
+
+    // Channel data with working test streams
     const channels = {
         '0': {
-            name: 'BEIN NEWS',
-            source: 'https://raw.githubusercontent.com/kidntv/KID/refs/heads/main/pos1.m3u8',
-            description: 'شاشة البث الرئيسية'
+            name: 'TEST STREAM',
+            source: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8',
+            description: 'بث تجريبي - Test Stream'
         },
         '1': {
-            name: 'BEIN GLOBAL',
-            source: 'http://ibo.lynxiptv.com/live/said2024/123456789/222598.m3u8',
-            description: 'قناة رياضية متخصصة'
+            name: 'AL JAZEERA',
+            source: 'https://live-hls-web-aje.getaj.net/AJE/index.m3u8',
+            description: 'قناة الجزيرة الدولية'
         },
         '2': {
-            name: 'BEIN 1',
-            source: 'http://135.125.109.73:9000/beinsport1_.m3u8',
-            description: 'القناة الأولى'
+            name: 'FRANCE 24',
+            source: 'https://live.france24.com/fr24/ar/hls/live.m3u8',
+            description: 'قناة فرانس 24 العربية'
         },
         '3': {
-            name: 'BEIN 2',
-            source: 'https://example.com/channel3.m3u8',
-            description: 'القناة الثانية'
+            name: 'BBC WORLD',
+            source: 'https://bbcwshls-i.akamaihd.net/hls/live/2530591/ws-arablive/master.m3u8',
+            description: 'بي بي سي عربي'
         },
         '4': {
-            name: 'BEIN 3',
-            source: 'https://example.com/channel4.m3u8',
-            description: 'القناة الثالثة'
+            name: 'DW TV',
+            source: 'https://dwstream6-lh.akamaihd.net/i/dwstream6_live@123962/master.m3u8',
+            description: 'قناة دويتشه فيله العربية'
         },
         '5': {
-            name: 'BEIN 4',
-            source: 'https://example.com/channel5.m3u8',
-            description: 'القناة الرابعة'
-        },
-        '6': {
-            name: 'BEIN 5',
-            source: 'https://example.com/channel5.m3u8',
-            description: 'القناة الخامسة'
-        },
-        '7': {
-            name: 'BEIN 6',
-            source: 'https://example.com/channel5.m3u8',
-            description: 'القناة السادسة'
-        },
-        '8': {
-            name: 'BEIN 7',
-            source: 'https://example.com/channel5.m3u8',
-            description: 'القناة السابعة'
-        },
-        '9': {
-            name: 'BEIN 8',
-            source: 'https://example.com/channel5.m3u8',
-            description: 'القناة الثامنة'
+            name: 'EURONEWS',
+            source: 'https://euronews-al.secure.footprint.net/eu1-al/_definst_/euronews-ar/playlist.m3u8',
+            description: 'يورونيوز عربي'
         }
     };
 
@@ -71,33 +56,35 @@ document.addEventListener('DOMContentLoaded', function() {
         height: "100%",
         aspectratio: "16:9",
         mute: false,
-        autostart: true,
+        autostart: false, // Changed to false to prevent auto-playing
         cast: {},
         logo: {
             file: "https://up6.cc/2025/08/175836245010381.jpg",
             position: 'bottom-right'
         },
-        stretching: 'fill'
+        stretching: 'uniform'
     });
 
     // Show notification function
     function showNotification(message, duration = 3000) {
-        notificationText.textContent = message;
-        notification.classList.add('visible');
+        if (notification && notificationText) {
+            notificationText.textContent = message;
+            notification.classList.add('visible');
 
-        setTimeout(() => {
-            notification.classList.remove('visible');
-        }, duration);
+            setTimeout(() => {
+                notification.classList.remove('visible');
+            }, duration);
+        }
     }
 
     // Show loading
     function showLoading() {
-        loadingOverlay.classList.add('visible');
+        if (loadingOverlay) loadingOverlay.classList.add('visible');
     }
 
     // Hide loading
     function hideLoading() {
-        loadingOverlay.classList.remove('visible');
+        if (loadingOverlay) loadingOverlay.classList.remove('visible');
     }
 
     // Change channel function
@@ -110,10 +97,11 @@ document.addEventListener('DOMContentLoaded', function() {
         // Update active channel
         channelCards.forEach(card => card.classList.remove('active'));
 
-        document.querySelector(`.channel-card[data-channel="${channelId}"]`).classList.add('active');
+        const activeCard = document.querySelector(`.channel-card[data-channel="${channelId}"]`);
+        if (activeCard) activeCard.classList.add('active');
 
         // Update program info
-        programTitle.textContent = channel.description;
+        if (programTitle) programTitle.textContent = channel.description;
 
         // Setup player with new source
         playerInstance.setup({
@@ -136,7 +124,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 file: "https://up6.cc/2025/08/175836245010381.jpg",
                 position: 'bottom-right'
             },
-            stretching: 'fill'
+            stretching: 'uniform'
         });
 
         // Show notification
@@ -148,9 +136,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         // Handle errors
-        playerInstance.on('error', function() {
+        playerInstance.on('error', function(e) {
             hideLoading();
-            showNotification('حدث خطأ في تحميل القناة', 5000);
+            console.error('Player error:', e);
+            showNotification('حدث خطأ في تحميل القناة. جرب قناة أخرى.', 5000);
         });
     }
 
