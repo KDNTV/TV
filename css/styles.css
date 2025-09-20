@@ -269,6 +269,17 @@ body {
     opacity: 1;
 }
 
+/* Error message */
+.error-message {
+    background: #e74c3c;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    text-align: center;
+    display: none;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .app-container {
