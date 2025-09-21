@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="no-referrer" />
-    <title>وسيل لايف برو - مشغل JW Player</title>
+    <title> كايدن TV </title>
     <script src="//ssl.p.jwpcdn.com/player/v/8.26.0/jwplayer.js"></script>
     <script>jwplayer.key = "XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo";</script>
     <style>
@@ -16,6 +16,9 @@
             --text-color: #e0e0e0;
             --card-bg: #1e1e1e;
             --quality-bg: rgba(0, 0, 0, 0.7);
+            --success-color: #2ecc71;
+            --warning-color: #f39c12;
+            --error-color: #e74c3c;
         }
 
         * {
@@ -30,6 +33,7 @@
             color: var(--text-color);
             line-height: 1.6;
             padding-bottom: 20px;
+            overflow-x: hidden;
         }
 
         header {
@@ -109,37 +113,6 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
         }
 
-        .search-container {
-            background-color: var(--card-bg);
-            margin: 1.5rem 0;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            border-radius: 25px;
-            padding: 0.1rem;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        .search-container input {
-            background-color: transparent;
-            width: 100%;
-            max-width: 500px;
-            padding: 0.8rem 1.2rem;
-            border: none;
-            border-radius: 15px;
-            font-size: 1rem;
-            color: var(--text-color);
-            outline: none;
-        }
-
-        .search-container i {
-            position: absolute;
-            left: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #888;
-        }
-
         .channels-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -199,6 +172,7 @@
             font-weight: 600;
             transition: all 0.3s ease;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
         }
 
         .quality-badge:hover {
@@ -264,6 +238,7 @@
             justify-content: center;
             align-items: center;
             transition: all 0.3s ease;
+            z-index: 2002;
         }
 
         .close-btn:hover {
@@ -271,59 +246,135 @@
             transform: rotate(90deg);
         }
 
-        /* قائمة الجودة في المشغل */
+        /* تحسينات قائمة الجودة */
         .quality-container {
             position: absolute;
-            bottom: 80px;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: var(--quality-bg);
-            border-radius: 10px;
-            padding: 1rem;
-            width: 90%;
-            max-width: 500px;
-            z-index: 2001;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 12px;
+            padding: 15px;
+            z-index: 2002;
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            transform: translateY(20px);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .quality-container.active {
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
         }
 
         .quality-title {
-            color: white;
-            margin-bottom: 0.8rem;
+            color: #fff;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
             text-align: center;
-            font-size: 1.1rem;
             font-weight: 600;
         }
 
         .quality-options {
             display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            justify-content: center;
+            flex-direction: column;
+            gap: 8px;
         }
 
         .quality-option {
             background: rgba(255, 255, 255, 0.1);
-            color: white;
-            padding: 0.6rem 1rem;
-            border-radius: 20px;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 15px;
             cursor: pointer;
             transition: all 0.3s ease;
             font-size: 0.9rem;
-            border: 1px solid transparent;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
 
         .quality-option:hover {
-            background: rgba(52, 152, 219, 0.3);
-            border-color: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateX(-5px);
         }
 
         .quality-option.active {
             background: var(--accent-color);
-            border-color: rgba(255, 255, 255, 0.3);
-            box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+            color: #fff;
         }
-        
+
+        .quality-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .quality-indicator.excellent {
+            background-color: var(--success-color);
+        }
+
+        .quality-indicator.good {
+            background-color: var(--warning-color);
+        }
+
+        .quality-indicator.fair {
+            background-color: var(--error-color);
+        }
+
+        .toggle-quality-btn {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 2001;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .toggle-quality-btn:hover {
+            background: rgba(0, 0, 0, 0.8);
+            transform: scale(1.1);
+        }
+
+        .server-status {
+            font-size: 0.8rem;
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .status-online {
+            background-color: var(--success-color);
+        }
+
+        .status-offline {
+            background-color: var(--error-color);
+        }
+
         .loading {
             grid-column: 1 / -1;
             text-align: center;
@@ -345,18 +396,32 @@
                 padding: 0.5rem;
             }
             
+            .player-header {
+                padding: 0.5rem;
+            }
+            
+            .channel-title-player {
+                font-size: 1rem;
+            }
+            
+            .close-btn {
+                width: 35px;
+                height: 35px;
+                font-size: 1rem;
+            }
+            
             .quality-container {
-                bottom: 70px;
-                width: 95%;
+                bottom: 10px;
+                right: 10px;
+                left: 10px;
+                padding: 10px;
             }
             
-            .quality-options {
-                gap: 0.3rem;
-            }
-            
-            .quality-option {
-                padding: 0.5rem 0.8rem;
-                font-size: 0.8rem;
+            .toggle-quality-btn {
+                bottom: 10px;
+                left: 10px;
+                width: 40px;
+                height: 40px;
             }
         }
 
@@ -379,14 +444,29 @@
         .fade-in {
             animation: fadeIn 0.5s ease forwards;
         }
+        
+        /* تأثيرات لخيارات الجودة */
+        @keyframes slideInRight {
+            from { 
+                transform: translateX(30px);
+                opacity: 0;
+            }
+            to { 
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        
+        .quality-option {
+            animation: slideInRight 0.3s ease forwards;
+        }
+        
+        .quality-option:nth-child(1) { animation-delay: 0.05s; }
+        .quality-option:nth-child(2) { animation-delay: 0.1s; }
+        .quality-option:nth-child(3) { animation-delay: 0.15s; }
     </style>
 </head>
 <body>
-    
-    <div class="search-container">
-            <input type="text" id="search-input" placeholder="البحث عن قناة...">
-        </div>
-    
     
     <div class="container">
         <div class="categories">
@@ -394,10 +474,7 @@
             <button class="category-btn" data-category="sports">رياضية</button>
             <button class="category-btn" data-category="news">أخبارية</button>
             <button class="category-btn" data-category="entertainment">ترفيهية</button>
-
         </div>
-
-        
 
         <div class="channels-grid" id="channels-container">
             <div class="loading">جاري تحميل القنوات...</div>
@@ -412,10 +489,17 @@
             </button>
         </div>
         
+        <button class="toggle-quality-btn" id="toggle-quality-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path>
+            </svg>
+        </button>
+        
         <div class="quality-container" id="quality-container">
-            <div class="quality-title">اذا لم يعمل السيرفر الاول قم بالتغير الي السيرفر الاخر</div>
+            <div class="quality-title">اختر جودة البث المناسبة</div>
             <div class="quality-options" id="quality-options">
-                </div>
+                <!-- سيتم ملؤها ديناميكيًا -->
+            </div>
         </div>
         
         <div id="jwplayerDiv" class="jwplayer-container"></div>
@@ -429,10 +513,9 @@
                 title: "bein sport 1",
                 category: "sports",
                 streams: [
-                    { quality: "S1", url: "https://wo.cma.footballii.ir/hls2/b1.m3u8" },
-                    { quality: "S2", url: "https://hz.achourtv.com/bn1.m3u8" },
-                    { quality: "S3", url: "https://github.com/o2ws/xpola-player/raw/refs/heads/main/1.m3u8" },
-                    
+                    { quality: "S1 - جودة عالية", status: "excellent", url: "https://wo.cma.footballii.ir/hls2/b1.m3u8" },
+                    { quality: "S2 - جودة متوسطة", status: "good", url: "https://hz.achourtv.com/bn1.m3u8" },
+                    { quality: "S3 - جودة منخفضة", status: "fair", url: "https://github.com/o2ws/xpola-player/raw/refs/heads/main/1.m3u8" },
                 ]
             },
             {
@@ -440,9 +523,9 @@
                 title: "bein sport 2",
                 category: "news",
                 streams: [
-                    { quality: "S1", url: "https://wo.cma.footballii.ir/hls2/b2.m3u8" },
-                    { quality: "S2", url: "https://hz.achourtv.com/bn2.m3u8" },
-                    { quality: "S3", url: "https://github.com/o2ws/xpola-player/raw/refs/heads/main/2.m3u8" },
+                    { quality: "S1 - جودة عالية", status: "excellent", url: "https://wo.cma.footballii.ir/hls2/b2.m3u8" },
+                    { quality: "S2 - جودة متوسطة", status: "good", url: "https://hz.achourtv.com/bn2.m3u8" },
+                    { quality: "S3 - جودة منخفضة", status: "fair", url: "https://github.com/o2ws/xpola-player/raw/refs/heads/main/2.m3u8" },
                 ]
             },
             {
@@ -450,9 +533,9 @@
                 title: "bein sport 3",
                 category: "entertainment",
                 streams: [
-                    { quality: "S1", url: "https://balance.footballii.ir/hls2/b3.m3u8" },
-                    { quality: "S2", url: "https://hz.achourtv.com/bn3.m3u8" },
-                    { quality: "S3", url: "https://github.com/o2ws/xpola-player/raw/refs/heads/main/3.m3u8" },
+                    { quality: "S1 - جودة عالية", status: "excellent", url: "https://balance.footballii.ir/hls2/b3.m3u8" },
+                    { quality: "S2 - جودة متوسطة", status: "good", url: "https://hz.achourtv.com/bn3.m3u8" },
+                    { quality: "S3 - جودة منخفضة", status: "fair", url: "https://github.com/o2ws/xpola-player/raw/refs/heads/main/3.m3u8" },
                 ]
             },
             {
@@ -460,9 +543,9 @@
                 title: "bein sport 4",
                 category: "educational",
                 streams: [
-                    { quality: "S1", url: "https://github.com/o2ws/xpola-player/raw/refs/heads/main/4.m3u8" },
-                    { quality: "S2", url: "https://hz.achourtv.com/bn4.m3u8" },
-                    { quality: "S3", url: "https://hz.achourtv.com/bn4.m3u8" },
+                    { quality: "S1 - جودة عالية", status: "excellent", url: "https://github.com/o2ws/xpola-player/raw/refs/heads/main/4.m3u8" },
+                    { quality: "S2 - جودة متوسطة", status: "good", url: "https://hz.achourtv.com/bn4.m3u8" },
+                    { quality: "S3 - جودة منخفضة", status: "fair", url: "https://hz.achourtv.com/bn4.m3u8" },
                 ]
             },
             {
@@ -470,9 +553,9 @@
                 title: "bein sport 5",
                 category: "entertainment",
                 streams: [
-                    { quality: "S1", url: "https://github.com/o2ws/xpola-player/raw/refs/heads/main/5.m3u8" },
-                    { quality: "S2", url: "https://hz.achourtv.com/bn5.m3u8" },
-                    { quality: "S3", url: "https://hz.achourtv.com/bn5.m3u8" },
+                    { quality: "S1 - جودة عالية", status: "excellent", url: "https://github.com/o2ws/xpola-player/raw/refs/heads/main/5.m3u8" },
+                    { quality: "S2 - جودة متوسطة", status: "good", url: "https://hz.achourtv.com/bn5.m3u8" },
+                    { quality: "S3 - جودة منخفضة", status: "fair", url: "https://hz.achourtv.com/bn5.m3u8" },
                 ]
             },
             {
@@ -480,9 +563,9 @@
                 title: "bein sport 6",
                 category: "educational",
                 streams: [
-                    { quality: "S1", url: "https://github.com/o2ws/xpola-player/raw/refs/heads/main/6.m3u8" },
-                    { quality: "S2", url: "https://hz.achourtv.com/bn6.m3u8" },
-                    { quality: "S3", url: "https://hz.achourtv.com/bn6.m3u8" },
+                    { quality: "S1 - جودة عالية", status: "excellent", url: "https://github.com/o2ws/xpola-player/raw/refs/heads/main/6.m3u8" },
+                    { quality: "S2 - جودة متوسطة", status: "good", url: "https://hz.achourtv.com/bn6.m3u8" },
+                    { quality: "S3 - جودة منخفضة", status: "fair", url: "https://hz.achourtv.com/bn6.m3u8" },
                 ]
             }
         ];
@@ -490,15 +573,18 @@
         // عناصر DOM
         const channelsContainer = document.getElementById('channels-container');
         const categoryButtons = document.querySelectorAll('.category-btn');
-        const searchInput = document.getElementById('search-input');
         const playerContainer = document.getElementById('player-container');
         const closePlayerBtn = document.getElementById('close-player');
-        const qualityOptionsContainer = document.getElementById('quality-options');
         const playerChannelTitle = document.getElementById('player-channel-title');
+        const qualityContainer = document.getElementById('quality-container');
+        const qualityOptions = document.getElementById('quality-options');
+        const toggleQualityBtn = document.getElementById('toggle-quality-btn');
         
         // متغيرات حالة المشغل
         let currentChannel = null;
         let currentStreamIndex = 0;
+        let playerInstance = null;
+        let isQualityMenuOpen = false;
         
         // عرض القنوات
         function displayChannels(channels) {
@@ -518,7 +604,7 @@
                         <div class="channel-title">${channel.title}</div>
                         <div class="channel-quality">
                             ${channel.streams.map(stream => 
-                                `<span class="quality-badge">${stream.quality}</span>`
+                                `<span class="quality-badge">${stream.quality.split(' - ')[0]}</span>`
                             ).join('')}
                         </div>
                     </div>
@@ -546,16 +632,80 @@
                 playerContainer.classList.add('active');
             }, 10);
             
-            // تحديث قائمة الجودة
-            updateQualitySelector();
+            // إعداد خيارات الجودة
+            setupQualityOptions();
             
             // إعداد مشغل JW Player
             setupPlayer();
         }
         
+        // إعداد خيارات الجودة
+        function setupQualityOptions() {
+            qualityOptions.innerHTML = '';
+            
+            currentChannel.streams.forEach((stream, index) => {
+                const qualityOption = document.createElement('button');
+                qualityOption.className = `quality-option ${index === currentStreamIndex ? 'active' : ''}`;
+                qualityOption.innerHTML = `
+                    <span class="quality-indicator ${stream.status}"></span>
+                    ${stream.quality}
+                `;
+                
+                qualityOption.addEventListener('click', () => {
+                    if (index !== currentStreamIndex) {
+                        changeStream(index);
+                    }
+                    
+                    // إغلاق قائمة الجودة بعد الاختيار
+                    toggleQualityMenu();
+                });
+                
+                qualityOptions.appendChild(qualityOption);
+            });
+        }
+        
+        // تغيير مصدر البث
+        function changeStream(index) {
+            currentStreamIndex = index;
+            
+            // تحديث حالة الخيار النشط
+            document.querySelectorAll('.quality-option').forEach((option, i) => {
+                if (i === index) {
+                    option.classList.add('active');
+                } else {
+                    option.classList.remove('active');
+                }
+            });
+            
+            // إعادة تحميل المشغل بمصدر البث الجديد
+            if (playerInstance) {
+                playerInstance.load([{ 
+                    file: currentChannel.streams[currentStreamIndex].url 
+                }]);
+                playerInstance.play();
+            }
+        }
+        
+        // تبديل عرض/إخفاء قائمة الجودة
+        function toggleQualityMenu() {
+            isQualityMenuOpen = !isQualityMenuOpen;
+            
+            if (isQualityMenuOpen) {
+                qualityContainer.classList.add('active');
+            } else {
+                qualityContainer.classList.remove('active');
+            }
+        }
+        
+        toggleQualityBtn.addEventListener('click', toggleQualityMenu);
+        
         // إعداد مشغل JW Player
         function setupPlayer() {
-            jwplayer("jwplayerDiv").setup({
+            if (playerInstance) {
+                playerInstance.remove();
+            }
+            
+            playerInstance = jwplayer("jwplayerDiv").setup({
                 file: currentChannel.streams[currentStreamIndex].url,
                 width: "100%",
                 height: "100%",
@@ -568,59 +718,60 @@
             });
             
             // تعيين المسار الصوتي الافتراضي عند بدء التشغيل
-            jwplayer("jwplayerDiv").on('ready', function() {
+            playerInstance.on('ready', function() {
                 this.setAudioTrack(0);
+                // تشغيل وضع ملء الشاشة تلقائياً
+                this.setFullscreen(true);
+                
+                // ضبط حجم المشغل لملء الشاشة
+                resizePlayer();
             });
+
+            // إعادة ضبط حجم المشغل عند تغيير حجم النافذة
+            window.addEventListener('resize', resizePlayer);
         }
         
-        // تحديث قائمة اختيار الجودة
-        function updateQualitySelector() {
-            qualityOptionsContainer.innerHTML = '';
-            
-            currentChannel.streams.forEach((stream, index) => {
-                const qualityOption = document.createElement('div');
-                qualityOption.className = `quality-option ${index === currentStreamIndex ? 'active' : ''}`;
-                qualityOption.textContent = stream.quality;
-                qualityOption.dataset.index = index;
+        // ضبط حجم المشغل لملء الشاشة
+        function resizePlayer() {
+            if (playerInstance && playerInstance.getState() === 'playing') {
+                const container = document.getElementById('jwplayerDiv');
+                container.style.width = '100%';
+                container.style.height = '100%';
                 
-                qualityOption.addEventListener('click', () => {
-                    changeStream(index);
-                });
-                
-                qualityOptionsContainer.appendChild(qualityOption);
-            });
-        }
-        
-        // تغيير مصدر البث
-        function changeStream(index) {
-            if (index === currentStreamIndex) return;
-            
-            currentStreamIndex = index;
-            
-            // تحديث النشاط في قائمة الجودة
-            document.querySelectorAll('.quality-option').forEach((option, i) => {
-                if (i === index) {
-                    option.classList.add('active');
-                } else {
-                    option.classList.remove('active');
-                }
-            });
-            
-            // إعادة إعداد المشغل مع المصدر الجديد
-            jwplayer("jwplayerDiv").load([{
-                file: currentChannel.streams[currentStreamIndex].url
-            }]);
-            
-            jwplayer("jwplayerDiv").play();
+                // إعادة ضبط حجم المشغل
+                playerInstance.resize(window.innerWidth, window.innerHeight);
+            }
         }
 
         // إغلاق المشغل
-        closePlayerBtn.addEventListener('click', () => {
+        function closePlayer() {
             playerContainer.classList.remove('active');
             setTimeout(() => {
                 playerContainer.style.display = 'none';
-                jwplayer("jwplayerDiv").stop();
+                if (playerInstance) {
+                    playerInstance.stop();
+                }
+                // إزالة مستمع حدث resize عند إغلاق المشغل
+                window.removeEventListener('resize', resizePlayer);
             }, 300);
+            
+            // إغلاق قائمة الجودة إذا كانت مفتوحة
+            if (isQualityMenuOpen) {
+                toggleQualityMenu();
+            }
+        }
+
+        closePlayerBtn.addEventListener('click', closePlayer);
+
+        // إغلاق المشغل عند الضغط على زر Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && playerContainer.style.display === 'block') {
+                if (isQualityMenuOpen) {
+                    toggleQualityMenu();
+                } else {
+                    closePlayer();
+                }
+            }
         });
 
         // تصفية حسب الفئة
@@ -636,18 +787,12 @@
             });
         });
 
-        // البحث
-        searchInput.addEventListener('input', filterChannels);
-
         // تصفية القنوات
         function filterChannels() {
             const activeCategory = document.querySelector('.category-btn.active').dataset.category;
-            const searchText = searchInput.value.toLowerCase();
             
             const filteredChannels = channelsData.filter(channel => {
-                const matchesCategory = activeCategory === 'all' || channel.category === activeCategory;
-                const matchesSearch = channel.title.toLowerCase().includes(searchText);
-                return matchesCategory && matchesSearch;
+                return activeCategory === 'all' || channel.category === activeCategory;
             });
             
             displayChannels(filteredChannels);
