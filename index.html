@@ -1,805 +1,289 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="referrer" content="no-referrer" />
-    <title> كايدن TV </title>
-    <script src="//ssl.p.jwpcdn.com/player/v/8.26.0/jwplayer.js"></script>
-    <script>jwplayer.key = "XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo";</script>
-    <style>
-        :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #1a2530;
-            --accent-color: #3498db;
-            --background-color: #121212;
-            --text-color: #e0e0e0;
-            --card-bg: #1e1e1e;
-            --quality-bg: rgba(0, 0, 0, 0.7);
-            --success-color: #2ecc71;
-            --warning-color: #f39c12;
-            --error-color: #e74c3c;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: var(--background-color);
-            color: var(--text-color);
-            line-height: 1.6;
-            padding-bottom: 20px;
-            overflow-x: hidden;
-        }
-
-        header {
-            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
-            color: white;
-            position: relative;
-            padding: 1rem;
-            text-align: center;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-            overflow: hidden;
-        }
-
-        header::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: #121212;
-            background-size: 200px;
-            background-repeat: repeat;
-        }
-
-        header h1 {
-            position: relative;
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-        }
-
-        header p {
-            position: relative;
-            font-size: 1rem;
-            opacity: 0.9;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1rem;
-        }
-
-        .categories {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-bottom: 1rem;
-            justify-content: center;
-        }
-
-        .category-btn {
-            background-color: #333;
-            border: 2px solid #555;
-            padding: 0.5rem 1.2rem;
-            border-radius: 25px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            color: #ccc;
-            font-weight: 500;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-        }
-
-        .category-btn:hover {
-            background-color: var(--accent-color);
-            border-color: var(--accent-color);
-            color: #fff;
-            transform: translateY(-3px);
-            box-shadow: 0 6px 10px rgba(0,0,0,0.4);
-        }
-
-        .category-btn.active {
-            background-color: var(--accent-color);
-            border-color: var(--accent-color);
-            color: #fff;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        }
-
-        .channels-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1rem;
-        }
-
-        .channel-card {
-            background: #1c1c1c;
-            border-radius: 20px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            position: relative;
-            border: 2px solid transparent;
-        }
-
-        .channel-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
-            border-color: var(--accent-color);
-        }
-
-        .channel-info {
-            padding: 1.2rem;
-            position: relative;
-            z-index: 2;
-        }
-
-        .channel-title {
-            background: linear-gradient(to right, #4E2C78, #3A1F5B);
-            border-radius: 12px;
-            padding: 0.6rem 1rem;
-            font-weight: bold;
-            font-size: 1.1rem;
-            text-align: center;
-            color: #fff;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-            margin-bottom: 0.8rem;
-        }
-
-        .channel-quality {
-            display: flex;
-            gap: 0.5rem;
-            margin-top: 0.5rem;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .quality-badge {
-            background-color: #fff;
-            color: #4E2C78;
-            border: 2px solid #4E2C78;
-            border-radius: 8px;
-            padding: 0.4rem 0.8rem;
-            font-size: 0.9rem;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            cursor: pointer;
-        }
-
-        .quality-badge:hover {
-            transform: scale(1.1);
-            background-color: #4E2C78;
-            color: #fff;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        }
-
-        /* مشغل JW Player */
-        .player-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.95);
-            display: none;
-            z-index: 2000;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .player-container.active {
-            opacity: 1;
-        }
-
-        .jwplayer-container {
-            width: 100%;
-            height: 100%;
-        }
-
-        .player-header {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            padding: 1rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
-            z-index: 2001;
-        }
-
-        .channel-title-player {
-            color: white;
-            font-size: 1.2rem;
-            font-weight: bold;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
-        }
-
-        .close-btn {
-            color: white;
-            background: #e74c3c;
-            border: none;
-            border-radius: 50%;
-            font-size: 1.2rem;
-            cursor: pointer;
-            width: 40px;
-            height: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: all 0.3s ease;
-            z-index: 2002;
-        }
-
-        .close-btn:hover {
-            background: #c0392b;
-            transform: rotate(90deg);
-        }
-
-        /* تحسينات قائمة الجودة */
-        .quality-container {
-            position: absolute;
-            bottom: 20px;
-            right: 20px;
-            background: rgba(0, 0, 0, 0.8);
-            border-radius: 12px;
-            padding: 15px;
-            z-index: 2002;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-            transform: translateY(20px);
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
-        }
-
-        .quality-container.active {
-            transform: translateY(0);
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .quality-title {
-            color: #fff;
-            font-size: 0.9rem;
-            margin-bottom: 10px;
-            text-align: center;
-            font-weight: 600;
-        }
-
-        .quality-options {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-
-        .quality-option {
-            background: rgba(255, 255, 255, 0.1);
-            color: #fff;
-            border: none;
-            border-radius: 8px;
-            padding: 10px 15px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-size: 0.9rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .quality-option:hover {
-            background: rgba(255, 255, 255, 0.2);
-            transform: translateX(-5px);
-        }
-
-        .quality-option.active {
-            background: var(--accent-color);
-            color: #fff;
-        }
-
-        .quality-indicator {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            display: inline-block;
-        }
-
-        .quality-indicator.excellent {
-            background-color: var(--success-color);
-        }
-
-        .quality-indicator.good {
-            background-color: var(--warning-color);
-        }
-
-        .quality-indicator.fair {
-            background-color: var(--error-color);
-        }
-
-        .toggle-quality-btn {
-            position: absolute;
-            bottom: 20px;
-            left: 20px;
-            background: rgba(0, 0, 0, 0.6);
-            color: white;
-            border: none;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            z-index: 2001;
-            transition: all 0.3s ease;
-            backdrop-filter: blur(5px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .toggle-quality-btn:hover {
-            background: rgba(0, 0, 0, 0.8);
-            transform: scale(1.1);
-        }
-
-        .server-status {
-            font-size: 0.8rem;
-            margin-top: 5px;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-
-        .status-dot {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            display: inline-block;
-        }
-
-        .status-online {
-            background-color: var(--success-color);
-        }
-
-        .status-offline {
-            background-color: var(--error-color);
-        }
-
-        .loading {
-            grid-column: 1 / -1;
-            text-align: center;
-            padding: 2rem;
-            font-size: 1.2rem;
-            color: #888;
-        }
-
-        @media (max-width: 768px) {
-            .channels-grid {
-                grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-            }
-            
-            .channel-card {
-                padding: 0.5rem;
-            }
-
-            .channel-info {
-                padding: 0.5rem;
-            }
-            
-            .player-header {
-                padding: 0.5rem;
-            }
-            
-            .channel-title-player {
-                font-size: 1rem;
-            }
-            
-            .close-btn {
-                width: 35px;
-                height: 35px;
-                font-size: 1rem;
-            }
-            
-            .quality-container {
-                bottom: 10px;
-                right: 10px;
-                left: 10px;
-                padding: 10px;
-            }
-            
-            .toggle-quality-btn {
-                bottom: 10px;
-                left: 10px;
-                width: 40px;
-                height: 40px;
-            }
-        }
-
-        /* تنسيقات خاصة بمشغل JW Player */
-        .jw-icon.jw-icon-inline.jw-button-color.jw-reset.jw-icon-pip,
-        .jw-icon.jw-icon-inline.jw-button-color.jw-reset.jw-settings-sharing {
-            display: none;
-        }
-        
-        .jwplayer.jw-stretch-uniform .jw-media video {
-            object-fit: fill;
-        }
-        
-        /* تأثيرات للتحميل */
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        
-        .fade-in {
-            animation: fadeIn 0.5s ease forwards;
-        }
-        
-        /* تأثيرات لخيارات الجودة */
-        @keyframes slideInRight {
-            from { 
-                transform: translateX(30px);
-                opacity: 0;
-            }
-            to { 
-                transform: translateX(0);
-                opacity: 1;
-            }
-        }
-        
-        .quality-option {
-            animation: slideInRight 0.3s ease forwards;
-        }
-        
-        .quality-option:nth-child(1) { animation-delay: 0.05s; }
-        .quality-option:nth-child(2) { animation-delay: 0.1s; }
-        .quality-option:nth-child(3) { animation-delay: 0.15s; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>قنوات كايدن TV</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #000;
+      color: #fff;
+      direction: rtl;
+    }
+    
+    /* شعار القناة في الأعلى */
+    .header-logo {
+      text-align: center;
+      margin-bottom: 30px;
+      padding: 10px 20px;
+      background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+      border-radius: 12px;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      border: 1px solid #333;
+      position: relative;
+    }
+    
+    .logo-text {
+      font-size: 42px;
+      font-weight: bold;
+      background: linear-gradient(45deg, #ff6b35, #f7931e, #ffd200);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-shadow: 0 0 20px rgba(255, 107, 53, 0.3);
+      margin-bottom: 15px;
+      letter-spacing: 1px;
+    }
+    
+    .logo-subtitle {
+      font-size: 18px;
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+    
+    .telegram-btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #0088cc, #00a2e8);
+      color: white;
+      text-decoration: none;
+      padding: 12px 25px;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 136, 204, 0.3);
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    
+    .telegram-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(0, 136, 204, 0.5);
+      background: linear-gradient(135deg, #0077b5, #0099e0);
+    }
+    
+    .telegram-btn:active {
+      transform: translateY(0);
+    }
+    
+    .telegram-btn i {
+      margin-left: 8px;
+    }
+    
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    
+    .channel {
+      background: #111;
+      border-radius: 8px;
+      text-align: center;
+      cursor: pointer;
+      padding: 10px;
+      transition: transform 0.2s ease;
+      color: #ddd;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .channel:hover {
+      transform: scale(1.05);
+      background: #222;
+    }
+    
+    .channel img {
+      max-width: 100%;
+      height: 90px;
+      object-fit: contain;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      background: #222;
+      padding: 5px;
+    }
+    
+    iframe {
+      border: none;
+      width: 100%;
+      height: calc(100vh - 60px);
+      display: block;
+    }
+    
+    .error {
+      color: white;
+      text-align: center;
+      padding-top: 50px;
+      font-family: Arial, sans-serif;
+    }
+    
+    .back-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background: rgba(30, 30, 30, 0.8);
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      z-index: 1000;
+      transition: background 0.3s;
+    }
+    
+    .back-button:hover {
+      background: rgba(50, 50, 50, 0.9);
+    }
+    
+    /* تصميم متجاوب للشاشات الصغيرة */
+    @media (max-width: 768px) {
+      .logo-text {
+        font-size: 32px;
+      }
+      
+      .logo-subtitle {
+        font-size: 16px;
+      }
+      
+      .telegram-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .logo-text {
+        font-size: 28px;
+      }
+      
+      .logo-subtitle {
+        font-size: 14px;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+  <div id="content"></div>
+
+  <script>
+    function getParam(name) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(name);
+    }
     
-    <div class="container">
-        <div class="categories">
-            <button class="category-btn active" data-category="all">الكل</button>
-            <button class="category-btn" data-category="sports">رياضية</button>
-            <button class="category-btn" data-category="news">أخبارية</button>
-            <button class="category-btn" data-category="entertainment">ترفيهية</button>
-        </div>
-
-        <div class="channels-grid" id="channels-container">
-            <div class="loading">جاري تحميل القنوات...</div>
-        </div>
-    </div>
-
-    <div class="player-container" id="player-container">
-        <div class="player-header">
-            <div class="channel-title-player" id="player-channel-title">bein sport 1</div>
-            <button class="close-btn" id="close-player">
-                ✕
-            </button>
-        </div>
-        
-        <button class="toggle-quality-btn" id="toggle-quality-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path>
-            </svg>
-        </button>
-        
-        <div class="quality-container" id="quality-container">
-            <div class="quality-title">اختر جودة البث المناسبة</div>
-            <div class="quality-options" id="quality-options">
-                <!-- سيتم ملؤها ديناميكيًا -->
-            </div>
-        </div>
-        
-        <div id="jwplayerDiv" class="jwplayer-container"></div>
-    </div>
-
-    <script>
-        // بيانات القنوات
-        const channelsData = [
-            {
-                id: 1,
-                title: "bein sport 1",
-                category: "sports",
-                streams: [
-                    { quality: "S1 -  سيرفر اول", status: "excellent", url: "https://wo.cma.footballii.ir/hls2/b1.m3u8" },
-                    { quality: "S2 - سيرفر ثاني ", status: "good", url: "https://raw.githubusercontent.com/alysjc7-dot/VBB/refs/heads/main/1.m3u8" },
-                    { quality: "S3 - سيرفر ثالث ", status: "fair", url: "http://stream.mytvplus.net:7002/sport/ch1/adaptive.m3u8" },
-                ]
-            },
-            {
-                id: 2,
-                title: "bein sport 2",
-                category: "news",
-                streams: [
-                    { quality: "S1 - جودة عالية", status: "excellent", url: "https://wo.cma.footballii.ir/hls2/b2.m3u8" },
-                    { quality: "S2 - جودة متوسطة", status: "good", url: "https://hz.achourtv.com/bn2.m3u8" },
-                    { quality: "S3 - جودة منخفضة", status: "fair", url: "https://github.com/o2ws/xpola-player/raw/refs/heads/main/2.m3u8" },
-                ]
-            },
-            {
-                id: 3,
-                title: "bein sport 3",
-                category: "entertainment",
-                streams: [
-                    { quality: "S1 - جودة عالية", status: "excellent", url: "https://balance.footballii.ir/hls2/b3.m3u8" },
-                    { quality: "S2 - جودة متوسطة", status: "good", url: "https://hz.achourtv.com/bn3.m3u8" },
-                    { quality: "S3 - جودة منخفضة", status: "fair", url: "https://github.com/o2ws/xpola-player/raw/refs/heads/main/3.m3u8" },
-                ]
-            },
-            {
-                id: 4,
-                title: "bein sport 4",
-                category: "educational",
-                streams: [
-                    { quality: "S1 - جودة عالية", status: "excellent", url: "https://github.com/o2ws/xpola-player/raw/refs/heads/main/4.m3u8" },
-                    { quality: "S2 - جودة متوسطة", status: "good", url: "https://hz.achourtv.com/bn4.m3u8" },
-                    { quality: "S3 - جودة منخفضة", status: "fair", url: "https://hz.achourtv.com/bn4.m3u8" },
-                ]
-            },
-            {
-                id: 5,
-                title: "bein sport 5",
-                category: "entertainment",
-                streams: [
-                    { quality: "S1 - جودة عالية", status: "excellent", url: "https://github.com/o2ws/xpola-player/raw/refs/heads/main/5.m3u8" },
-                    { quality: "S2 - جودة متوسطة", status: "good", url: "https://hz.achourtv.com/bn5.m3u8" },
-                    { quality: "S3 - جودة منخفضة", status: "fair", url: "https://hz.achourtv.com/bn5.m3u8" },
-                ]
-            },
-            {
-                id: 6,
-                title: "bein sport 6",
-                category: "educational",
-                streams: [
-                    { quality: "S1 - جودة عالية", status: "excellent", url: "https://github.com/o2ws/xpola-player/raw/refs/heads/main/6.m3u8" },
-                    { quality: "S2 - جودة متوسطة", status: "good", url: "https://hz.achourtv.com/bn6.m3u8" },
-                    { quality: "S3 - جودة منخفضة", status: "fair", url: "https://hz.achourtv.com/bn6.m3u8" },
-                ]
-            }
-        ];
-
-        // عناصر DOM
-        const channelsContainer = document.getElementById('channels-container');
-        const categoryButtons = document.querySelectorAll('.category-btn');
-        const playerContainer = document.getElementById('player-container');
-        const closePlayerBtn = document.getElementById('close-player');
-        const playerChannelTitle = document.getElementById('player-channel-title');
-        const qualityContainer = document.getElementById('quality-container');
-        const qualityOptions = document.getElementById('quality-options');
-        const toggleQualityBtn = document.getElementById('toggle-quality-btn');
-        
-        // متغيرات حالة المشغل
-        let currentChannel = null;
-        let currentStreamIndex = 0;
-        let playerInstance = null;
-        let isQualityMenuOpen = false;
-        
-        // عرض القنوات
-        function displayChannels(channels) {
-            channelsContainer.innerHTML = '';
-            
-            if (channels.length === 0) {
-                channelsContainer.innerHTML = '<div class="loading">لا توجد قنوات متاحة</div>';
-                return;
-            }
-            
-            channels.forEach(channel => {
-                const channelCard = document.createElement('div');
-                channelCard.className = 'channel-card fade-in';
-                
-                channelCard.innerHTML = `
-                    <div class="channel-info">
-                        <div class="channel-title">${channel.title}</div>
-                        <div class="channel-quality">
-                            ${channel.streams.map(stream => 
-                                `<span class="quality-badge">${stream.quality.split(' - ')[0]}</span>`
-                            ).join('')}
-                        </div>
-                    </div>
-                `;
-                
-                channelCard.addEventListener('click', () => {
-                    openPlayer(channel);
-                });
-                
-                channelsContainer.appendChild(channelCard);
-            });
-        }
-        
-        // فتح مشغل الفيديو
-        function openPlayer(channel) {
-            currentChannel = channel;
-            currentStreamIndex = 0;
-            
-            // تحديث عنوان القناة في المشغل
-            playerChannelTitle.textContent = channel.title;
-            
-            // إظهار المشغل
-            playerContainer.style.display = 'block';
-            setTimeout(() => {
-                playerContainer.classList.add('active');
-            }, 10);
-            
-            // إعداد خيارات الجودة
-            setupQualityOptions();
-            
-            // إعداد مشغل JW Player
-            setupPlayer();
-        }
-        
-        // إعداد خيارات الجودة
-        function setupQualityOptions() {
-            qualityOptions.innerHTML = '';
-            
-            currentChannel.streams.forEach((stream, index) => {
-                const qualityOption = document.createElement('button');
-                qualityOption.className = `quality-option ${index === currentStreamIndex ? 'active' : ''}`;
-                qualityOption.innerHTML = `
-                    <span class="quality-indicator ${stream.status}"></span>
-                    ${stream.quality}
-                `;
-                
-                qualityOption.addEventListener('click', () => {
-                    if (index !== currentStreamIndex) {
-                        changeStream(index);
-                    }
-                    
-                    // إغلاق قائمة الجودة بعد الاختيار
-                    toggleQualityMenu();
-                });
-                
-                qualityOptions.appendChild(qualityOption);
-            });
-        }
-        
-        // تغيير مصدر البث
-        function changeStream(index) {
-            currentStreamIndex = index;
-            
-            // تحديث حالة الخيار النشط
-            document.querySelectorAll('.quality-option').forEach((option, i) => {
-                if (i === index) {
-                    option.classList.add('active');
-                } else {
-                    option.classList.remove('active');
-                }
-            });
-            
-            // إعادة تحميل المشغل بمصدر البث الجديد
-            if (playerInstance) {
-                playerInstance.load([{ 
-                    file: currentChannel.streams[currentStreamIndex].url 
-                }]);
-                playerInstance.play();
-            }
-        }
-        
-        // تبديل عرض/إخفاء قائمة الجودة
-        function toggleQualityMenu() {
-            isQualityMenuOpen = !isQualityMenuOpen;
-            
-            if (isQualityMenuOpen) {
-                qualityContainer.classList.add('active');
+    function createBackButton() {
+      const backButton = document.createElement('button');
+      backButton.className = 'back-button';
+      backButton.innerHTML = '← رجوع إلى القائمة';
+      backButton.onclick = () => {
+        window.location.href = window.location.pathname;
+      };
+      document.body.appendChild(backButton);
+    }
+    
+    const id = getParam("id");
+    const sourceId = getParam("source");
+    const content = document.getElementById('content');
+    
+    const sources = {
+      'source1': {
+        url: 'https://raw.githubusercontent.com/alysjc7-dot/playlist/refs/heads/main/file/api.json',
+        player: 'https://www.m3u8player.online/embed/m3u8?url='
+      },
+      'source2': {
+        url: 'https://raw.githubusercontent.com/abusaeeidx/CricHd-playlists-Auto-Update-permanent/main/api.json',
+        player: 'https://anym3u8player.com/tv/video-player.php?url='
+      }
+    };
+    
+    if (id && sourceId) {
+      // عرض المشغل إذا تم اختيار قناة
+      const selectedSource = sources[sourceId];
+      if (selectedSource) {
+        fetch(selectedSource.url)
+          .then(res => res.json())
+          .then(data => {
+            const channel = data.find(item => item.id === id);
+            if (channel && channel.link) {
+              const encoded = encodeURIComponent(channel.link);
+              const playerURL = selectedSource.player + encoded;
+              content.innerHTML = `<iframe src="${playerURL}" allowfullscreen></iframe>`;
+              createBackButton();
             } else {
-                qualityContainer.classList.remove('active');
+              content.innerHTML = `<div class="error"><h2>القناة غير موجودة</h2></div>`;
             }
-        }
-        
-        toggleQualityBtn.addEventListener('click', toggleQualityMenu);
-        
-        // إعداد مشغل JW Player
-        function setupPlayer() {
-            if (playerInstance) {
-                playerInstance.remove();
+          })
+          .catch(() => {
+            content.innerHTML = `<div class="error"><h2>خطأ في تحميل البث</h2></div>`;
+          });
+      } else {
+        content.innerHTML = `<div class="error"><h2>مصدر غير صالح</h2></div>`;
+      }
+    } else {
+      // عرض جميع القنوات مع الشعار
+      const headerLogo = document.createElement('div');
+      headerLogo.className = 'header-logo';
+      headerLogo.innerHTML = `
+        <div class="logo-text">كايدن TV</div>
+        <a href="https://t.me/KIDNTV" target="_blank" class="telegram-btn">
+          انضم إلى قناتنا على تليجرام <i class="fab fa-telegram-plane"></i>
+        </a>
+      `;
+      content.appendChild(headerLogo);
+      
+      const grid = document.createElement('div');
+      grid.className = 'grid';
+      content.appendChild(grid);
+      
+      const fetchChannels = (sourceKey) => {
+        const source = sources[sourceKey];
+        fetch(source.url)
+          .then(res => {
+            if (!res.ok) {
+              throw new Error('Network response was not ok');
             }
-            
-            playerInstance = jwplayer("jwplayerDiv").setup({
-                file: currentChannel.streams[currentStreamIndex].url,
-                width: "100%",
-                height: "100%",
-                autostart: true,
-                mute: false,
-                stretching: "uniform",
-                cast: {},
-                sharing: {},
-                fullscreen: true
-            });
-            
-            // تعيين المسار الصوتي الافتراضي عند بدء التشغيل
-            playerInstance.on('ready', function() {
-                this.setAudioTrack(0);
-                // تشغيل وضع ملء الشاشة تلقائياً
-                this.setFullscreen(true);
-                
-                // ضبط حجم المشغل لملء الشاشة
-                resizePlayer();
-            });
-
-            // إعادة ضبط حجم المشغل عند تغيير حجم النافذة
-            window.addEventListener('resize', resizePlayer);
-        }
-        
-        // ضبط حجم المشغل لملء الشاشة
-        function resizePlayer() {
-            if (playerInstance && playerInstance.getState() === 'playing') {
-                const container = document.getElementById('jwplayerDiv');
-                container.style.width = '100%';
-                container.style.height = '100%';
-                
-                // إعادة ضبط حجم المشغل
-                playerInstance.resize(window.innerWidth, window.innerHeight);
+            return res.json();
+          })
+          .then(data => {
+            if (data.length) {
+              data.forEach(channel => {
+                const a = document.createElement('a');
+                a.className = 'channel';
+                a.href = `?id=${encodeURIComponent(channel.id)}&source=${sourceKey}`;
+                a.innerHTML = `
+                  <img src="${channel.logo}" alt="${channel.name}" />
+                  <div>${channel.name}</div>
+                `;
+                grid.appendChild(a);
+              });
             }
+          })
+          .catch(() => {
+            console.error(`Failed to load channels from ${source.url}`);
+          });
+      };
+      
+      fetchChannels('source1');
+      fetchChannels('source2');
+      
+      // في حالة فشل تحميل جميع القنوات
+      setTimeout(() => {
+        if (!grid.hasChildNodes()) {
+          content.innerHTML += `<div class="error"><h2>فشل تحميل القنوات</h2></div>`;
         }
-
-        // إغلاق المشغل
-        function closePlayer() {
-            playerContainer.classList.remove('active');
-            setTimeout(() => {
-                playerContainer.style.display = 'none';
-                if (playerInstance) {
-                    playerInstance.stop();
-                }
-                // إزالة مستمع حدث resize عند إغلاق المشغل
-                window.removeEventListener('resize', resizePlayer);
-            }, 300);
-            
-            // إغلاق قائمة الجودة إذا كانت مفتوحة
-            if (isQualityMenuOpen) {
-                toggleQualityMenu();
-            }
-        }
-
-        closePlayerBtn.addEventListener('click', closePlayer);
-
-        // إغلاق المشغل عند الضغط على زر Escape
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && playerContainer.style.display === 'block') {
-                if (isQualityMenuOpen) {
-                    toggleQualityMenu();
-                } else {
-                    closePlayer();
-                }
-            }
-        });
-
-        // تصفية حسب الفئة
-        categoryButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                // إزالة النشاط من جميع الأزرار
-                categoryButtons.forEach(btn => btn.classList.remove('active'));
-                // إضافة النشاط للزر المحدد
-                button.classList.add('active');
-                
-                const category = button.dataset.category;
-                filterChannels();
-            });
-        });
-
-        // تصفية القنوات
-        function filterChannels() {
-            const activeCategory = document.querySelector('.category-btn.active').dataset.category;
-            
-            const filteredChannels = channelsData.filter(channel => {
-                return activeCategory === 'all' || channel.category === activeCategory;
-            });
-            
-            displayChannels(filteredChannels);
-        }
-
-        // التهيئة الأولية
-        displayChannels(channelsData);
-    </script>
+      }, 5000); // 5 ثواني
+    }
+  </script>
 </body>
 </html>
