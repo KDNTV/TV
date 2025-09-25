@@ -1,0 +1,195 @@
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #000;
+  color: #fff;
+  direction: rtl;
+}
+
+/* أنماط شاشة التحميل الجديدة */
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  flex-direction: column;
+  color: #ffd200; /* لون مميز للتحميل */
+  transition: opacity 0.3s ease;
+}
+
+#loading-screen i {
+  font-size: 3em;
+  margin-bottom: 15px;
+}
+
+.loading-text {
+  font-size: 1.2em;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* شعار القناة في الأعلى */
+.header-logo {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  border-radius: 12px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border: 1px solid #333;
+  position: relative;
+}
+
+.logo-text {
+  font-size: 42px;
+  font-weight: bold;
+  background: linear-gradient(45deg, #ff6b35, #f7931e, #ffd200);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 20px rgba(255, 107, 53, 0.3);
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.logo-subtitle {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.telegram-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #0088cc, #00a2e8);
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 136, 204, 0.3);
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.telegram-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 136, 204, 0.5);
+  background: linear-gradient(135deg, #0077b5, #0099e0);
+}
+
+.telegram-btn:active {
+  transform: translateY(0);
+}
+
+.telegram-btn i {
+  margin-left: 8px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.channel {
+  background: #111;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px;
+  transition: transform 0.2s ease;
+  color: #ddd;
+  text-decoration: none;
+  display: block;
+}
+
+.channel:hover {
+  transform: scale(1.05);
+  background: #222;
+}
+
+.channel img {
+  max-width: 100%;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background: #222;
+  padding: 5px;
+}
+
+iframe {
+  border: none;
+  width: 100%;
+  height: calc(100vh - 60px);
+  display: block;
+}
+
+.error {
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+.back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: rgba(30, 30, 30, 0.8);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 1000;
+  transition: background 0.3s;
+}
+
+.back-button:hover {
+  background: rgba(50, 50, 50, 0.9);
+}
+
+/* تصميم متجاوب للشاشات الصغيرة */
+@media (max-width: 768px) {
+  .logo-text {
+    font-size: 32px;
+  }
+  
+  .logo-subtitle {
+    font-size: 16px;
+  }
+  
+  .telegram-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-text {
+    font-size: 28px;
+  }
+  
+  .logo-subtitle {
+    font-size: 14px;
+  }
+}
