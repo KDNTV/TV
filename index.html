@@ -14,6 +14,36 @@
       direction: rtl;
     }
     
+    /* أنماط شاشة التحميل الجديدة */
+    #loading-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 2000;
+      flex-direction: column;
+      color: #ffd200; /* لون مميز للتحميل */
+      transition: opacity 0.3s ease;
+    }
+    
+    #loading-screen i {
+      font-size: 3em;
+      margin-bottom: 15px;
+    }
+    
+    .loading-text {
+      font-size: 1.2em;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
     /* شعار القناة في الأعلى */
     .header-logo {
       text-align: center;
@@ -174,7 +204,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <div id="content"></div>
+  <div id="loading-screen">
+      <i class="fas fa-spinner fa-spin"></i>
+      <div class="loading-text">جاري تحميل القنوات...</div>
+  </div>
+  <div id="content" class="hidden"></div>
 
   <script>
     function getParam(name) {
@@ -191,6 +225,18 @@
       };
       document.body.appendChild(backButton);
     }
+
+    function hideLoadingScreen() {
+        const loadingScreen = document.getElementById('loading-screen');
+        const content = document.getElementById('content');
+        if (loadingScreen && content) {
+            loadingScreen.style.opacity = '0';
+            setTimeout(() => {
+                loadingScreen.classList.add('hidden');
+                content.classList.remove('hidden');
+            }, 300); // يتأخر قليلاً للسماح لـ CSS Transition بالعمل
+        }
+    }
     
     const id = getParam("id");
     const sourceId = getParam("source");
@@ -201,6 +247,10 @@
         url: 'https://raw.githubusercontent.com/alysjc7-dot/playlist/refs/heads/main/file/api.json',
         player: 'https://www.m3u8player.online/embed/m3u8?url='
       },
+      'source3': {
+        url: 'https://raw.githubusercontent.com/alysjc7-dot/playlist/refs/heads/main/file/api2.json',
+        player: 'https://anym3u8player.com/tv/p.php?url='
+      },
       'source2': {
         url: 'https://raw.githubusercontent.com/abusaeeidx/CricHd-playlists-Auto-Update-permanent/main/api.json',
         player: 'https://anym3u8player.com/tv/video-player.php?url='
@@ -208,6 +258,9 @@
     };
     
     if (id && sourceId) {
+      // إخفاء شاشة التحميل مباشرة إذا كنا في وضع المشغل
+      hideLoadingScreen(); 
+      
       // عرض المشغل إذا تم اختيار قناة
       const selectedSource = sources[sourceId];
       if (selectedSource) {
@@ -217,7 +270,7 @@
             const channel = data.find(item => item.id === id);
             if (channel && channel.link) {
               const encoded = encodeURIComponent(channel.link);
-              const playerURL = selectedSource.player + encoded;
+              const playerURL = selectedSource.player + encoded; 
               content.innerHTML = `<iframe src="${playerURL}" allowfullscreen></iframe>`;
               createBackButton();
             } else {
@@ -231,7 +284,7 @@
         content.innerHTML = `<div class="error"><h2>مصدر غير صالح</h2></div>`;
       }
     } else {
-      // عرض جميع القنوات مع الشعار
+      // عرض جميع القنوات مع الشعار (واجهة القائمة)
       const headerLogo = document.createElement('div');
       headerLogo.className = 'header-logo';
       headerLogo.innerHTML = `
@@ -246,6 +299,20 @@
       grid.className = 'grid';
       content.appendChild(grid);
       
+      let pendingFetches = 3; // عدد المصادر التي يجب جلبها
+      let channelsLoaded = 0; // عدد المصادر التي تم تحميلها بنجاح
+
+      const checkCompletion = () => {
+          pendingFetches--;
+          if (pendingFetches === 0) {
+              hideLoadingScreen();
+              // في حالة فشل تحميل جميع القنوات
+              if (channelsLoaded === 0) {
+                  content.innerHTML += `<div class="error"><h2>فشل تحميل القنوات</h2></div>`;
+              }
+          }
+      };
+
       const fetchChannels = (sourceKey) => {
         const source = sources[sourceKey];
         fetch(source.url)
@@ -257,6 +324,7 @@
           })
           .then(data => {
             if (data.length) {
+              channelsLoaded++;
               data.forEach(channel => {
                 const a = document.createElement('a');
                 a.className = 'channel';
@@ -268,21 +336,19 @@
                 grid.appendChild(a);
               });
             }
+            checkCompletion();
           })
-          .catch(() => {
-            console.error(`Failed to load channels from ${source.url}`);
+          .catch((error) => {
+            console.error(`Failed to load channels from ${source.url}:`, error);
+            checkCompletion();
           });
       };
       
+      // التغيير هنا: ترتيب جلب القنوات
+      // الترتيب الجديد: Source 1, Source 2, Source 3 (في الأخير)
       fetchChannels('source1');
-      fetchChannels('source2');
-      
-      // في حالة فشل تحميل جميع القنوات
-      setTimeout(() => {
-        if (!grid.hasChildNodes()) {
-          content.innerHTML += `<div class="error"><h2>فشل تحميل القنوات</h2></div>`;
-        }
-      }, 5000); // 5 ثواني
+      fetchChannels('source2'); 
+      fetchChannels('source3'); // المصدر الثالث الآن في الأخير
     }
   </script>
 </body>
