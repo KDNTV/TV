@@ -95,6 +95,40 @@ http://176.119.29.54/31dc1067-8fa1-4189-bfc2-b0550f8c477b.m3u8
 
 
 
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/557.png?54988" group-title="ALKASS Sport 4K⚽",SPO: Al Kass 1 4K
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/3120.m3u8
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/558.png?31318" group-title="ALKASS Sport 4K⚽",SPO: Al Kass 2 4K
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/3121.m3u8
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/3983.png?20448" group-title="ALKASS Sport 4K⚽",SPO: Al Kass 3 4K
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/314634.m3u8
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/566.png?8174" group-title="ALKASS Sport 4K⚽",SPO: Al Kass 4 4K
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/3122.m3u8
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/8549.png?12698" group-title="ALKASS Sport 4K⚽",SPO: Al Kass 5 4K (LIVE EVENT ONLY)
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/120449.m3u8
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/13387.jpg?56275" group-title="ALKASS Sport 4K⚽",SPO: Al Kass 6 4K (LIVE EVENT ONLY)
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/314636.m3u8
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/3915.png?98326" group-title="ALKASS Sport 4K⚽",SPO: Al Kass 7 4K (LIVE EVENT ONLY)
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/478760.m3u8
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/557.png?54988" group-title="ALKASS Sport 4K⚽",SPO: Al Kass 1 HD
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/498849.m3u8
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/558.png?31318" group-title="ALKASS Sport 4K⚽",SPO: Al Kass 2 HD
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/498883.m3u8
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/3983.png?20448" group-title="ALKASS Sport 4K⚽",SPO: Al Kass 3 HD
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/498886.m3u8
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/566.png?8174" group-title="ALKASS Sport 4K⚽",SPO: Al Kass 4 HD
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/498884.m3u8
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/8549.png?12698" group-title="ALKASS Sport 4K⚽",SPO: Al Kass 5 HD (LIVE EVENT ONLY)
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/457287.m3u8
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/3915.png?98326" group-title="ALKASS Sport 4K⚽",SPO: Al Kass 7 HD (LIVE EVENT ONLY)
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/478759.m3u8
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/3915.png?98326" group-title="ALKASS Sport 4K⚽",SPO: Al Kass 8 4K
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/1465760.m3u8
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/3915.png?98326" group-title="ALKASS Sport 4K⚽",SPO: Al Kass 9 4K
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/1415733.m3u8
+
+
+
+
 #EXTM3U url-tvg="https://epg.best/2586d-mqgky2.xml.gz" x-tvg-url="https://epg.best/2586d-mqgky2.xml.gz"
 #EXTINF:-1 tvg-id="" tvg-name="BEIN 1 1080" tvg-logo="" tvg-chno="1" channel-id="1" group-title="yacine tv",BEIN 1 1080
 http://bdd78.4rouwanda-shop.store/live/918454578001/index.m3u8
@@ -8213,5 +8247,6 @@ http://max.amigo00.com:2052/movie/18631050917737/12212856565617/454495.mp4
 
 #EXTINF:-1 tvg-id="" tvg-name="" MOVIES - أكشن" MOVIES - أكشن" tvg-chno="21523" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/6nDZExrDKIXvSAghsFKVFRVJuSf.jpg" group-title="ACTION MOVIES - أكشن",2 FAST 2 FURIOUS
 http://max.amigo00.com:2052/movie/18631050917737/12212856565617/454494.mp4
+
 
 
