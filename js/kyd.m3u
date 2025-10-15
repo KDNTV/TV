@@ -1711,24 +1711,6 @@ https://linear-190.frequency.stream/dist/vizio/190/hls/master/playlist.m3u8?ads.
 
 
 
-#EXTINF:-1  tvg-id="" tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/ch33.png?raw=true" group-title="kan",Makan
-https://makan.media.kan.org.il/hls/live/2024680/2024680/master.m3u8
-#EXTINF:-1  tvg-id="" tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/kan11.png?raw=true" group-title="kan",kan
-https://kan11w.media.kan.org.il/hls/live/2105694/2105694/master.m3u8
-#EXTINF:-1  tvg-id="" tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/ch12.png?raw=true" group-title="kan",12
-https://mako-streaming.akamaized.net/stream/hls/live/2033791/k12/profile/3/profileManifest.m3u8?_uid=0&rK=b6
-
-#EXTINF:-1  tvg-id="" tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/ch13.png?raw=true" group-title="kan",13
-https://d198ztbnlup2iq.cloudfront.net/out/v1/2d9050c90fb94df8b78d1d98306a1a65/index.m3u8
-#EXTINF:-1  tvg-id="" tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/ch14.png?raw=true" group-title="kan",14
-https://ch14channel14content-ioriver-cdn.encoders.immergo.tv/master.m3u8
-#EXTINF:-1  tvg-id="" tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/ch24.png?raw=true" group-title="kan",24
-https://mako-streaming.akamaized.net/direct/hls/live/2035340/ch24live/video_7201280_p_1.m3u8
-
-
-
-
-
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co/d6c87Km/trt122.png" group-title="TURKISH" ,TRT 1
 https://trt.daioncdn.net/trt-1/master.m3u8?app=web
@@ -8293,6 +8275,7 @@ http://max.amigo00.com:2052/movie/18631050917737/12212856565617/454495.mp4
 
 #EXTINF:-1 tvg-id="" tvg-name="" MOVIES - أكشن" MOVIES - أكشن" tvg-chno="21523" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/6nDZExrDKIXvSAghsFKVFRVJuSf.jpg" group-title="ACTION MOVIES - أكشن",2 FAST 2 FURIOUS
 http://max.amigo00.com:2052/movie/18631050917737/12212856565617/454494.mp4
+
 
 
 
