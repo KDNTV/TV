@@ -277,6 +277,11 @@ http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/293201.m3u8
 
 
 
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/8129.jpg?72990" group-title="AD Sport 4K⚽",VIP:  bein 1 4K
+#EXT-X-STREAM-INF:BANDWIDTH=500000,RESOLUTION=1920x1080
+http://max.amigo00.com:2052/live/18631050917737/12212856565617/192644.m3u8
+
+
 
 #EXTM3U url-tvg="https://epg.best/2586d-mqgky2.xml.gz" x-tvg-url="https://epg.best/2586d-mqgky2.xml.gz"
 #EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/8129.jpg?72990" group-title="AD Sport 4K⚽",VIP: AD SPORT AD 1 HD
