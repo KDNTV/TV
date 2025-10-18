@@ -453,6 +453,100 @@ https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-1-usa/fdac3a4fc0473f1f56e
 #EXTINF:-1 tvg-logo="https://i.ibb.co/N19JFwZ/mbc.png" group-title="⚽ القنوات الرياضية",MBC 1 USA
 https://mbc-1-usa-ak.akamaized.net/out/v1/8c1ce74bfd0743aab1026ef5b2aecfa4/index.m3u8
 
+
+
+
+
+
+
+
+
+
+
+#EXTINF:-1 tvg-id="" tvg-name="AR: OSN TV YA HALA" tvg-logo="http://148.251.133.153:8181/logo/chn/4777.png" group-title="OSN CHANNELS",AR: OSN TV YA HALA
+http://eagle2024.xyz:80/play/live.php?mac=00:1A:79:c1:e3:9a&stream=22&extension=m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="AR: OSN YA HALA AFLAM" tvg-logo="http://148.251.133.153:8181/logo/chn/4780.png" group-title="OSN CHANNELS",AR: OSN YA HALA AFLAM
+http://cms-ar.accesss.me:25461/live/NP02f14NE771k667/V7hc77I22221PX/2272.ts
+
+#EXTINF:-1 tvg-id="" tvg-name="AR: OSN YA HALA BIL ARABI" tvg-logo="http://148.251.133.153:8181/logo/chn/4779.png" group-title="OSN CHANNELS",AR: OSN YA HALA BIL ARABI
+http://eagle2024.xyz:80/play/live.php?mac=00:1A:79:c1:e3:9a&stream=37&extension=m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="AR: OSN ART HEKAYAT 1" tvg-logo="http://148.251.133.153:8181/logo/chn/4758.png" group-title="OSN CHANNELS",AR: OSN ART HEKAYAT 1
+http://eagle2024.xyz:80/play/live.php?mac=00:1A:79:c1:e3:9a&stream=66&extension=m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="AR: OSN ART HEKAYAT 2" tvg-logo="http://148.251.133.153:8181/logo/chn/4746.png" group-title="OSN CHANNELS",AR: OSN ART HEKAYAT 2
+http://eagle2024.xyz:80/play/live.php?mac=00:1A:79:c1:e3:9a&stream=67&extension=m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="AR: OSN ART AFLAM 1" tvg-logo="http://148.251.133.153:8181/logo/chn/4747.png" group-title="OSN CHANNELS",AR: OSN ART AFLAM 1
+http://eagle2024.xyz:80/play/live.php?mac=00:1A:79:c1:e3:9a&stream=68&extension=m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="AR: OSN ART AFLAM 2" tvg-logo="https://www.elahmad.com/tv/mobiletv/images/art_aflam_2.jpg?v=7" group-title="OSN CHANNELS",AR: OSN ART AFLAM 2
+http://eagle2024.xyz:80/play/live.php?mac=00:1A:79:c1:e3:9a&stream=69&extension=m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="AR: OSN ART CINEMA" tvg-logo="http://148.251.133.153:8181/logo/chn/4750.png" group-title="OSN CHANNELS",AR: OSN ART CINEMA
+http://eagle2024.xyz:80/play/live.php?mac=00:1A:79:c1:e3:9a&stream=70&extension=m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="OSN CINEMA 1" tvg-logo="http://148.251.133.153:8181/logo/chn/4723.png" group-title="OSN CHANNELS",OSN CINEMA 1
+http://eagle2024.xyz:80/play/live.php?mac=00:1A:79:c1:e3:9a&stream=726&extension=m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="OSN CINEMA 2" tvg-logo="http://148.251.133.153:8181/logo/chn/4750.png" group-title="OSN CHANNELS",OSN CINEMA 2
+http://eagle2024.xyz:80/play/live.php?mac=00:1A:79:c1:e3:9a&stream=727&extension=m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="AR: OSN AL YAWM" tvg-logo="http://148.251.133.153:8181/logo/chn/4745.png" group-title="OSN CHANNELS",AR: OSN AL YAWM
+http://eagle2024.xyz:80/play/live.php?mac=00:1A:79:c1:e3:9a&stream=15044&extension=m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="AR: OSN ALFA MUSALSALAT 1" tvg-logo="http://148.251.133.153:8181/logo/chn/4782.png" group-title="OSN CHANNELS",AR: OSN ALFA MUSALSALAT 1
+http://eagle2024.xyz:80/play/live.php?mac=00:1A:79:c1:e3:9a&stream=728&extension=m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="AR: OSN ALFA MUSALSALAT 2" tvg-logo="http://148.251.133.153:8181/logo/chn/4726.png" group-title="OSN CHANNELS",AR: OSN ALFA MUSALSALAT 2
+http://eagle2024.xyz:80/play/live.php?mac=00:1A:79:c1:e3:9a&stream=9005&extension=m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="OSN MEZZE" tvg-logo="https://content.osn.com/logo/channel/cropped/OMZ.png" group-title="OSN CHANNELS",OSN MEZZE
+http://eagle2024.xyz:80/play/live.php?mac=00:1A:79:c1:e3:9a&stream=44847&extension=m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="AR: OSN MOVIES ACTION" tvg-logo="https://s3-eu-west-1.amazonaws.com/photo.elcinema.com/tvguide/1211_1.png" group-title="OSN CHANNELS",AR: OSN MOVIES ACTION
+http://eagle2024.xyz:80/play/live.php?mac=00:1A:79:c1:e3:9a&stream=27737&extension=m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="AR: OSN MOVIES PREMIERE" tvg-logo="http://148.251.133.153:8181/logo/chn/4721.png" group-title="OSN CHANNELS",AR: OSN MOVIES PREMIERE
+http://eagle2024.xyz:80/play/live.php?mac=00:1A:79:c1:e3:9a&stream=15035&extension=m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="AR: OSN SHOWCASE" tvg-logo="http://148.251.133.153:8181/logo/chn/4720.png" group-title="OSN CHANNELS",AR: OSN SHOWCASE
+http://eagle2024.xyz:80/play/live.php?mac=00:1A:79:c1:e3:9a&stream=15033&extension=m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="OSN MOVIES HOLLYWOOD" tvg-logo="http://148.251.133.153:8181/logo/chn/4719.png" group-title="OSN CHANNELS",OSN MOVIES HOLLYWOOD
+http://eagle2024.xyz:80/play/live.php?mac=00:1A:79:c1:e3:9a&stream=27732&extension=m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="OSN MOVIES ENIGMA" tvg-logo="http://148.251.133.153:8181/logo/cat/42.png" group-title="OSN CHANNELS",OSN MOVIES ENIGMA
+http://cms-ar.accesss.me:25461/live/NP02f14NE771k667/V7hc77I22221PX/2309.ts
+
+#EXTINF:-1 tvg-id="" tvg-name="OSN POP UP" tvg-logo="https://content.osn.com/logo/channel/cropped/POP.png" group-title="OSN CHANNELS",OSN POP UP
+http://eagle2024.xyz:80/play/live.php?mac=00:1A:79:c1:e3:9a&stream=624267&extension=m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="OSN MOVIES FAMILY" tvg-logo="http://148.251.133.153:8181/logo/chn/4755.png" group-title="OSN CHANNELS",OSN MOVIES FAMILY
+http://eagle2024.xyz:80/play/live.php?mac=00:1A:79:c1:e3:9a&stream=599152&extension=m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="OSN NOW" tvg-logo="http://148.251.133.153:8181/logo/chn/4761.png" group-title="OSN CHANNELS",OSN NOW
+http://eagle2024.xyz:80/play/live.php?mac=00:1A:79:c1:e3:9a&stream=14571&extension=m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="OSN DISCOVERY" tvg-logo="http://148.251.133.153:8181/logo/chn/4753.png" group-title="OSN CHANNELS",OSN DISCOVERY
+http://eagle2024.xyz:80/play/live.php?mac=00:1A:79:c1:e3:9a&stream=60922&extension=m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="OSN E!" tvg-logo="http://148.251.133.153:8181/logo/chn/4727.png" group-title="OSN CHANNELS",OSN E!
+http://cms-ar.accesss.me:25461/live/NP02f14NE771k667/V7hc77I22221PX/2308.ts
+
+#EXTINF:-1 tvg-id="" tvg-name="OSN NAT GEO WILD" tvg-logo="http://148.251.133.153:8181/logo/chn/4772.png" group-title="OSN CHANNELS",OSN NAT GEO WILD
+http://cms-ar.accesss.me:25461/live/NP02f14NE771k667/V7hc77I22221PX/2302.m3u8
+
+
+
+
+
+
+
+
+
+
 ##############################
 # 2️⃣ 📰 القنوات الإخبارية
 ##############################
