@@ -1,0 +1,699 @@
+#EXTM3U
+
+##############################
+# 1️⃣ ⚽ القنوات الرياضية
+##############################
+
+#EXTINF:-1 tvg-id="BeIN 1 VIP" tvg-name="BEIN SPORTS 1 HD GHD" tvg-logo="https://www14.0zz0.com/2022/01/27/22/454939537.png" group-title="⚽ القنوات الرياضية",BEIN SPORTS 1 HD GHD
+https://cdnfest.com/G1-1080p/video.m3u8
+
+#EXTINF:-1 tvg-id="BeIN 2 VIP" tvg-name="BEIN SPORTS 2 HD GHD" tvg-logo="https://www14.0zz0.com/2022/01/27/22/818970998.png" group-title="⚽ القنوات الرياضية",BEIN SPORTS 2 HD GHD
+https://cdnfest.com/G2-1080p/video.m3u8
+
+#EXTINF:-1 tvg-id="BeIN 3 VIP" tvg-name="BEIN SPORT 3 HD" tvg-logo="https://www14.0zz0.com/2022/01/27/22/798340876.png" group-title="⚽ القنوات الرياضية",BEIN SPORTS 3 HD GHD
+https://cdnfest.com/G3-1080p/video.m3u8
+
+#EXTINF:-1 tvg-id="BeIN 4 VIP" tvg-name="BEIN SPORTS 4 HD GHD" tvg-logo="https://www14.0zz0.com/2022/01/27/22/188068553.png" group-title="⚽ القنوات الرياضية",BEIN SPORTS 4 HD GHD
+https://cdnfest.com/G4-1080p/video.m3u8
+
+#EXTINF:-1 tvg-id="BeIN 5 VIP" tvg-name="BEIN SPORTS 5 HD GHD" tvg-logo="https://www6.0zz0.com/2022/01/27/22/181309184.png" group-title="⚽ القنوات الرياضية",BEIN SPORTS 5 HD GHD
+https://cdnfest.com/G5-1080p/video.m3u8
+
+#EXTINF:-1 tvg-id="BeIN 6 VIP" tvg-name="BEIN SPORTS 6 HD GHD" tvg-logo="https://www6.0zz0.com/2022/01/27/22/452839047.png" group-title="⚽ القنوات الرياضية",BEIN SPORTS 6 HD GHD
+https://cdnfest.com/G6-1080p/video.m3u8
+
+#EXTINF:-1 tvg-id="BeIN 7 VIP" tvg-name="BEIN SPORTS 7 HD GHD" tvg-logo="https://www14.0zz0.com/2022/01/27/22/819528568.png" group-title="⚽ القنوات الرياضية",BEIN SPORTS 7 HD GHD
+https://cdnfest.com/G7-1080p/video.m3u8
+
+#EXTINF:-1 tvg-id="BeIN 8 VIP" tvg-name="BEIN SPORTS 8 HD GHD" tvg-logo="https://assets.bein.com/mena/sites/4/2023/09/logos-_beINSPORTS8.png" group-title="⚽ القنوات الرياضية",BEIN SPORTS 8 HD GHD
+https://cdnfest.com/G8-1080p/video.m3u8
+
+#EXTINF:-1 tvg-id="BeIN 9 VIP" tvg-name="BEIN SPORTS 9 HD GHD" tvg-logo="https://assets.bein.com/mena/sites/4/2023/09/logos-_beINSPORTS9.png" group-title="⚽ القنوات الرياضية",BEIN SPORTS 9 HD GHD
+https://cdnfest.com/G9-1080p/video.m3u8
+
+
+
+
+
+
+
+#EXTINF:-1 group-title="⚽ القنوات الرياضية", --- ⚽ قنوات بي إن سبورت متعددة الجودة ---
+
+#EXTINF:-1 group-title="⚽ القنوات الرياضية" tvg-logo="https://i.postimg.cc/FKrp6jS2/D-x-Mmbt-400x400.jpg",بي إن سبورت 1 - 1080p
+http://bdd78.4rouwanda-shop.store/live/918454578001/index.m3u8
+
+#EXTINF:-1 group-title="⚽ القنوات الرياضية" tvg-logo="https://i.postimg.cc/FKrp6jS2/D-x-Mmbt-400x400.jpg",بي إن سبورت 1 - 720p
+http://het106a.4rouwanda-shop.store/live/918454578001/index.m3u8
+
+#EXTINF:-1 group-title="⚽ القنوات الرياضية" tvg-logo="https://i.postimg.cc/FKrp6jS2/D-x-Mmbt-400x400.jpg",بي إن سبورت 1 - 480p
+http://het129a.4rouwanda-shop.store/live/918454578001/index.m3u8
+
+#EXTINF:-1 group-title="⚽ القنوات الرياضية" tvg-logo="https://i.postimg.cc/FKrp6jS2/D-x-Mmbt-400x400.jpg",بي إن سبورت 1 - 240p
+http://het114a.4rouwanda-shop.store/live/31009988005/index.m3u8
+
+#EXTINF:-1 group-title="⚽ القنوات الرياضية" tvg-logo="https://i.postimg.cc/FKrp6jS2/D-x-Mmbt-400x400.jpg",بي إن سبورت 2 - 1080p
+http://het110a.4rouwanda-shop.store/live/69854211/index.m3u8
+
+#EXTINF:-1 group-title="⚽ القنوات الرياضية" tvg-logo="https://i.postimg.cc/FKrp6jS2/D-x-Mmbt-400x400.jpg",بي إن سبورت 2 - 720p
+http://het106a.4rouwanda-shop.store/live/69854211/index.m3u8
+
+#EXTINF:-1 group-title="⚽ القنوات الرياضية" tvg-logo="https://i.postimg.cc/FKrp6jS2/D-x-Mmbt-400x400.jpg",بي إن سبورت 2 - 480p
+http://het110a.4rouwanda-shop.store/live/10011244/index.m3u8
+
+#EXTINF:-1 group-title="⚽ القنوات الرياضية" tvg-logo="https://i.postimg.cc/FKrp6jS2/D-x-Mmbt-400x400.jpg",بي إن سبورت 2 - 240p
+http://het101a.4rouwanda-shop.store/live/4798998070/index.m3u8
+
+#EXTINF:-1 group-title="⚽ القنوات الرياضية" tvg-logo="https://i.postimg.cc/FKrp6jS2/D-x-Mmbt-400x400.jpg",بي إن سبورت 3 - 1080p
+http://het120a.4rouwanda-shop.store/live/645587700/index.m3u8
+
+#EXTINF:-1 group-title="⚽ القنوات الرياضية" tvg-logo="https://i.postimg.cc/FKrp6jS2/D-x-Mmbt-400x400.jpg",بي إن سبورت 3 - 720p
+http://het124a.4rouwanda-shop.store/live/645587700/index.m3u8
+
+#EXTINF:-1 group-title="⚽ القنوات الرياضية" tvg-logo="https://i.postimg.cc/FKrp6jS2/D-x-Mmbt-400x400.jpg",بي إن سبورت 3 - 480p
+http://het128a.4rouwanda-shop.store/live/645587700/index.m3u8
+
+#EXTINF:-1 group-title="⚽ القنوات الرياضية" tvg-logo="https://i.postimg.cc/FKrp6jS2/D-x-Mmbt-400x400.jpg",بي إن سبورت 3 - 240p
+http://het127a.4rouwanda-shop.store/live/161988840/index.m3u8
+
+#EXTINF:-1 group-title="⚽ القنوات الرياضية" tvg-logo="https://i.postimg.cc/FKrp6jS2/D-x-Mmbt-400x400.jpg",بي إن سبورت 4 - 1080p
+http://bdd78.4rouwanda-shop.store/live/9787488847/index.m3u8
+
+#EXTINF:-1 group-title="⚽ القنوات الرياضية" tvg-logo="https://i.postimg.cc/FKrp6jS2/D-x-Mmbt-400x400.jpg",بي إن سبورت 4 - 720p
+http://het107a.4rouwanda-shop.store/live/9787488847/index.m3u8
+
+#EXTINF:-1 group-title="⚽ القنوات الرياضية" tvg-logo="https://i.postimg.cc/FKrp6jS2/D-x-Mmbt-400x400.jpg",بي إن سبورت 4 - 480p
+http://het112a.4rouwanda-shop.store/live/0103088447/index.m3u8
+
+#EXTINF:-1 group-title="⚽ القنوات الرياضية" tvg-logo="https://i.postimg.cc/FKrp6jS2/D-x-Mmbt-400x400.jpg",بي إن سبورت 4 - 240p
+http://het110a.4rouwanda-shop.store/live/131326625/index.m3u8
+
+#EXTINF:-1 group-title="⚽ القنوات الرياضية" tvg-logo="https://i.postimg.cc/FKrp6jS2/D-x-Mmbt-400x400.jpg",بي إن سبورت 5 - 1080p
+http://bdd78.4rouwanda-shop.store/live/610303030/index.m3u8
+
+#EXTINF:-1 group-title="⚽ القنوات الرياضية" tvg-logo="https://i.postimg.cc/FKrp6jS2/D-x-Mmbt-400x400.jpg",بي إن سبورت 5 - 720p
+http://het100a.4rouwanda-shop.store/live/610303030/index.m3u8
+
+#EXTINF:-1 group-title="⚽ القنوات الرياضية" tvg-logo="https://i.postimg.cc/FKrp6jS2/D-x-Mmbt-400x400.jpg",بي إن سبورت 5 - 480p
+http://het105a.4rouwanda-shop.store/live/115451004/index.m3u8
+
+#EXTINF:-1 group-title="⚽ القنوات الرياضية" tvg-logo="https://i.postimg.cc/FKrp6jS2/D-x-Mmbt-400x400.jpg",بي إن سبورت 5 - 240p
+http://het132a.4rouwanda-shop.store/live/181818444/index.m3u8
+
+#EXTINF:-1 group-title="⚽ القنوات الرياضية" tvg-logo="https://i.postimg.cc/FKrp6jS2/D-x-Mmbt-400x400.jpg",بي إن سبورت 6 - 1080p
+http://bdd78.4rouwanda-shop.store/live/1515000000/index.m3u8
+
+#EXTINF:-1 group-title="⚽ القنوات الرياضية" tvg-logo="https://i.postimg.cc/FKrp6jS2/D-x-Mmbt-400x400.jpg",بي إن سبورت 6 - 720p
+http://het127a.4rouwanda-shop.store/live/1515000000/index.m3u8
+
+#EXTINF:-1 group-title="⚽ القنوات الرياضية" tvg-logo="https://i.postimg.cc/FKrp6jS2/D-x-Mmbt-400x400.jpg",بي إن سبورت 6 - 480p
+http://het133a.4rouwanda-shop.store/live/788550011/index.m3u8
+
+#EXTINF:-1 group-title="⚽ القنوات الرياضية" tvg-logo="https://i.postimg.cc/FKrp6jS2/D-x-Mmbt-400x400.jpg",بي إن سبورت 6 - 240p
+http://het130a.4rouwanda-shop.store/live/9883322/index.m3u8
+
+#EXTINF:-1 group-title="⚽ القنوات الرياضية" tvg-logo="https://i.postimg.cc/FKrp6jS2/D-x-Mmbt-400x400.jpg",بي إن سبورت 7 - 1080p
+http://bdd78.4rouwanda-shop.store/live/33523510/index.m3u8
+
+#EXTINF:-1 group-title="⚽ القنوات الرياضية" tvg-logo="https://i.postimg.cc/FKrp6jS2/D-x-Mmbt-400x400.jpg",بي إن سبورت 7 - 720p
+http://het104a.4rouwanda-shop.store/live/33523510/index.m3u8
+
+#EXTINF:-1 group-title="⚽ القنوات الرياضية" tvg-logo="https://i.postimg.cc/FKrp6jS2/D-x-Mmbt-400x400.jpg",بي إن سبورت 7 - 480p
+http://het100a.4rouwanda-shop.store/live/14066007/index.m3u8
+
+#EXTINF:-1 group-title="⚽ القنوات الرياضية" tvg-logo="https://i.postimg.cc/FKrp6jS2/D-x-Mmbt-400x400.jpg",بي إن سبورت 7 - 240p
+http://het129a.4rouwanda-shop.store/live/79247621/index.m3u8
+
+#EXTINF:-1 group-title="⚽ القنوات الرياضية" tvg-logo="https://i.postimg.cc/FKrp6jS2/D-x-Mmbt-400x400.jpg",بي إن سبورت 8 - 1080p
+http://bdd78.4rouwanda-shop.store/live/996251000/index.m3u8
+
+#EXTINF:-1 group-title="⚽ القنوات الرياضية" tvg-logo="https://i.postimg.cc/FKrp6jS2/D-x-Mmbt-400x400.jpg",بي إن سبورت 8 - 720p
+http://het100a.4rouwanda-shop.store/live/996251000/index.m3u8
+
+#EXTINF:-1 group-title="⚽ القنوات الرياضية" tvg-logo="https://i.postimg.cc/FKrp6jS2/D-x-Mmbt-400x400.jpg",بي إن سبورت 8 - 480p
+http://het109a.4rouwanda-shop.store/live/500021000/index.m3u8
+
+#EXTINF:-1 group-title="⚽ القنوات الرياضية" tvg-logo="https://i.postimg.cc/FKrp6jS2/D-x-Mmbt-400x400.jpg",بي إن سبورت 8 - 240p
+http://het129a.4rouwanda-shop.store/live/770001000/index.m3u8
+
+#EXTINF:-1 group-title="⚽ القنوات الرياضية" tvg-logo="https://i.postimg.cc/FKrp6jS2/D-x-Mmbt-400x400.jpg",بي إن سبورت 9 - 720p
+http://het129a.4rouwanda-shop.store/live/34114434/index.m3u8
+
+
+
+
+
+
+
+##############################
+# ⚽ قنوات الكأس والدوري - Al Kass
+##############################
+
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/557.png?54988" group-title="⚽ قنوات الكأس والدوري",الكأس 1 - 4K
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/3120.m3u8
+
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/557.png?54988" group-title="⚽ قنوات الكأس والدوري",الكأس 1 - HD
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/498849.m3u8
+
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/558.png?31318" group-title="⚽ قنوات الكأس والدوري",الكأس 2 - 4K
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/3121.m3u8
+
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/558.png?31318" group-title="⚽ قنوات الكأس والدوري",الكأس 2 - HD
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/498883.m3u8
+
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/3983.png?20448" group-title="⚽ قنوات الكأس والدوري",الكأس 3 - 4K
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/314634.m3u8
+
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/3983.png?20448" group-title="⚽ قنوات الكأس والدوري",الكأس 3 - HD
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/498886.m3u8
+
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/566.png?8174" group-title="⚽ قنوات الكأس والدوري",الكأس 4 - 4K
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/3122.m3u8
+
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/566.png?8174" group-title="⚽ قنوات الكأس والدوري",الكأس 4 - HD
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/498884.m3u8
+
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/8549.png?12698" group-title="⚽ قنوات الكأس والدوري",الكأس 5 - 4K (البث المباشر فقط)
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/120449.m3u8
+
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/8549.png?12698" group-title="⚽ قنوات الكأس والدوري",الكأس 5 - HD (البث المباشر فقط)
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/457287.m3u8
+
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/13387.jpg?56275" group-title="⚽ قنوات الكأس والدوري",الكأس 6 - 4K (البث المباشر فقط)
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/314636.m3u8
+
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/3915.png?98326" group-title="⚽ قنوات الكأس والدوري",الكأس 7 - 4K (البث المباشر فقط)
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/478760.m3u8
+
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/3915.png?98326" group-title="⚽ قنوات الكأس والدوري",الكأس 7 - HD (البث المباشر فقط)
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/478759.m3u8
+
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/3915.png?98326" group-title="⚽ قنوات الكأس والدوري",الكأس 8 - 4K
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/1465760.m3u8
+
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/3915.png?98326" group-title="⚽ قنوات الكأس والدوري",الكأس 9 - 4K
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/1415733.m3u8
+
+##############################
+# 📺 قنوات أبو ظبي الرياضية - AD Sports
+##############################
+
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/8129.jpg?72990" group-title="📺 قنوات أبو ظبي الرياضية",أبو ظبي الرياضية 1 - 4K
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/3123.m3u8
+
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/8129.jpg?72990" group-title="📺 قنوات أبو ظبي الرياضية",أبو ظبي الرياضية 1 - HD
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/498838.m3u8
+
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/8129.jpg?72990" group-title="📺 قنوات أبو ظبي الرياضية",أبو ظبي الرياضية 1 - SD
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/333581.m3u8
+
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/8129.jpg?72990" group-title="📺 قنوات أبو ظبي الرياضية",أبو ظبي الرياضية 2 - 4K
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/3124.m3u8
+
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/8129.jpg?72990" group-title="📺 قنوات أبو ظبي الرياضية",أبو ظبي الرياضية 2 - HD
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/498839.m3u8
+
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/8129.jpg?72990" group-title="📺 قنوات أبو ظبي الرياضية",أبو ظبي الرياضية 2 - SD
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/333580.m3u8
+
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/8129.jpg?72990" group-title="📺 قنوات أبو ظبي الرياضية",أبو ظبي الرياضية 3 - 4K
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/386055.m3u8
+
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/8129.jpg?72990" group-title="📺 قنوات أبو ظبي الرياضية",أبو ظبي الرياضية 3 - HD
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/301909.m3u8
+
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/8129.jpg?72990" group-title="📺 قنوات أبو ظبي الرياضية",أبو ظبي الرياضية 3 - SD
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/411003.m3u8
+
+##############################
+# 💎 قنوات أبو ظبي الرياضية بريميوم
+##############################
+
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/8129.jpg?72990" group-title="📺 قنوات أبو ظبي الرياضية",أبو ظبي الرياضية 1 بريميوم - 4K
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/301910.m3u8
+
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/8129.jpg?72990" group-title="📺 قنوات أبو ظبي الرياضية",أبو ظبي الرياضية 1 بريميوم - HD
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/288268.m3u8
+
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/8129.jpg?72990" group-title="📺 قنوات أبو ظبي الرياضية",أبو ظبي الرياضية 1 بريميوم - SD
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/411005.m3u8
+
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/8129.jpg?72990" group-title="📺 قنوات أبو ظبي الرياضية",أبو ظبي الرياضية 2 بريميوم - 4K
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/301911.m3u8
+
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/8129.jpg?72990" group-title="📺 قنوات أبو ظبي الرياضية",أبو ظبي الرياضية 2 بريميوم - HD
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/301908.m3u8
+
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/8129.jpg?72990" group-title="📺 قنوات أبو ظبي الرياضية",أبو ظبي الرياضية 2 بريميوم - SD
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/411004.m3u8
+
+##############################
+# 📡 قنوات AD Sport الإضافية
+##############################
+
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/8129.jpg?72990" group-title="📺 قنوات أبو ظبي الرياضية",AD Sport 1 - 4K
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/293201.m3u8
+
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/8129.jpg?72990" group-title="📺 قنوات أبو ظبي الرياضية",AD Sport 1 - HD
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/329205.m3u8
+
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/8129.jpg?72990" group-title="📺 قنوات أبو ظبي الرياضية",AD Sport 1 - SD
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/516882.m3u8
+
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/8129.jpg?72990" group-title="📺 قنوات أبو ظبي الرياضية",AD Sport 2 - 4K
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/293202.m3u8
+
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/8129.jpg?72990" group-title="📺 قنوات أبو ظبي الرياضية",AD Sport 2 - HD
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/329206.m3u8
+
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/8129.jpg?72990" group-title="📺 قنوات أبو ظبي الرياضية",AD Sport 2 - SD
+http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/516881.m3u8
+
+##############################
+# 🔧 قنوات تجريبية
+##############################
+
+#EXTINF:-1 group-title="🔧 قنوات تجريبية" tvg-logo="https://i.postimg.cc/FKrp6jS2/D-x-Mmbt-400x400.jpg",بي إن سبورت 1 تجريبي
+http://portal.geniptv.com:8080/live/dmtndmtnkimo/a7GPMeArdf/98085.m3u8
+
+#EXTINF:-1 group-title="🔧 قنوات تجريبية" tvg-logo="https://i.postimg.cc/FKrp6jS2/D-x-Mmbt-400x400.jpg",بي إن سبورت 2 تجريبي
+http://1789-181.123091763.it.com/live/235756_.m3u8
+
+#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/8129.jpg?72990" group-title="🔧 قنوات تجريبية",بي إن سبورت 1 - 4K تجريبي
+http://max.amigo00.com:2052/live/18631050917737/12212856565617/192644.m3u8
+
+
+
+
+
+
+EXTINF:-1 tvg-id="beinsports1.ar" tvg-name="Bein Sports 1" tvg-logo="https://prod-media.beinsports.com/image/4fbe073f17f161810fdf3dab1307b30f.128.png?ver=12-01-2025" group-title="Algeria -", بي إن سبورتس 1
+https://nl1.streamlive.to/live/19995634/79960700/714411.m3u8
+#EXTINF:-1 tvg-id="beinsports2.ar" tvg-name="Bein Sports 2" tvg-logo="https://prod-media.beinsports.com/image/4fbe073f17f161810fdf3dab1307b30f.128.png?ver=12-01-2025" group-title="Algeria -", بي إن سبورتس 2
+https://nl1.streamlive.to/live/19995634/79960700/659428.m3u8
+#EXTINF:-1 tvg-id="beinsports3.ar" tvg-name="Bein Sports 3" tvg-logo="https://prod-media.beinsports.com/image/94130ea17023c4837f0dcdda95034b65.128.png?ver=12-01-2025" group-title="Algeria -", بي إن سبورتس 3
+https://nl1.streamlive.to/live/19995634/79960700/659429.m3u8
+#EXTINF:-1 tvg-id="beinsports4.ar" tvg-name="Bein Sports 4" tvg-logo="https://prod-media.beinsports.com/image/e92b755eb0d8800175a02a35c2bf44fe.128.png?ver=12-01-2025" group-title="Algeria -", بي إن سبورتس 4
+https://nl1.streamlive.to/live/19995634/79960700/659430.m3u8
+#EXTINF:-1 tvg-id="beinsports5.ar" tvg-name="Bein Sports 5" tvg-logo="https://prod-media.beinsports.com/image/0a5052334511e344f15ae0bfafd47a67.128.png?ver=12-01-2025" group-title="Algeria -", بي إن سبورتس 5
+https://nl1.streamlive.to/live/19995634/79960700/659431.m3u8
+#EXTINF:-1 tvg-id="beinsports6.ar" tvg-name="Bein Sports 6" tvg-logo="https://prod-media.beinsports.com/image/1aa4de654d4e502b4ef4136466b13fcc.128.png?ver=12-01-2025" group-title="Algeria -", بي إن سبورتس 6
+https://nl1.streamlive.to/live/19995634/79960700/659432.m3u8
+#EXTINF:-1 tvg-id="beinsports7.ar" tvg-name="Bein Sports 7" tvg-logo="https://prod-media.beinsports.com/image/a3ce63a7a8521c37a513db67129855a8.128.png?ver=12-01-2025" group-title="Algeria -", بي إن سبورتس 7
+https://nl1.streamlive.to/live/19995634/79960700/659433.m3u8
+#EXTINF:-1 tvg-id="beinsports8.ar" tvg-name="Bein Sports 8" tvg-logo="https://prod-media.beinsports.com/image/a9dd7e3c6ee87a48cb35b729caf61eb5.128.png?ver=12-01-2025" group-title="Algeria -", بي إن سبورتس 8
+https://nl1.streamlive.to/live/19995634/79960700/659434.m3u8
+#EXTINF:-1 tvg-id="beinsports9.ar" tvg-name="Bein Sports 9" tvg-logo="https://prod-media.beinsports.com/image/de9d96171258bf940fc7b77c09b1cde4.128.png?ver=12-01-2025" group-title="Algeria -", بي إن سبورتس 9
+https://nl1.streamlive.to/live/19995634/79960700/659435.m3u8
+#EXTINF:-1 tvg-id="beinsportsextra1.ar" tvg-name="Bein Sports Xtra 1" tvg-logo="https://prod-media.beinsports.com/image/4cd31d31e16ac873f5f421d5880e88d6.128.png?ver=12-01-2025" group-title="Algeria -", بي إن سبورتس إكسترا 1
+https://nl1.streamlive.to/live/19995634/79960700/659444.m3u8
+#EXTINF:-1 tvg-id="beinsportsextra2.ar" tvg-name="Bein Sports Xtra 2" tvg-logo="https://prod-media.beinsports.com/image/051928341be67dcba03f0e04104d9047.128.png?ver=12-01-2025" group-title="Algeria -", بي إن سبورتس إكسترا 2
+https://nl1.streamlive.to/live/19995634/79960700/659443.m3u8
+#EXTINF:-1 group-title="الرياضية" tvg-logo="https://i.postimg.cc/FKrp6jS2/D-x-Mmbt-400x400.jpg",4 SPORTS
+https://pepsi.abntv.live/hls/4spstream.m3u8
+#EXTINF:-1 group-title="الرياضية" tvg-logo="https://i.postimg.cc/FKrp6jS2/D-x-Mmbt-400x400.jpg",4K IRIB
+https://ncdn.telewebion.com/faratar/live/playlist.m3u8
+
+
+
+
+
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/xSjB51j/aspor.png" group-title="⚽ القنوات الرياضية",A SPOR
+https://raw.githubusercontent.com/tecotv2025/tecotv/refs/heads/main/playlist/A_Spor.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/F0Tsz1v/htsportr.png" group-title="⚽ القنوات الرياضية",HT SPOR
+https://ciner-live.ercdn.net/htspor/htspor.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/ky3qVPc/trtspory2.png" group-title="⚽ القنوات الرياضية",TRT SPOR2 YILDIZ
+http://live.artofknot.com:5080/proxy/channel?url=https://tv-trtspor2.medya.trt.com.tr/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/3WmLjwG/trtspor22c.png" group-title="⚽ القنوات الرياضية",TRT SPOR
+http://live.artofknot.com:5080/proxy/channel?url=https://tv-trtspor-esdai.medya.trt.com.tr/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/4Rm7Z6Z/sports22.png" group-title="⚽ القنوات الرياضية",SPORTS TV
+https://live.sportstv.com.tr/hls/low/sportstv_hd/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/BfM21nC/beinhaber.png" group-title="⚽ القنوات الرياضية",BIS HABER
+https://raw.githubusercontent.com/tecotv2025/tecotv/refs/heads/main/playlist/Bein_Spor_Haber.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/abudhabi.s1.png?raw=true" group-title="⚽ القنوات الرياضية",Abu Dhabi Sport 1
+https://vo-live-media.cdb.cdn.orange.com/Content/Channel/AbuDhabiSportsChannel1/HLS/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/abudhabi.s2.png?raw=true" group-title="⚽ القنوات الرياضية",Abu Dhabi Sport 2
+https://vo-live-media.cdb.cdn.orange.com/Content/Channel/AbuDhabiSportsChannel2/HLS/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/dubai.s1.png?raw=true" group-title="⚽ القنوات الرياضية",Dubai Sport 1
+https://dmidspta.cdn.mangomolo.com/dubaisports/smil:dubaisports.stream.smil/playlist.m3u?m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/dubai.s2.png?raw=true" group-title="⚽ القنوات الرياضية",Dubai Sport 2
+https://dmitwlvvll.cdn.mgmlcdn.com/dubaisportshd/smil:dubaisportshd.smil/chunklist.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/dubai.s3.png?raw=true" group-title="⚽ القنوات الرياضية",Dubai Sport 3
+https://dmitwlvvll.cdn.mgmlcdn.com/dubaisportshd5/smil:dubaisportshd5.smil/chunklist.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/BpcV8jS.png" group-title="⚽ القنوات الرياضية",Dubai Racing
+https://dmisdracta.cdn.mgmlcdn.com/events/smil:events.stream.smil/chunklist.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/H2TTn7t.png" group-title="⚽ القنوات الرياضية",Dubai Racing 2
+https://dmithrvllta.cdn.mgmlcdn.com/dubairacing/smil:dubairacing.smil/chunklist.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/Vg4fxmc.png" group-title="⚽ القنوات الرياضية",Dubai Racing 3
+https://dmithrvllta.cdn.mgmlcdn.com/dubaimubasher/smil:dubaimubasher.smil/chunklist.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/sharqa.sport.png?raw=true" group-title="⚽ القنوات الرياضية",Al Sharjah Sport
+https://svs.itworkscdn.net/smc4sportslive/smc4tv.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/sport1.bh.png?raw=true" group-title="⚽ القنوات الرياضية",Bahrain Sport 1
+https://5c7b683162943.streamlock.net/live/ngrp:sportsone_all/chunklist.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/sport2.bh.png?raw=true" group-title="⚽ القنوات الرياضية",Bahrain Sport 2
+https://5c7b683162943.streamlock.net/live/ngrp:bahrainsportstwo_all/chunklist.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/kuwait.s1.png?raw=true" group-title="⚽ القنوات الرياضية",Kuwait Sport
+https://kwtspta.cdn.mangomolo.com/sp/smil:sp.stream.smil/chunklist.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/kuwait.s2.png?raw=true" group-title="⚽ القنوات الرياضية",Kuwait Sport 2
+https://kwtsplta.cdn.mangomolo.com/spl/smil:spl.stream.smil/chunklist.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/sport.om.png?raw=true" group-title="⚽ القنوات الرياضية",Oman Sport
+https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/playllist.m3u8
+
+#EXTINF:-1 tvg-logo="https://aloula.faulio.com/storage/mediagallery/36/f0/fullhd_7b5a1c62d4c0785dff72d85e41ade22b9478258b.png" group-title="⚽ القنوات الرياضية",ksa sport 1
+https://www.elahmad.com/tv/m3u8/online_live_14_tv.m3u8?id=saudi_sport1&t=11111111
+
+#EXTINF:-1 tvg-logo="https://aloula.faulio.com/storage/mediagallery/57/09/fullhd_470ef56d4e496e82df1d74aca7edeef597b2e541.png" group-title="⚽ القنوات الرياضية",ksa sport 2
+https://www.elahmad.com/tv/m3u8/online_live_14_tv.m3u8?id=saudi_sport2&t=11111111
+
+#EXTINF:-1 tvg-logo="https://aloula.faulio.com/storage/mediagallery/2d/ee/fullhd_f1d461237592b4d46c44a6f300df1d97051f7c55.png" group-title="⚽ القنوات الرياضية",ksa sport 3
+https://www.elahmad.com/tv/m3u8/online_live_14_tv.m3u8?id=saudi_sport3&t=11111111
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/N19JFwZ/mbc.png" group-title="⚽ القنوات الرياضية",MBC 1
+https://mbc1-enc.edgenextcdn.net/out/v1/0965e4d7deae49179172426cbfb3bc5e/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/N19JFwZ/mbc.png" group-title="⚽ القنوات الرياضية",MBC 1
+https://d2ow8h651gs7dx.cloudfront.net/out/v1/0965e4d7deae49179172426cbfb3bc5e/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/N19JFwZ/mbc.png" group-title="⚽ القنوات الرياضية",MBC 1
+https://mbc1-usa-enc.edgenextcdn.net/out/v1/8c1ce74bfd0743aab1026ef5b2aecfa4/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/N19JFwZ/mbc.png" group-title="⚽ القنوات الرياضية",MBC 1
+https://shls-mbc1na-prod-dub.shahid.net/out/v1/84ab37e99d6e4b16b33c6600f94f6ccb/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/N19JFwZ/mbc.png" group-title="⚽ القنوات الرياضية",MBC 1
+https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-1-na/eec141533c90dd34722c503a296dd0d8/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/N19JFwZ/mbc.png" group-title="⚽ القنوات الرياضية",MBC 1
+https://shls-live-enc.edgenextcdn.net/out/v1/0965e4d7deae49179172426cbfb3bc5e/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/N19JFwZ/mbc.png" group-title="⚽ القنوات الرياضية",MBC 1 USA
+https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-1-usa/fdac3a4fc0473f1f56e07ec1d63a4b7b/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/N19JFwZ/mbc.png" group-title="⚽ القنوات الرياضية",MBC 1 USA
+https://mbc-1-usa-ak.akamaized.net/out/v1/8c1ce74bfd0743aab1026ef5b2aecfa4/index.m3u8
+
+##############################
+# 2️⃣ 📰 القنوات الإخبارية
+##############################
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/jazeera.qa.png?raw=true" group-title="📰 القنوات الإخبارية",Al Jazeera
+https://live-hls-web-aja-fa.thehlive.com/AJA/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/jazeeram.qa.png?raw=true" group-title="📰 القنوات الإخبارية",Al Jazeera Mubasher
+https://live-hls-web-ajm.getaj.net/AJM/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/alaraby.qa.png?raw=true" group-title="📰 القنوات الإخبارية",Al Arabi
+https://live.kwikmotion.com/alaraby1live/alaraby_abr/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/alghad.png?raw=true" group-title="📰 القنوات الإخبارية",Al Ghad
+https://eazyvwqssi.erbvr.com/alghadtv/alghadtv.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/almamlaka.jo.png?raw=true" group-title="📰 القنوات الإخبارية",Al Mamlaka
+https://bcovlive-a.akamaihd.net/4109c7ba30fd4a44ad9afe917c67a8c8/eu-central-1/6415809151001/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/alhiwar.png?raw=true" group-title="📰 القنوات الإخبارية",Al Hiwar
+https://mn-nl.mncdn.com/alhiwar_live/smil:alhiwar.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/trt.png?raw=true" group-title="📰 القنوات الإخبارية",TRT Arabi
+https://tv-trtarabi.medya.trt.com.tr/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/al24news.al.png?raw=true" group-title="📰 القنوات الإخبارية",AL24 News
+https://cdn.live.easybroadcast.io/abr_corp/66_al24_u4yga6h/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/news.kw.png?raw=true" group-title="📰 القنوات الإخبارية",Kuwait News
+https://kwtsplta.cdn.mangomolo.com/kb/smil:kb.stream.smil/chunklist.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/almashhad.png?raw=true" group-title="📰 القنوات الإخبارية",Al Mash-had
+https://fastly.live.brightcove.com/6378439181112/ap-south-1/6313884884001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoiaWR2d3RnLmVncmVzcy5qYXYzemwiLCJhY2NvdW50X2lkIjoiNjMxMzg4NDg4NDAwMSIsImVobiI6ImZhc3RseS5saXZlLmJyaWdodGNvdmUuY29tIiwiaXNzIjoiYmxpdmUtcGxheWJhY2stc291cmNlLWFwaSIsInN1YiI6InBhdGhtYXB0b2tlbiIsImF1ZCI6WyI2MzEzODg0ODg0MDAxIl0sImp0aSI6IjYzNzg0MzkxODExMTIifQ.EdlNOMQrd1QZ3Y_9mU1f4eKS3spc8eU5sIlXnWLbgmY/chunklist__1.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/alarabiya.png?raw=true" group-title="📰 القنوات الإخبارية",Al Arabiyyah
+https://live.alarabiya.net/alarabiapublish/alarabiya.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/alhadath.png?raw=true" group-title="📰 القنوات الإخبارية",Al Hadath
+https://live.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/alarabiya-p.jpg?raw=true" group-title="📰 القنوات الإخبارية",Al Arab Programs
+https://d1j4r34gq3qw9y.cloudfront.net/out/v1/96804f3a14864641a21c25e8ca9afb74/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/alarabiya-p.jpg?raw=true" group-title="📰 القنوات الإخبارية",Cairo News
+https://bcovlive-a.akamaihd.net/d30cbb3350af4cb7a6e05b9eb1bfd850/eu-west-1/6057955906001/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/news.ksa.png?raw=true" group-title="📰 القنوات الإخبارية",Saudi News
+https://shd-gcp-live.edgenextcdn.net/live/bitmovin-al-ekhbaria/297b3ef1cd0633ad9cfba7473a686a06/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/watan.eg.png?raw=true" group-title="📰 القنوات الإخبارية",Watan Eg
+https://rp.tactivemedia.com/watantv_source/live/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/sharq.eg.png?raw=true" group-title="📰 القنوات الإخبارية",Elsharq Eg
+https://mn-nl.mncdn.com/elsharq_live/live/chunklist.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/mkammilin.eg.png?raw=true" group-title="📰 القنوات الإخبارية",Mkammileen Eg
+https://mn-nl.mncdn.com/mekameleen/smil:mekameleentv.smil/chunklist.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/shuoob.eg.png?raw=true" group-title="📰 القنوات الإخبارية",AlShoob tv
+https://play.tactivemedia.com/memfs/c5919b97-5329-4b84-91b2-613c6ed9953e.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/news.iq.png?raw=true" group-title="📰 القنوات الإخبارية",Al Iraqia News
+https://cdn.catiacast.video/abr/78054972db7708422595bc96c6e024ac/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/inews.png?raw=true" group-title="📰 القنوات الإخبارية",INEWS
+https://live.i-news.tv/hls/stream.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/asharq.ksa.png?raw=true" group-title="📰 القنوات الإخبارية",Asharq News
+https://bcovlive-a.akamaihd.net/0b75ef0a49e24704a4ca023d3a82c2df/ap-south-1/6203311941001/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/ch9.png?raw=true" group-title="📰 القنوات الإخبارية",Channel 9
+https://cdn.bestream.io:19360/alqanat9/alqanat9.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/almayadin.png?raw=true" group-title="📰 القنوات الإخبارية",Al Mayadeen
+https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/almanar.lb.png?raw=true" group-title="📰 القنوات الإخبارية",Al Manaar
+https://edge.fastpublish.me/live/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/cgtn.png?raw=true" group-title="📰 القنوات الإخبارية",CGTN Arabic
+https://arabic-livews.cgtn.com/hls/LSveq57bErWLinBnxosqjisZ220802LSTefTAS9zc9mpU08y3np9TH220802cd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/skynews.png?raw=true" group-title="📰 القنوات الإخبارية",Sky News Arabia
+https://stream.skynewsarabia.com/hls/sna.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/bbc.png?raw=true" group-title="📰 القنوات الإخبارية",BBC Arabic
+https://vs-hls-pushb-ww.live.cf.md.bbci.co.uk/x=4/i=urn:bbc:pips:service:bbc_arabic_tv/pc_hd_abr_v2.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/france24.png?raw=true" group-title="📰 القنوات الإخبارية",France 24
+https://live.france24.com/hls/live/2037222/F24_AR_HI_HLS/master_5000.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/fr/thumb/e/ed/MonteCarloDoualiya_2013.svg/1024px-MonteCarloDoualiya_2013.svg.png" group-title="📰 القنوات الإخبارية",MCD
+https://montecarlodoualiya128k.ice.infomaniak.ch/mc-doualiya.mp3
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/alhurra.png?raw=true" group-title="📰 القنوات الإخبارية",Al Hurra
+https://mbn-ingest-worldsafe.akamaized.net/hls/live/2038900-b/MBN_Alhurra_Worldsafe_HLS/master_2596.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/i24.png?raw=true" group-title="📰 القنوات الإخبارية",i24 Arabic
+https://bcovlive-a.akamaihd.net/95116e8d79524d87bf3ac20ba04241e3/eu-central-1/5377161796001/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/dw.png?raw=true" group-title="📰 القنوات الإخبارية",DW Arabic
+https://dwamdstream103.akamaized.net/hls/live/2015526/dwstream103/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/rt.png?raw=true" group-title="📰 القنوات الإخبارية",RT ARABIC
+https://rt-arb.rttv.com/live/rtarab/playlist.m3u8
+
+##############################
+# 3️⃣ 🎬 قنوات الأفلام
+##############################
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/mc475nQ/shadidblck.jpg" group-title="🎬 قنوات الأفلام",MBC AFLAM
+https://shls-live-enc.edgenextcdn.net/out/v1/0044dd4b001a466c941ad77b04a574a2/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/mc475nQ/shadidblck.jpg" group-title="🎬 قنوات الأفلام",MBC MOVIES
+https://shls-live-enc.edgenextcdn.net/out/v1/90143f040feb40589d18c57863d9e829/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/mc475nQ/shadidblck.jpg" group-title="🎬 قنوات الأفلام",MBC MOVIES ACTION
+https://shls-live-enc.edgenextcdn.net/out/v1/46079e838e65490c8299f902a7731168/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/mc475nQ/shadidblck.jpg" group-title="🎬 قنوات الأفلام",MBC MOVIES THRILLER
+https://shls-live-enc.edgenextcdn.net/out/v1/f6d718e841f8442f8374de47f18c93a7/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/rotana.cinema.png?raw=true" group-title="🎬 قنوات الأفلام",Rotana Cinema
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/rotana-aflam-plus/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/rotana.classic.png?raw=true" group-title="🎬 قنوات الأفلام",Rotana Classic
+https://bcovlive-a.akamaihd.net/0debf5648e584e5fb795c3611c5c0252/eu-central-1/6057955906001/profile_0/chunklist.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/shahid.ar.png?raw=true" group-title="🎬 قنوات الأفلام",Shahid AFLAM
+https://shls-live-enc.edgenextcdn.net/out/v1/0044dd4b001a466c941ad77b04a574a2/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/shahid.action.png?raw=true" group-title="🎬 قنوات الأفلام",Shahid Action
+https://shls-live-enc.edgenextcdn.net/out/v1/46079e838e65490c8299f902a7731168/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/shahid.thriller.png?raw=true" group-title="🎬 قنوات الأفلام",Shahid THRILLER
+https://shls-live-enc.edgenextcdn.net/out/v1/f6d718e841f8442f8374de47f18c93a7/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/7W5nWYV/rotanacinema.png" group-title="🎬 قنوات الأفلام",ROTANA CINEMA KSA
+https://bcovlive-a.akamaihd.net/9527a892aeaf43019fd9eeb77ad1516e/eu-central-1/6057955906001/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/7W5nWYV/rotanacinema.png" group-title="🎬 قنوات الأفلام",ROTANA CINEMA KSA
+https://rotana.hibridcdn.net/rotana/cinema_net-7Y83PP5adWixDF93/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/7W5nWYV/rotanacinema.png" group-title="🎬 قنوات الأفلام",ROTANA CINEMA MASR
+https://rotana.hibridcdn.net/rotananet/cinemamasr_net-7Y83PP5adWixDF93/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/7W5nWYV/rotanacinema.png" group-title="🎬 قنوات الأفلام",ROTANA AFLAM PLUS
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/rotana-aflam-plus/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/7W5nWYV/rotanacinema.png" group-title="🎬 قنوات الأفلام",ROTANA AFLAM PLUS
+https://cdn1.iptvcdn.tv/mcnc/ROTANA_AFLAMPLUS/playlist.m3u8?token=demo
+
+##############################
+# 4️⃣ 🎵 قنوات الموسيقى
+##############################
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/trt.music.png?raw=true" group-title="🎵 قنوات الموسيقى",TRT Musik
+https://tv-trtmuzik.medya.trt.com.tr/master_720.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/jordan.music.png?raw=true" group-title="🎵 قنوات الموسيقى",JORDAN Music
+https://playlist.fasttvcdn.com/pl/cc0blorawy1ibohhrupraa/Song/playlist/3.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/wanasah.png?raw=true" group-title="🎵 قنوات الموسيقى",Wanasah
+https://shls-wanasah-prod-dub.shahid.net/out/v1/c84ef3128e564b74a6a796e8b6287de6/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/ajman.png?raw=true" group-title="🎵 قنوات الموسيقى",Ajman
+https://cdn1.logichost.in/ajmantv/live/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/LZR8RK4/rotanamusic.png" group-title="🎵 قنوات الموسيقى",ROTANA MUSIC
+https://cdn1.iptvcdn.tv/mcnc/ROTANA_MUSIC/playlist.m3u8?&token=demo
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/LZR8RK4/rotanamusic.png" group-title="🎵 قنوات الموسيقى",ROTANA MUSIC
+https://rotana.hibridcdn.net/rotananet/music_net-7Y83PP5adWixDF93/playlist.m3u8
+
+##############################
+# 5️⃣ 🇰🇼 القنوات الكويتية
+##############################
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/ktv1.kw.png?raw=true" group-title="🇰🇼 القنوات الكويتية",Kuwait tv
+https://kwtktv1ta.cdn.mangomolo.com/ktv1/smil:ktv1.stream.smil/chunklist.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/qurein.kw.png?raw=true" group-title="🇰🇼 القنوات الكويتية",Al Querain
+https://kwtktvaqta.cdn.mangomolo.com/ktvaq/smil:tktvaq.stream.smil/chunklist.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/ktv2.kw.png?raw=true" group-title="🇰🇼 القنوات الكويتية",Kuwait 2
+https://kwtktv2ta.cdn.mangomolo.com/ktv2/smil:ktv2.stream.smil/chunklist.m3u8
+
+##############################
+# 6️⃣ 🇸🇦 القنوات السعودية
+##############################
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/saudi.ksa.png?raw=true" group-title="🇸🇦 القنوات السعودية",Saudi 1
+https://shd-gcp-live.edgenextcdn.net/live/bitmovin-saudi-tv/2ad66056b51fd8c1b624854623112e43/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/abidm8/iptv.ara/refs/heads/main/img/thikrayat.sa.png" group-title="🇸🇦 القنوات السعودية",Thikrayat tv
+https://www.elAhmad.com/tv/m3u8/online_live_14_tv.m3u8?id=saudi_thikrayat&t=11111111
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/alkhaleej.ksa.png?raw=true" group-title="🇸🇦 القنوات السعودية",Al Khaleej
+http://mn-nl.mncdn.com/khalij/khalij/chunklist.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/sbc.ksa.png?raw=true" group-title="🇸🇦 القنوات السعودية",SBC
+https://shd-gcp-live.edgenextcdn.net/live/bitmovin-sbc/90e09c0c28db26435799b4a14892a167/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/iqraa.ksa.png?raw=true" group-title="🇸🇦 القنوات السعودية",Iqra
+https://playlist.fasttvcdn.com/pl/dlkqw1ftuvuuzkcb4pxdcg/Iqraafasttv3/playlist.m3u8?v=1354583377
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/makkah.ksa.png?raw=true" group-title="🇸🇦 القنوات السعودية",Makkah tv
+https://media2.streambrothers.com:1936/8122/8122/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/peacetv.png?raw=true" group-title="🇸🇦 القنوات السعودية",Peace tv
+https://dzkyvlfyge.erbvr.com/PeaceTvEnglish/index.m3u8
+
+##############################
+# 7️⃣ 🇪🇬 القنوات المصرية
+##############################
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/dQV1zQG/cbclive.jpg" group-title="🇪🇬 القنوات المصرية",CBC LIVE EGY
+https://bcovlive-a.akamaihd.net/0c223ac0a9d34b30b100cb92ee83b70a/us-west-2/6057955906001/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/0jpsxm7/cbcsofra.png" group-title="🇪🇬 القنوات المصرية",CBC SOFRA
+https://uvotv-aniview.global.ssl.fastly.net/hls/live/2119197/cbcsofra/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/HKtfJmp/cbcextranews.jpg" group-title="🇪🇬 القنوات المصرية",CBC EXTRA NEWS
+https://uvotv-aniview.global.ssl.fastly.net/hls/live/2119197/cbcextranews/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/21JHLXpk/cbcdrama.jpg" group-title="🇪🇬 القنوات المصرية",CBC DRAMA
+https://fl1002.bozztv.com/ga-cbcdrama/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/N2msLHmY/dmcdrama.png" group-title="🇪🇬 القنوات المصرية",DMC DRAMA
+https://uvotv-aniview.global.ssl.fastly.net/10010/dvr/hls/dmcdrama/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Kcwxz7NQ/dmceg.png" group-title="🇪🇬 القنوات المصرية",DMC EGY
+https://uvotv-aniview.global.ssl.fastly.net/10010/dvr/hls/dmc/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Kcwxz7NQ/dmceg.png" group-title="🇪🇬 القنوات المصرية",DMC EGY
+https://bcovlive-a.akamaihd.net/ba3169004d40484b9ff29e194964c9e8/eu-west-1/6057955906001/playlist.m3u8
+
+##############################
+# 8️⃣ 🇶🇦 القنوات القطرية
+##############################
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/qatar1.qa.png?raw=true" group-title="🇶🇦 القنوات القطرية",Qatar tv
+https://qatartv.akamaized.net/hls/live/2026573/qtv1/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/qatar2.qa.png?raw=true" group-title="🇶🇦 القنوات القطرية",Qatar 2
+https://qatartv.akamaized.net/hls/live/2026574/qtv2/4.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/rayyan1.qa.png?raw=true" group-title="🇶🇦 القنوات القطرية",Al Rayyan 1
+https://alrayyancdn.vidgyor.com/pub-noalrayy3pwz0l/liveabr/pub-noalrayy3pwz0l/live_1080p/chunks_dvr.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/rayyan2.qa.png?raw=true" group-title="🇶🇦 القنوات القطرية",Al Rayyan Qadeem
+https://alrayyancdn.vidgyor.com/pub-nooldraybinbdh/liveabr/pub-nooldraybinbdh/live_1080p/chunks_dvr.m3u8
+
+##############################
+# 9️⃣ 🌍 قنوات الدول الأخرى
+##############################
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/jrtv.jo.png?raw=true" group-title="🌍 قنوات الدول الأخرى",Jordan tv
+https://jrtv-live.ercdn.net/jordanhd/jordanhd_1080p.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/roya.jo.png?raw=true" group-title="🌍 قنوات الدول الأخرى",Roya
+https://royatv-live.daioncdn.net/royatv/royatv.m3u8?v=1442954305
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/amman.jo.png?raw=true" group-title="🌍 قنوات الدول الأخرى",Amman
+https://ammantv-live.ercdn.net/ammantvhd/ammantvhd.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/fact.jo.png?raw=true" group-title="🌍 قنوات الدول الأخرى",Al Haqiqah Jo
+https://ghaasiflu.online/alhqeqa/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/noonfm.jo.png?raw=true" group-title="🌍 قنوات الدول الأخرى",Noon FM
+https://samson.streamerr.co:8081/radionoon/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/oman.om.png?raw=true" group-title="🌍 قنوات الدول الأخرى",Oman tv
+https://partneta.cdn.mgmlcdn.com/omantv/smil:omantv.stream.smil/playllist.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/culture.om.png?raw=true" group-title="🌍 قنوات الدول الأخرى",Oman Culture
+https://partwota.cdn.mgmlcdn.com/omcultural/smil:omcultural.stream.smil/playllist.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/news.om.png?raw=true" group-title="🌍 قنوات الدول الأخرى",Oman Mubashir
+https://partwota.cdn.mgmlcdn.com/omlive/smil:omlive.stream.smil/playllist.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/bahrain.bh.png?raw=true" group-title="🌍 قنوات الدول الأخرى",Bahrain
+https://5c7b683162943.streamlock.net/live/ngrp:bahraintvmain_all/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/bahrain2.bh.png?raw=true" group-title="🌍 قنوات الدول الأخرى",Bahrain Int
+https://5c7b683162943.streamlock.net/live/ngrp:bahraininternational_all/chunklist.m3u8
