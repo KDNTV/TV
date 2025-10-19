@@ -581,13 +581,12 @@ https://raw.githubusercontent.com/alysjc7-dot/site/refs/heads/main/14.m3u8
 https://raw.githubusercontent.com/alysjc7-dot/site/refs/heads/main/15.m3u8
 #EXTINF:-1 tvg-logo="" group-title="OSN",OSN MOVIES HOLLYWOID
 https://raw.githubusercontent.com/alysjc7-dot/site/refs/heads/main/16.m3u8
-#EXTINF:-1 tvg-logo="" group-title="TEST",TEST
-https://raw.githubusercontent.com/alysjc7-dot/site/refs/heads/main/17.m3u8
+
 #EXTINF:-1 tvg-logo="" group-title="OSN",OSN ACTION
 https://raw.githubusercontent.com/alysjc7-dot/site/refs/heads/main/18.m3u8
 #EXTINF:-1 tvg-logo="" group-title="OSN",OSN NOW
 https://raw.githubusercontent.com/alysjc7-dot/site/refs/heads/main/19.m3u8
-#EXTINF:-1 tvg-logo="" group-title="OSN",OSN LIFE
+#EXTINF:-1 tvg-logo="" group-title="OSN",OSN discovery
 https://raw.githubusercontent.com/alysjc7-dot/site/refs/heads/main/20.m3u8
 
 
