@@ -689,8 +689,6 @@ https://montecarlodoualiya128k.ice.infomaniak.ch/mc-doualiya.mp3
 #EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/alhurra.png?raw=true" group-title="📰 القنوات الإخبارية",Al Hurra
 https://mbn-ingest-worldsafe.akamaized.net/hls/live/2038900-b/MBN_Alhurra_Worldsafe_HLS/master_2596.m3u8
 
-#EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/i24.png?raw=true" group-title="📰 القنوات الإخبارية",i24 Arabic
-https://bcovlive-a.akamaihd.net/95116e8d79524d87bf3ac20ba04241e3/eu-central-1/5377161796001/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://github.com/abidm8/iptv.ara/blob/main/img/dw.png?raw=true" group-title="📰 القنوات الإخبارية",DW Arabic
 https://dwamdstream103.akamaized.net/hls/live/2015526/dwstream103/index.m3u8
