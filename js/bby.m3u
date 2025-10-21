@@ -328,18 +328,264 @@ http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/329206.m3u8
 #EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/8129.jpg?72990" group-title="📺 قنوات أبو ظبي الرياضية",AD Sport 2 - SD
 http://cmc.best-ott.me/live/bein_4K_STRONG/g32mXj2&action/516881.m3u8
 
-##############################
-# 🔧 قنوات تجريبية
-##############################
 
-#EXTINF:-1 group-title="🔧 قنوات تجريبية" tvg-logo="https://i.postimg.cc/FKrp6jS2/D-x-Mmbt-400x400.jpg",بي إن سبورت 1 تجريبي
-http://portal.geniptv.com:8080/live/dmtndmtnkimo/a7GPMeArdf/98085.m3u8
 
-#EXTINF:-1 group-title="🔧 قنوات تجريبية" tvg-logo="https://i.postimg.cc/FKrp6jS2/D-x-Mmbt-400x400.jpg",بي إن سبورت 2 تجريبي
-http://1789-181.123091763.it.com/live/235756_.m3u8
 
-#EXTINF:-1 tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/8129.jpg?72990" group-title="🔧 قنوات تجريبية",بي إن سبورت 1 - 4K تجريبي
-http://max.amigo00.com:2052/live/18631050917737/12212856565617/192644.m3u8
+
+
+
+
+
+#EXTINF:-1 tvg-id="" tvg-name="##### beIN SP⚽RTS HD #####" tvg-logo="" group-title="AR| BEIN SPORTS ⁸ᴷ & ᴴᴰ ⚽",##### beIN SP⚽RTS HD #####
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544436.m3u8
+#EXTINF:-1 tvg-id="beINSportsNews.qa" tvg-name="8K: beIN SP⚽RTS NEWS HD ◉" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ⁸ᴷ & ᴴᴰ ⚽",8K: beIN SP⚽RTS NEWS HD ◉
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544435.m3u8
+#EXTINF:-1 tvg-id="beINSports.qa" tvg-name="8K: beIN SP⚽RTS GLOBAL HD ◉" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ⁸ᴷ & ᴴᴰ ⚽",8K: beIN SP⚽RTS GLOBAL HD ◉
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544434.m3u8
+#EXTINF:-1 tvg-id="beINSports1.qa" tvg-name="8K: beIN SP⚽RTS 1 HD ◉" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ⁸ᴷ & ᴴᴰ ⚽",8K: beIN SP⚽RTS 1 HD ◉
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544431.m3u8
+#EXTINF:-1 tvg-id="beINSports2.qa" tvg-name="8K: beIN SP⚽RTS 2 HD ◉" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ⁸ᴷ & ᴴᴰ ⚽",8K: beIN SP⚽RTS 2 HD ◉
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544430.m3u8
+#EXTINF:-1 tvg-id="beINSports3.qa" tvg-name="8K: beIN SP⚽RTS 3 HD ◉" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ⁸ᴷ & ᴴᴰ ⚽",8K: beIN SP⚽RTS 3 HD ◉
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544429.m3u8
+#EXTINF:-1 tvg-id="beINSports4.qa" tvg-name="8K: beIN SP⚽RTS 4 HD ◉" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ⁸ᴷ & ᴴᴰ ⚽",8K: beIN SP⚽RTS 4 HD ◉
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544428.m3u8
+#EXTINF:-1 tvg-id="beINSports5.qa" tvg-name="8K: beIN SP⚽RTS 5 HD ◉" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ⁸ᴷ & ᴴᴰ ⚽",8K: beIN SP⚽RTS 5 HD ◉
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544427.m3u8
+#EXTINF:-1 tvg-id="beINSports6.qa" tvg-name="8K: beIN SP⚽RTS 6 HD ◉" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ⁸ᴷ & ᴴᴰ ⚽",8K: beIN SP⚽RTS 6 HD ◉
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544426.m3u8
+#EXTINF:-1 tvg-id="beINSports7.qa" tvg-name="8K: beIN SP⚽RTS 7 HD ◉" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ⁸ᴷ & ᴴᴰ ⚽",8K: beIN SP⚽RTS 7 HD ◉
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544425.m3u8
+#EXTINF:-1 tvg-id="beINSports8.qa" tvg-name="8K: beIN SP⚽RTS 8 HD ◉" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ⁸ᴷ & ᴴᴰ ⚽",8K: beIN SP⚽RTS 8 HD ◉
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544424.m3u8
+#EXTINF:-1 tvg-id="beINSports9.qa" tvg-name="8K: beIN SP⚽RTS 9 HD ◉" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ⁸ᴷ & ᴴᴰ ⚽",8K: beIN SP⚽RTS 9 HD ◉
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544423.m3u8
+#EXTINF:-1 tvg-id="beINSportsXtra1.qa" tvg-name="8K: beIN SP⚽RTS 1 XTRA HD ◉" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ⁸ᴷ & ᴴᴰ ⚽",8K: beIN SP⚽RTS 1 XTRA HD ◉
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544422.m3u8
+#EXTINF:-1 tvg-id="beINSportsXtra2.qa" tvg-name="8K: beIN SP⚽RTS 2 XTRA HD ◉" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ⁸ᴷ & ᴴᴰ ⚽",8K: beIN SP⚽RTS 2 XTRA HD ◉
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544421.m3u8
+#EXTINF:-1 tvg-id="beINSportsXtra3.qa" tvg-name="8K: beIN SP⚽RTS 3 XTRA HD ◉" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ⁸ᴷ & ᴴᴰ ⚽",8K: beIN SP⚽RTS 3 XTRA HD ◉
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544420.m3u8
+#EXTINF:-1 tvg-id="beINSports1En.qa" tvg-name="8K: beIN SP⚽RTS 1 ENGLISH HD ◉" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ⁸ᴷ & ᴴᴰ ⚽",8K: beIN SP⚽RTS 1 ENGLISH HD ◉
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544419.m3u8
+#EXTINF:-1 tvg-id="beINSports2En.qa" tvg-name="8K: beIN SP⚽RTS 2 ENGLISH HD ◉" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ⁸ᴷ & ᴴᴰ ⚽",8K: beIN SP⚽RTS 2 ENGLISH HD ◉
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544418.m3u8
+#EXTINF:-1 tvg-id="BeinSports1.fr" tvg-name="8K: beIN SP⚽RTS 1 FRANCE HD ◉" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ⁸ᴷ & ᴴᴰ ⚽",8K: beIN SP⚽RTS 1 FRANCE HD ◉
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544417.m3u8
+#EXTINF:-1 tvg-id="BeinSports2.fr" tvg-name="8K: beIN SP⚽RTS 2 FRANCE HD" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ⁸ᴷ & ᴴᴰ ⚽",8K: beIN SP⚽RTS 2 FRANCE HD
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544416.m3u8
+#EXTINF:-1 tvg-id="BeinSports3.fr" tvg-name="8K: beIN SP⚽RTS 3 FRANCE HD ◉" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ⁸ᴷ & ᴴᴰ ⚽",8K: beIN SP⚽RTS 3 FRANCE HD ◉
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544415.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="##### beIN SP⚽RTS ʰᵉᵛᶜ #####" tvg-logo="" group-title="AR| BEIN SPORTS ⁸ᴷ & ʰᵉᵛᶜ ⚽",##### beIN SP⚽RTS ʰᵉᵛᶜ #####
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544493.m3u8
+#EXTINF:-1 tvg-id="beINSports1.qa" tvg-name="8K: beIN SP⚽RTS 1 ʰᵉᵛᶜ" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ⁸ᴷ & ʰᵉᵛᶜ ⚽",8K: beIN SP⚽RTS 1 ʰᵉᵛᶜ
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544491.m3u8
+#EXTINF:-1 tvg-id="beINSports2.qa" tvg-name="8K: beIN SP⚽RTS 2 ʰᵉᵛᶜ" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ⁸ᴷ & ʰᵉᵛᶜ ⚽",8K: beIN SP⚽RTS 2 ʰᵉᵛᶜ
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544490.m3u8
+#EXTINF:-1 tvg-id="beINSports3.qa" tvg-name="8K: beIN SP⚽RTS 3 ʰᵉᵛᶜ" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ⁸ᴷ & ʰᵉᵛᶜ ⚽",8K: beIN SP⚽RTS 3 ʰᵉᵛᶜ
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544489.m3u8
+#EXTINF:-1 tvg-id="beINSports4.qa" tvg-name="8K: beIN SP⚽RTS 4 ʰᵉᵛᶜ" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ⁸ᴷ & ʰᵉᵛᶜ ⚽",8K: beIN SP⚽RTS 4 ʰᵉᵛᶜ
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544488.m3u8
+#EXTINF:-1 tvg-id="beINSports5.qa" tvg-name="8K: beIN SP⚽RTS 5 ʰᵉᵛᶜ" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ⁸ᴷ & ʰᵉᵛᶜ ⚽",8K: beIN SP⚽RTS 5 ʰᵉᵛᶜ
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544487.m3u8
+#EXTINF:-1 tvg-id="beINSports6.qa" tvg-name="8K: beIN SP⚽RTS 6 ʰᵉᵛᶜ" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ⁸ᴷ & ʰᵉᵛᶜ ⚽",8K: beIN SP⚽RTS 6 ʰᵉᵛᶜ
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544486.m3u8
+#EXTINF:-1 tvg-id="beINSports7.qa" tvg-name="8K: beIN SP⚽RTS 7 ʰᵉᵛᶜ" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ⁸ᴷ & ʰᵉᵛᶜ ⚽",8K: beIN SP⚽RTS 7 ʰᵉᵛᶜ
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544485.m3u8
+#EXTINF:-1 tvg-id="beINSports8.qa" tvg-name="8K: beIN SP⚽RTS 8 ʰᵉᵛᶜ" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ⁸ᴷ & ʰᵉᵛᶜ ⚽",8K: beIN SP⚽RTS 8 ʰᵉᵛᶜ
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544484.m3u8
+#EXTINF:-1 tvg-id="beINSports9.qa" tvg-name="8K: beIN SP⚽RTS 9 ʰᵉᵛᶜ" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ⁸ᴷ & ʰᵉᵛᶜ ⚽",8K: beIN SP⚽RTS 9 ʰᵉᵛᶜ
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544483.m3u8
+#EXTINF:-1 tvg-id="beINSportsXtra1.qa" tvg-name="8K: beIN SP⚽RTS 1 XTRA ʰᵉᵛᶜ" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ⁸ᴷ & ʰᵉᵛᶜ ⚽",8K: beIN SP⚽RTS 1 XTRA ʰᵉᵛᶜ
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544482.m3u8
+#EXTINF:-1 tvg-id="beINSportsXtra2.qa" tvg-name="8K: beIN SP⚽RTS 2 XTRA ʰᵉᵛᶜ" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ⁸ᴷ & ʰᵉᵛᶜ ⚽",8K: beIN SP⚽RTS 2 XTRA ʰᵉᵛᶜ
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544481.m3u8
+#EXTINF:-1 tvg-id="beINSportsXtra3.qa" tvg-name="8K: beIN SP⚽RTS 3 XTRA ʰᵉᵛᶜ" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ⁸ᴷ & ʰᵉᵛᶜ ⚽",8K: beIN SP⚽RTS 3 XTRA ʰᵉᵛᶜ
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544480.m3u8
+#EXTINF:-1 tvg-id="beINSports1En.qa" tvg-name="8K: beIN SP⚽RTS 1 ENGLISH ʰᵉᵛᶜ" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ⁸ᴷ & ʰᵉᵛᶜ ⚽",8K: beIN SP⚽RTS 1 ENGLISH ʰᵉᵛᶜ
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544479.m3u8
+#EXTINF:-1 tvg-id="beINSports2En.qa" tvg-name="8K: beIN SP⚽RTS 2 ENGLISH ʰᵉᵛᶜ" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ⁸ᴷ & ʰᵉᵛᶜ ⚽",8K: beIN SP⚽RTS 2 ENGLISH ʰᵉᵛᶜ
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544478.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="####### SS ᴴᴰ #######" tvg-logo="" group-title="AR| BEIN SPORTS ˢˢ ⚽",####### SS ᴴᴰ #######
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/706552.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="SS: ALKASS 5 ᴿᴬᵂ" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/13830.jpg?ver=12418" group-title="AR| BEIN SPORTS ˢˢ ⚽",SS: ALKASS 5 ᴿᴬᵂ
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/1027206.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="SS: ALKASS 6 ᴿᴬᵂ" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/13830.jpg?ver=12418" group-title="AR| BEIN SPORTS ˢˢ ⚽",SS: ALKASS 6 ᴿᴬᵂ
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/1027205.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="SS: ALKASS 7 ᴿᴬᵂ" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/13830.jpg?ver=12418" group-title="AR| BEIN SPORTS ˢˢ ⚽",SS: ALKASS 7 ᴿᴬᵂ
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/1027204.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="SS: ALKASS 8 ᴿᴬᵂ" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/13830.jpg?ver=12418" group-title="AR| BEIN SPORTS ˢˢ ⚽",SS: ALKASS 8 ᴿᴬᵂ
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/1027203.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="SS: beIN SP⚽RTS 1 HD" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ˢˢ ⚽",SS: beIN SP⚽RTS 1 HD
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/706551.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="SS: beIN SP⚽RTS 2 HD" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ˢˢ ⚽",SS: beIN SP⚽RTS 2 HD
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/706550.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="SS: beIN SP⚽RTS 3 HD" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ˢˢ ⚽",SS: beIN SP⚽RTS 3 HD
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/706549.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="SS: beIN SP⚽RTS 4 HD" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ˢˢ ⚽",SS: beIN SP⚽RTS 4 HD
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/706548.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="SS: beIN SP⚽RTS 5 HD" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ˢˢ ⚽",SS: beIN SP⚽RTS 5 HD
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/706547.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="SS: beIN SP⚽RTS 6 HD" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ˢˢ ⚽",SS: beIN SP⚽RTS 6 HD
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/706546.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="SS: beIN SP⚽RTS 7 HD" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ˢˢ ⚽",SS: beIN SP⚽RTS 7 HD
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/706545.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="SS: beIN SP⚽RTS 8 HD" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ˢˢ ⚽",SS: beIN SP⚽RTS 8 HD
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/706544.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="SS: beIN SP⚽RTS 9 HD" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ˢˢ ⚽",SS: beIN SP⚽RTS 9 HD
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/706543.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="####### SS 4K #######" tvg-logo="" group-title="AR| BEIN SPORTS ˢˢ ⚽",####### SS 4K #######
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/706539.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="SS: beIN SP⚽RTS 1 4K" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ˢˢ ⚽",SS: beIN SP⚽RTS 1 4K
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/706538.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="SS: beIN SP⚽RTS 2 4K" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ˢˢ ⚽",SS: beIN SP⚽RTS 2 4K
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/706537.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="SS: beIN SP⚽RTS 3 4K" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ˢˢ ⚽",SS: beIN SP⚽RTS 3 4K
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/706536.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="SS: beIN SP⚽RTS 4 4K" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ˢˢ ⚽",SS: beIN SP⚽RTS 4 4K
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/706535.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="SS: beIN SP⚽RTS 5 4K" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ˢˢ ⚽",SS: beIN SP⚽RTS 5 4K
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/706534.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="SS: beIN SP⚽RTS 6 4K" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ˢˢ ⚽",SS: beIN SP⚽RTS 6 4K
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/706533.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="SS: beIN SP⚽RTS 7 4K" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ˢˢ ⚽",SS: beIN SP⚽RTS 7 4K
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/706532.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="SS: beIN SP⚽RTS 8 4K" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ˢˢ ⚽",SS: beIN SP⚽RTS 8 4K
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/706531.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="SS: beIN SP⚽RTS 9 4K" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ˢˢ ⚽",SS: beIN SP⚽RTS 9 4K
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/706530.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="SS: beIN SP⚽RTS XTRA 1 4K" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ˢˢ ⚽",SS: beIN SP⚽RTS XTRA 1 4K
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/706529.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="SS: beIN SP⚽RTS XTRA 2 4K" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ˢˢ ⚽",SS: beIN SP⚽RTS XTRA 2 4K
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/706528.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="SS: beIN SP⚽RTS XTRA 3 4K" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ˢˢ ⚽",SS: beIN SP⚽RTS XTRA 3 4K
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/706527.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="##### beIN SP⚽RTS HD ◉ #####" tvg-logo="" group-title="AR| BEIN SPORTS ◉ ⚽",##### beIN SP⚽RTS HD ◉ #####
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544837.m3u8
+#EXTINF:-1 tvg-id="beINSports1En.qa" tvg-name="◉: beIN Sp⚽rts 1 HD" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ◉ ⚽",◉: beIN Sp⚽rts 1 HD
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544835.m3u8
+#EXTINF:-1 tvg-id="beINSports2En.qa" tvg-name="◉: beIN Sp⚽rts 2 HD" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ◉ ⚽",◉: beIN Sp⚽rts 2 HD
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544834.m3u8
+#EXTINF:-1 tvg-id="beINSports3En.qa" tvg-name="◉: beIN Sp⚽rts 3 HD" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ◉ ⚽",◉: beIN Sp⚽rts 3 HD
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544833.m3u8
+#EXTINF:-1 tvg-id="beINSports4En.qa" tvg-name="◉: beIN Sp⚽rts 4 HD" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ◉ ⚽",◉: beIN Sp⚽rts 4 HD
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544832.m3u8
+#EXTINF:-1 tvg-id="beINSports5En.qa" tvg-name="◉: beIN Sp⚽rts 5 HD" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ◉ ⚽",◉: beIN Sp⚽rts 5 HD
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544831.m3u8
+#EXTINF:-1 tvg-id="beINSports6En.qa" tvg-name="◉: beIN Sp⚽rts 6 HD" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ◉ ⚽",◉: beIN Sp⚽rts 6 HD
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544830.m3u8
+#EXTINF:-1 tvg-id="beINSports7En.qa" tvg-name="◉: beIN Sp⚽rts 7 HD" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ◉ ⚽",◉: beIN Sp⚽rts 7 HD
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544829.m3u8
+#EXTINF:-1 tvg-id="beINSports8En.qa" tvg-name="◉: beIN Sp⚽rts 8 HD" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ◉ ⚽",◉: beIN Sp⚽rts 8 HD
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544828.m3u8
+#EXTINF:-1 tvg-id="beINSports9En.qa" tvg-name="◉: beIN Sp⚽rts 9 HD" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ◉ ⚽",◉: beIN Sp⚽rts 9 HD
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544827.m3u8
+#EXTINF:-1 tvg-id="BeinSportsExtra1.qa" tvg-name="◉: beIN Sp⚽rts 1 XTRA HD" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ◉ ⚽",◉: beIN Sp⚽rts 1 XTRA HD
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544826.m3u8
+#EXTINF:-1 tvg-id="BeinSportsExtra2.qa" tvg-name="◉: beIN Sp⚽rts 2 XTRA HD" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ◉ ⚽",◉: beIN Sp⚽rts 2 XTRA HD
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544825.m3u8
+#EXTINF:-1 tvg-id="BeinSportsExtra3.qa" tvg-name="◉: beIN Sp⚽rts 3 XTRA HD" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ◉ ⚽",◉: beIN Sp⚽rts 3 XTRA HD
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544824.m3u8
+#EXTINF:-1 tvg-id="beINSportsNBA.qa" tvg-name="◉: beIN Sp⚽rts NBA HD" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ◉ ⚽",◉: beIN Sp⚽rts NBA HD
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544823.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="##### beIN SP⚽RTS 4K ◉ #####" tvg-logo="" group-title="AR| BEIN SPORTS ◉ ⚽",##### beIN SP⚽RTS 4K ◉ #####
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544822.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="##### beIN SP⚽RTS 4K ◉ #####" tvg-logo="" group-title="AR| BEIN SPORTS ◉ ⚽",##### beIN SP⚽RTS 4K ◉ #####
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544822.m3u8
+#EXTINF:-1 tvg-id="beINSports1En.qa" tvg-name="◉: beIN Sp⚽rts 1 4K" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ◉ ⚽",◉: beIN Sp⚽rts 1 4K
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544821.m3u8
+#EXTINF:-1 tvg-id="beINSports2En.qa" tvg-name="◉: beIN Sp⚽rts 2 4K" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ◉ ⚽",◉: beIN Sp⚽rts 2 4K
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544820.m3u8
+#EXTINF:-1 tvg-id="beINSports3En.qa" tvg-name="◉: beIN Sp⚽rts 3 4K" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ◉ ⚽",◉: beIN Sp⚽rts 3 4K
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544819.m3u8
+#EXTINF:-1 tvg-id="beINSports4En.qa" tvg-name="◉: beIN Sp⚽rts 4 4K" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ◉ ⚽",◉: beIN Sp⚽rts 4 4K
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544818.m3u8
+#EXTINF:-1 tvg-id="beINSports5En.qa" tvg-name="◉: beIN Sp⚽rts 5 4K" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ◉ ⚽",◉: beIN Sp⚽rts 5 4K
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544817.m3u8
+#EXTINF:-1 tvg-id="beINSports6En.qa" tvg-name="◉: beIN Sp⚽rts 6 4K" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ◉ ⚽",◉: beIN Sp⚽rts 6 4K
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544816.m3u8
+#EXTINF:-1 tvg-id="beINSports7En.qa" tvg-name="◉: beIN Sp⚽rts 7 4K" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ◉ ⚽",◉: beIN Sp⚽rts 7 4K
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544815.m3u8
+#EXTINF:-1 tvg-id="beINSports8En.qa" tvg-name="◉: beIN Sp⚽rts 8 4K" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ◉ ⚽",◉: beIN Sp⚽rts 8 4K
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544814.m3u8
+#EXTINF:-1 tvg-id="beINSports9En.qa" tvg-name="◉: beIN Sp⚽rts 9 4K" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ◉ ⚽",◉: beIN Sp⚽rts 9 4K
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544813.m3u8
+#EXTINF:-1 tvg-id="BeinSportsExtra1.qa" tvg-name="◉: beIN Sp⚽rts 1 XTRA 4K" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ◉ ⚽",◉: beIN Sp⚽rts 1 XTRA 4K
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544812.m3u8
+#EXTINF:-1 tvg-id="BeinSportsExtra2.qa" tvg-name="◉: beIN Sp⚽rts 2 XTRA 4K" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ◉ ⚽",◉: beIN Sp⚽rts 2 XTRA 4K
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544811.m3u8
+#EXTINF:-1 tvg-id="BeinSportsExtra3.qa" tvg-name="◉: beIN Sp⚽rts 3 XTRA 4K" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ◉ ⚽",◉: beIN Sp⚽rts 3 XTRA 4K
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544810.m3u8
+#EXTINF:-1 tvg-id="beINSports1En.qa" tvg-name="◉: beIN Sp⚽rts 1 ENGLISH 4K" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ◉ ⚽",◉: beIN Sp⚽rts 1 ENGLISH 4K
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544807.m3u8
+#EXTINF:-1 tvg-id="BeinSports1.fr" tvg-name="◉: beIN Sp⚽rts 1 FRANCE 4K" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ◉ ⚽",◉: beIN Sp⚽rts 1 FRANCE 4K
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544809.m3u8
+#EXTINF:-1 tvg-id="BeinSports2.fr" tvg-name="◉: beIN Sp⚽rts 2 FRANCE 4K" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ◉ ⚽",◉: beIN Sp⚽rts 2 FRANCE 4K
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544808.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="##### beIN SP⚽RTS HEVC ◉ #####" tvg-logo="" group-title="AR| BEIN SPORTS ◉ ⚽",##### beIN SP⚽RTS HEVC ◉ #####
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544806.m3u8
+#EXTINF:-1 tvg-id="beINSports1En.qa" tvg-name="◉: beIN Sp⚽rts 1 HEVC" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ◉ ⚽",◉: beIN Sp⚽rts 1 HEVC
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544805.m3u8
+#EXTINF:-1 tvg-id="beINSports2En.qa" tvg-name="◉: beIN Sp⚽rts 2 HEVC" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ◉ ⚽",◉: beIN Sp⚽rts 2 HEVC
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544804.m3u8
+#EXTINF:-1 tvg-id="beINSports3En.qa" tvg-name="◉: beIN Sp⚽rts 3 HEVC" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ◉ ⚽",◉: beIN Sp⚽rts 3 HEVC
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544803.m3u8
+#EXTINF:-1 tvg-id="beINSports4En.qa" tvg-name="◉: beIN Sp⚽rts 4 HEVC" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ◉ ⚽",◉: beIN Sp⚽rts 4 HEVC
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544802.m3u8
+#EXTINF:-1 tvg-id="beINSports5En.qa" tvg-name="◉: beIN Sp⚽rts 5 HEVC" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ◉ ⚽",◉: beIN Sp⚽rts 5 HEVC
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544801.m3u8
+#EXTINF:-1 tvg-id="beINSports6En.qa" tvg-name="◉: beIN Sp⚽rts 6 HEVC" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ◉ ⚽",◉: beIN Sp⚽rts 6 HEVC
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544800.m3u8
+#EXTINF:-1 tvg-id="beINSports7En.qa" tvg-name="◉: beIN Sp⚽rts 7 HEVC" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ◉ ⚽",◉: beIN Sp⚽rts 7 HEVC
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544799.m3u8
+#EXTINF:-1 tvg-id="beINSports8En.qa" tvg-name="◉: beIN Sp⚽rts 8 HEVC" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ◉ ⚽",◉: beIN Sp⚽rts 8 HEVC
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544798.m3u8
+#EXTINF:-1 tvg-id="beINSports9En.qa" tvg-name="◉: beIN Sp⚽rts 9 HEVC" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ◉ ⚽",◉: beIN Sp⚽rts 9 HEVC
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/544797.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="##### beIN SP⚽RTS ᴴᴰ #####" tvg-logo="" group-title="AR| BEIN SPORTS ᵁᴴᴰ ⚽",##### beIN SP⚽RTS ᴴᴰ #####
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/985155.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ᵁᴴᴰ: beIN Sp⚽rts 1 ᴴᴰ" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ᵁᴴᴰ ⚽",ᵁᴴᴰ: beIN Sp⚽rts 1 ᴴᴰ
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/985154.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ᵁᴴᴰ: beIN Sp⚽rts 2 ᴴᴰ" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ᵁᴴᴰ ⚽",ᵁᴴᴰ: beIN Sp⚽rts 2 ᴴᴰ
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/985153.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ᵁᴴᴰ: beIN Sp⚽rts 3 ᴴᴰ" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ᵁᴴᴰ ⚽",ᵁᴴᴰ: beIN Sp⚽rts 3 ᴴᴰ
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/985152.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ᵁᴴᴰ: beIN Sp⚽rts 4 ᴴᴰ" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ᵁᴴᴰ ⚽",ᵁᴴᴰ: beIN Sp⚽rts 4 ᴴᴰ
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/985151.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ᵁᴴᴰ: beIN Sp⚽rts 5 ᴴᴰ" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ᵁᴴᴰ ⚽",ᵁᴴᴰ: beIN Sp⚽rts 5 ᴴᴰ
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/985150.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ᵁᴴᴰ: beIN Sp⚽rts 6 ᴴᴰ" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ᵁᴴᴰ ⚽",ᵁᴴᴰ: beIN Sp⚽rts 6 ᴴᴰ
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/985149.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ᵁᴴᴰ: beIN Sp⚽rts 7 ᴴᴰ" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ᵁᴴᴰ ⚽",ᵁᴴᴰ: beIN Sp⚽rts 7 ᴴᴰ
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/985148.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ᵁᴴᴰ: beIN Sp⚽rts 8 ᴴᴰ" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ᵁᴴᴰ ⚽",ᵁᴴᴰ: beIN Sp⚽rts 8 ᴴᴰ
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/985147.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ᵁᴴᴰ: beIN Sp⚽rts 9 ᴴᴰ" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ᵁᴴᴰ ⚽",ᵁᴴᴰ: beIN Sp⚽rts 9 ᴴᴰ
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/985146.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ᵁᴴᴰ: beIN Sp⚽rts XTRA 1 ᴴᴰ" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ᵁᴴᴰ ⚽",ᵁᴴᴰ: beIN Sp⚽rts XTRA 1 ᴴᴰ
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/985145.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ᵁᴴᴰ: beIN Sp⚽rts XTRA 2 ᴴᴰ" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ᵁᴴᴰ ⚽",ᵁᴴᴰ: beIN Sp⚽rts XTRA 2 ᴴᴰ
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/985144.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ᵁᴴᴰ: beIN Sp⚽rts XTRA 3 ᴴᴰ" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ᵁᴴᴰ ⚽",ᵁᴴᴰ: beIN Sp⚽rts XTRA 3 ᴴᴰ
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/985143.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ᵁᴴᴰ: beIN Sp⚽rts 1 EN ᴴᴰ" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ᵁᴴᴰ ⚽",ᵁᴴᴰ: beIN Sp⚽rts 1 EN ᴴᴰ
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/985142.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ᵁᴴᴰ: beIN Sp⚽rts 2 EN ᴴᴰ" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ᵁᴴᴰ ⚽",ᵁᴴᴰ: beIN Sp⚽rts 2 EN ᴴᴰ
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/985141.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ᵁᴴᴰ: beIN Sp⚽rts 1 FR ᴴᴰ" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ᵁᴴᴰ ⚽",ᵁᴴᴰ: beIN Sp⚽rts 1 FR ᴴᴰ
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/985140.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ᵁᴴᴰ: beIN Sp⚽rts 2 FR ᴴᴰ" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ᵁᴴᴰ ⚽",ᵁᴴᴰ: beIN Sp⚽rts 2 FR ᴴᴰ
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/985139.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ᵁᴴᴰ: beIN Sp⚽rts NBA ᴴᴰ" tvg-logo="http://icon-tmdb.me/stalker_portal/misc/logos/320/12782.png?95032" group-title="AR| BEIN SPORTS ᵁᴴᴰ ⚽",ᵁᴴᴰ: beIN Sp⚽rts NBA ᴴᴰ
+http://hi-world.me:80/live/33ef2265e1ae/6c3b3dd74b/985138.m3u8
+
+
+
 
 
 
