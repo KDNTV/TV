@@ -678,7 +678,31 @@ https://raw.githubusercontent.com/stvplus1/LOCAL/refs/heads/main/Zagros.m3u8
 
 
 
-
+#EXTM3U
+#EXTINF:-1 tvg-id="587714" tvg-name="###### NF - NETFLIX  ######" group-title="NETFLIX",###### NF - NETFLIX  ######
+https://raw.githubusercontent.com/alysjc7-dot/2/refs/heads/main/nflx/d1.m3u8
+#EXTINF:-1 tvg-id="587715" tvg-name="NF - NETFLIX MOVIES 1 4K" group-title="NETFLIX",NF - NETFLIX MOVIES 1 4K
+https://raw.githubusercontent.com/alysjc7-dot/2/refs/heads/main/nflx/d2.m3u8
+#EXTINF:-1 tvg-id="587713" tvg-name="NF - NETFLIX MOVIES 1 UHD" group-title="NETFLIX",NF - NETFLIX MOVIES 1 UHD
+https://raw.githubusercontent.com/alysjc7-dot/2/refs/heads/main/nflx/d3.m3u8
+#EXTINF:-1 tvg-id="587712" tvg-name="NF - NETFLIX MOVIES 2 UHD" group-title="NETFLIX",NF - NETFLIX MOVIES 2 UHD
+https://raw.githubusercontent.com/alysjc7-dot/2/refs/heads/main/nflx/d4.m3u8
+#EXTINF:-1 tvg-id="587711" tvg-name="NF - NETFLIX MOVIES 3 UHD" group-title="NETFLIX",NF - NETFLIX MOVIES 3 UHD
+https://raw.githubusercontent.com/alysjc7-dot/2/refs/heads/main/nflx/d5.m3u8
+#EXTINF:-1 tvg-id="587710" tvg-name="NF - NETFLIX MOVIES 4 UHD" group-title="NETFLIX",NF - NETFLIX MOVIES 4 UHD
+https://raw.githubusercontent.com/alysjc7-dot/2/refs/heads/main/nflx/d6.m3u8
+#EXTINF:-1 tvg-id="587709" tvg-name="NF - NETFLIX MOVIES 5 UHD" group-title="NETFLIX",NF - NETFLIX MOVIES 5 UHD
+https://raw.githubusercontent.com/alysjc7-dot/2/refs/heads/main/nflx/d7.m3u8
+#EXTINF:-1 tvg-id="587708" tvg-name="NF - NETFLIX MOVIES 6 UHD" group-title="NETFLIX",NF - NETFLIX MOVIES 6 UHD
+https://raw.githubusercontent.com/alysjc7-dot/2/refs/heads/main/nflx/d8.m3u8
+#EXTINF:-1 tvg-id="587707" tvg-name="NF - NETFLIX MOVIES 7 UHD" group-title="NETFLIX",NF - NETFLIX MOVIES 7 UHD
+https://raw.githubusercontent.com/alysjc7-dot/2/refs/heads/main/nflx/d9.m3u8
+#EXTINF:-1 tvg-id="587706" tvg-name="NF - NETFLIX MOVIES 8 UHD" group-title="NETFLIX",NF - NETFLIX MOVIES 8 UHD
+https://raw.githubusercontent.com/alysjc7-dot/2/refs/heads/main/nflx/d10.m3u8
+#EXTINF:-1 tvg-id="587705" tvg-name="NF - NETFLIX MOVIES 9 UHD" group-title="NETFLIX",NF - NETFLIX MOVIES 9 UHD
+https://raw.githubusercontent.com/alysjc7-dot/2/refs/heads/main/nflx/d11.m3u8
+#EXTINF:-1 tvg-id="587704" tvg-name="NF - NETFLIX MOVIES 10 UHD" group-title="NETFLIX",NF - NETFLIX MOVIES 10 UHD
+https://raw.githubusercontent.com/alysjc7-dot/2/refs/heads/main/nflx/d12.m3u8
 
 
 
